@@ -1,10 +1,10 @@
 # GTA San Andreas Homebrew PS5
 
-Run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS5 homebrew tile, powered by an adapted [Sahin](https://github.com/7tg/sahin) launcher and [Prospero Win](https://github.com/mpereiraesaa/prospero-win).
+Welcome to my GTA San Andreas PS5 homebrew project. I maintain this community adaptation so you can run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS5 homebrew tile, using an adapted [Sahin](https://github.com/7tg/sahin) launcher and [Prospero Win](https://github.com/mpereiraesaa/prospero-win).
 
 **Beta: `v0.1.0-beta` · PS5 title ID: `PPSA99604`**
 
-> **Tested on a real PS5 by the project owner:** direct launch, DualSense, AUTO2 and right-stick camera work. Select **Joypad** in GTA during the first controller setup. The validated binaries are frozen; this source update does not rebuild or change them. The release pairs the exact tested ZIP with its complete corresponding-source companion and notices; see [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md).
+> **I've tested this release on my own PS5.** The game launches successfully, the DualSense works with AUTO2, and the right analog stick controls the camera after selecting **Joypad** in the game's controller settings. I've kept the tested binaries unchanged. The release includes the exact ZIP I tested, its complete corresponding-source companion and third-party notices; see [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md).
 
 > **You must legally obtain and supply your own compatible copy of the classic PC game. GTA San Andreas, its executable, game data and personal saves are not included. The Definitive Edition is not supported.**
 
@@ -15,7 +15,7 @@ This is an unofficial community project. It is not affiliated with or endorsed b
 - A dedicated GTA San Andreas homebrew tile with direct game launch after installation.
 - Install and Repair from a user-supplied PC game folder.
 - DualSense controls through the existing R4 DirectInput/XInput bridge.
-- **AUTO2:** automatic native-control activation after a short period of stable controller reads and neutral input. The clean-console test reported about **three seconds**; this is an observation, not a configurable promise.
+- **AUTO2:** automatic native-control activation after a short period of stable controller reads and neutral input. In my clean-console test, activation took about **three seconds**; this is an observation, not a configurable promise.
 - Support for in-game saves and persistent GTA settings in the Wine user folder.
 - Recognition of the existing R4 prefix, without replacing its saved games.
 
@@ -25,7 +25,7 @@ This is an unofficial community project. It is not affiliated with or endorsed b
 - Your legally obtained, compatible classic PC GTA San Andreas installation.
 - Enough storage for both the source game folder and the installed copy in the Wine prefix.
 
-Firmware/loader combinations beyond the reported tests are not certified. When a compiled asset is available, use the project's [Releases page](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases). The source repository does not contain the compiled runtime.
+I can't confirm compatibility with firmware/loader combinations beyond those tested. Download the compiled release from my [Releases page](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases). The source repository does not contain the compiled runtime.
 
 ## PS5 installation
 
@@ -97,7 +97,7 @@ The prefix can be shared with the previous R4 installation. **Do not delete or m
 ## Current limitations
 
 - Beta software; compatibility, performance and stability vary by game build and PS5 environment.
-- The owner reports PPSA99604 launch, DualSense, AUTO2 and camera working on a real PS5. First-launch Joypad selection is required. This is not certification for every firmware, loader or PC game revision.
+- I've tested PPSA99604 launch, DualSense, AUTO2 and the camera on my own PS5. First-launch Joypad selection is required. This is not certification for every firmware, loader or PC game revision.
 - The newer, unshipped installation-detection patch is deliberately excluded.
 - The custom 32-bit `dinput8.dll` and the `dinput8=b` override are required. Do not replace them with a generic ASI loader.
 - RoSA, MMGE 3 and other graphics mods are not included or validated by this beta.
@@ -106,10 +106,10 @@ The prefix can be shared with the previous R4 installation. **Do not delete or m
 
 ## Credits & Acknowledgements
 
-Thank you to the developers whose work makes this adaptation possible:
+I'd like to thank the developers and contributors whose work makes my adaptation possible:
 
 - **[mpereiraesaa](https://github.com/mpereiraesaa)** and the [Prospero Win contributors](https://github.com/mpereiraesaa/prospero-win), for the compatibility engine that runs Windows games on PS5.
-- **[7tg](https://github.com/7tg)** and the [Sahin / Blur PS5 contributors](https://github.com/7tg/sahin), for the single-game launcher adapted by this project.
+- **[7tg](https://github.com/7tg)** and the [Sahin / Blur PS5 contributors](https://github.com/7tg/sahin), for the single-game launcher on which my adaptation is based.
 - **[lavavex](https://github.com/lavavex)** and the [NFS Black Box / Need for Speed: Most Wanted PS5 contributors](https://github.com/lavavex/nfs-blackbox-ps5), including the [launcher project](https://github.com/lavavex/nfs-blackbox-launcher), for their contribution to the PS5 PC-game homebrew ecosystem. This acknowledgement does not claim that their code is included here.
 - The [Wine contributors](https://gitlab.winehq.org/wine/wine) ([GitHub mirror](https://github.com/wine-mirror/wine)), the [DXVK contributors](https://github.com/doitsujin/dxvk) and the [PS5 DXVK fork contributors](https://github.com/mpereiraesaa/dxvk).
 - The [Mesa contributors](https://gitlab.freedesktop.org/mesa/mesa), the [PS5 OpenGL port contributors](https://github.com/mpereiraesaa/ps5-opengl), the [public PS5 payload SDK contributors](https://github.com/ps5-payload-dev/sdk), and the wider PS5 homebrew tools community.
@@ -122,6 +122,7 @@ These thanks supplement the component copyright and license notices; they do not
 
 The adapted launcher is in `sahin/launcher/`; GTA native engine changes are in `runner/native-source/`; the pinned Prospero Win base, Wine patches, R4 bridge and tests are included in their respective directories. See [BUILDING.md](BUILDING.md), [DEPENDENCIES.md](DEPENDENCIES.md) and [VALIDATION.md](VALIDATION.md).
 
-The planned version `v0.1.0-beta` identifies this community distribution; no public beta tag or binary Release has been created. It does not change the internal PS5 application version or title ID.
+I've published [v0.1.0-beta](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases/tag/v0.1.0-beta) as the first public beta of my community adaptation. This release version does not change the internal PS5 application version or title ID.
 
 The combined application uses GPL version 3 terms, while individual components retain their own licenses, including Prospero Win/Wine under LGPL-2.1-or-later. See [LICENSE](LICENSE), [LICENSING.md](LICENSING.md) and [THIRD_PARTY.md](THIRD_PARTY.md). Original copyright and attribution notices are retained. No license here grants rights to distribute GTA or proprietary Sony SDK/firmware files.
+
