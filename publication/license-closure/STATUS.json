@@ -1,0 +1,14 @@
+{
+  "title_id": "PPSA99604",
+  "binary_sha256": "4aa16e1a012d07a92f29d4607e6d13d5a440b40fba4193b8afc9bfc6575206ee",
+  "source_material_gaps_recovered": true,
+  "homebrew_rebuilt": false,
+  "validated_binaries_modified": false,
+  "binary_publication_cleared": true,
+  "pending": [],
+  "owner_authorized_unchanged_nonsecret_metadata": true,
+  "distribution_condition": "Binary, complete corresponding-source companion, checksums and notices must be accessible on the same GitHub Release",
+  "source_reconstruction_files_verified": 37495,
+  "opengl_objects_verified": 1275,
+  "compiler_rt_objects_verified": 165
+}

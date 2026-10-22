@@ -1,0 +1,1 @@
+ac_cs_config='--prefix=/usr --enable-archs=i386,x86_64 --disable-tests'

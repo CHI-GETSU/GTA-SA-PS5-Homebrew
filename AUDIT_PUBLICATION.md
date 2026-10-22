@@ -85,3 +85,51 @@ L’application comporte par conception un helper privilégié, un file worker, 
 6. Auditer et tester tout candidat modifié séparément, puis valider sur PS5 avant de le qualifier de version fonctionnelle publique. Aucun de ces changements n’a été effectué dans cette préparation.
 
 Les dossiers restent distincts et non publiés. La préparation s’arrête ici : aucun mod graphique n’est téléchargé ou installé.
+
+## 2026-10-22 — recovered corresponding-source materials
+
+The dedicated license-closure review has recovered the source material gaps
+listed in LICENSE_CLOSURE.md. No executable/library was rebuilt, altered or
+installed on PS5. The actual R4 source trees, AUTO2, saves and Wine prefix were
+not modified. New source exports, manifests and recipes are confined to the
+publication copy and a separate LICENSE-CLOSURE-PPSA99604 work directory.
+
+The first recursive source-companion pass read 228,523 file/member contents
+(5,657,913,965 bytes including containers). It found zero matches against the
+422-file commercial reference hash set, zero prohibited GTA/save/Git metadata
+names, zero owner-home-path matches and zero provider-token matches. Its 425
+private-key markers belong to the unchanged public OpenSSL/GnuTLS/Nettle test
+and example sources; 45 credential-URL matches belong to unchanged upstream
+source tests/documentation. They are public fixture data, not owner credentials,
+and are retained with the upstream preferred sources. Author attribution and
+license contacts are preserved as public copyright metadata.
+
+The sole container decode exception is the unchanged upstream zstd test input
+`tests/gzip/hufts-segv.gz`, a malformed gzip regression fixture in the SHA-pinned
+zstd 1.5.6 source archive. Its bytes were scanned; it cannot be represented as a
+valid decompressed archive. It is classified as public regression input, not an
+uninspected personal archive. A final pass must cover additions made after that
+initial inventory and the final source asset/index. No general absence-of-secrets
+claim is inferred from pattern scanning alone.
+
+The unchanged frozen binary ZIP retains the previously disclosed non-secret
+build-home paths and prefix host-name metadata. Publication of those personal
+metadata remains a separate explicit decision; this source update does not
+silently waive the owner's earlier confidentiality instruction.
+
+The owner explicitly authorized retaining the unchanged tested ZIP with the previously disclosed non-secret personal metadata on 2026-10-22, conditional on a satisfactory license/source audit. No secret or commercial-content exception was authorized.
+
+Final source-content pass: **228,709 regular file/member contents**,
+**5,770,931,966 bytes** including container layers. Findings remain exactly the
+425 public test-key markers, 45 public URL examples and one malformed public
+zstd gzip regression fixture described above. No new source, owner-path, token,
+commercial-reference or prohibited-file finding was introduced. The source
+addition set also passed the existing printable/UTF-16 signature scanner with
+zero findings/errors. Full raw evidence remains local; public summaries and
+source reconstruction manifests are in publication/license-closure. Original
+generated source whitespace is preserved for source correspondence.
+
+The unchanged binary ZIP also passes ZIP member CRC verification; all three
+validated binary hashes match. Final packaging verifies source companion member
+hashes against its inventory and excludes the source-verification worktrees.
+The source companion and license notices are required companion Release assets.

@@ -9,3 +9,10 @@ English README, credits, installation and Joypad setup instructions, release not
 The previously performed recursive ZIP audit covered 3665 file/member contents with no container errors, detected credential signatures, prohibited game/save names or matches against the commercial-game reference hash set. It reported non-secret build-path metadata separately. The final source Git index is audited independently before commit/push. Neither audit proves absence of arbitrary transformed commercial data or unknown secrets.
 
 No PS5 files, saves or settings are accessed or changed. The legally supplied PC game path, shared R4 prefix and save paths remain unchanged. No graphics mod is included.
+
+The 2026-10-22 source closure adds `publication/license-closure/`: the recursive
+OpenGL static-input map, exact SDK/PacBrew sources/recipes, Wine's missing
+untracked/generated overlays and source reconstruction/link materials are now
+recovered. Binary publication requires the complete corresponding-source
+companion alongside the immutable tested ZIP, the final asset audit, and the
+separate decision about the already disclosed non-secret personal metadata.

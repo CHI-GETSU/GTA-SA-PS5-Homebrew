@@ -1,0 +1,2879 @@
+{
+  "schema_version": 1,
+  "void_thunks": 472,
+  "generated_thunks": 385,
+  "functions": [
+    {
+      "function": "vkAntiLagUpdateAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkClearShaderInstrumentationMetricsARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginConditionalRendering2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginConditionalRenderingEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginCustomResolveEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginPerTileExecutionQCOM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginQuery",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginQueryIndexedEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginRenderPass",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginRenderPass2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginRenderPass2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginRendering",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginRenderingKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginShaderInstrumentationARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginTransformFeedback2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginTransformFeedbackEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBeginVideoCodingKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorBufferEmbeddedSamplers2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorBufferEmbeddedSamplersEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorBuffersEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorSets",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorSets2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindDescriptorSets2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindIndexBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindIndexBuffer2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindIndexBuffer2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindIndexBuffer3KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindInvocationMaskHUAWEI",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindPipeline",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindPipelineShaderGroupNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindResourceHeapEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindSamplerHeapEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindShadersEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindShadingRateImageNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindTileMemoryQCOM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindTransformFeedbackBuffers2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindTransformFeedbackBuffersEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindVertexBuffers",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindVertexBuffers2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindVertexBuffers2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBindVertexBuffers3KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBlitImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBlitImage2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBlitImage2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildAccelerationStructureNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildAccelerationStructuresIndirectKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildAccelerationStructuresKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildClusterAccelerationStructureIndirectNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildMicromapsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdBuildPartitionedAccelerationStructuresNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdClearAttachments",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdClearColorImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdClearDepthStencilImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdControlVideoCodingKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdConvertCooperativeVectorMatrixNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyAccelerationStructureKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyAccelerationStructureNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyAccelerationStructureToMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBuffer2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBuffer2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBufferToImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBufferToImage2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyBufferToImage2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyGpaSessionResultsAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImage2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImage2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImageToBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImageToBuffer2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImageToBuffer2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyImageToMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryIndirectKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryIndirectNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryToAccelerationStructureKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryToImageIndirectKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryToImageIndirectNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryToImageKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMemoryToMicromapEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMicromapEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyMicromapToMemoryEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyQueryPoolResults",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyQueryPoolResultsToMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCopyTensorARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdCuLaunchKernelNVX",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDebugMarkerBeginEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDebugMarkerEndEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDebugMarkerInsertEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDecodeVideoKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDecompressMemoryEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDecompressMemoryIndirectCountEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDecompressMemoryIndirectCountNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDecompressMemoryNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatch",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchBase",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchBaseKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchDataGraphARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchIndirect",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchIndirect2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDispatchTileQCOM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDraw",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawClusterHUAWEI",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawClusterIndirectHUAWEI",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexed",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirect",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirect2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirectCount",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirectCount2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirectCountAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndexedIndirectCountKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirect",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirect2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectByteCount2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectByteCountEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectCount",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectCount2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectCountAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawIndirectCountKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirect2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirectCount2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirectCountEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirectCountNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirectEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksIndirectNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMeshTasksNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMultiEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdDrawMultiIndexedEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEncodeVideoKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndConditionalRenderingEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndGpaSampleAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndPerTileExecutionQCOM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndQuery",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndQueryIndexedEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRenderPass",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRenderPass2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRenderPass2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRendering",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRendering2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRendering2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndRenderingKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndShaderInstrumentationARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndTransformFeedback2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndTransformFeedbackEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdEndVideoCodingKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdExecuteCommands",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdExecuteGeneratedCommandsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdExecuteGeneratedCommandsNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdFillBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdFillMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdInsertDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdNextSubpass",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdNextSubpass2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdNextSubpass2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdOpticalFlowExecuteNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPipelineBarrier",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPipelineBarrier2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPipelineBarrier2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPreprocessGeneratedCommandsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPreprocessGeneratedCommandsNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushConstants",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushConstants2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushConstants2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDataEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSet",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSet2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSet2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSetKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSetWithTemplate",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSetWithTemplate2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSetWithTemplate2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdPushDescriptorSetWithTemplateKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResetEvent",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResetEvent2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResetEvent2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResetQueryPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResolveImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResolveImage2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdResolveImage2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetAlphaToCoverageEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetAlphaToOneEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetAttachmentFeedbackLoopEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetBlendConstants",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCheckpointNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoarseSampleOrderNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetColorBlendAdvancedEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetColorBlendEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetColorBlendEquationEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetColorWriteEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetColorWriteMaskEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetComputeOccupancyPriorityNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetConservativeRasterizationModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageModulationModeNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageModulationTableEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageModulationTableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageReductionModeNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageToColorEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCoverageToColorLocationNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCullMode",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetCullModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBias",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBias2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBiasEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBiasEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBounds",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBoundsTestEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthBoundsTestEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthClampEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthClampRangeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthClipEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthClipNegativeOneToOneEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthCompareOp",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthCompareOpEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthTestEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthTestEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthWriteEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDepthWriteEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDescriptorBufferOffsets2EXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDescriptorBufferOffsetsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDeviceMask",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDeviceMaskKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDiscardRectangleEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDiscardRectangleEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDiscardRectangleModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetDispatchParametersARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetEvent",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetEvent2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetEvent2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetExclusiveScissorEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetExclusiveScissorNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetExtraPrimitiveOverestimationSizeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetFragmentShadingRateEnumNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetFragmentShadingRateKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetFrontFace",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetFrontFaceEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineRasterizationModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineStipple",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineStippleEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineStippleEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineStippleKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLineWidth",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLogicOpEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetLogicOpEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPatchControlPointsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPolygonModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPrimitiveRestartEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPrimitiveRestartEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPrimitiveRestartIndexEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPrimitiveTopology",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetPrimitiveTopologyEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetProvokingVertexModeEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRasterizationSamplesEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRasterizationStreamEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRasterizerDiscardEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRasterizerDiscardEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRayTracingPipelineStackSizeKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRenderingAttachmentLocations",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRenderingAttachmentLocationsKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRenderingInputAttachmentIndices",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRenderingInputAttachmentIndicesKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetRepresentativeFragmentTestEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetSampleLocationsEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetSampleLocationsEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetSampleMaskEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetScissor",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetScissorWithCount",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetScissorWithCountEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetShadingRateImageEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilCompareMask",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilOp",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilOpEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilReference",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilTestEnable",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilTestEnableEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetStencilWriteMask",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetTessellationDomainOriginEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetVertexInputEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewport",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportShadingRatePaletteNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportSwizzleNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportWScalingEnableNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportWScalingNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportWithCount",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSetViewportWithCountEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdSubpassShadingHUAWEI",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdTraceRaysIndirect2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdTraceRaysIndirectKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdTraceRaysKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdTraceRaysNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdUpdateBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdUpdateMemoryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdUpdatePipelineIndirectBufferNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWaitEvents",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWaitEvents2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWaitEvents2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteAccelerationStructuresPropertiesKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteAccelerationStructuresPropertiesNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteBufferMarker2AMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteBufferMarkerAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteMarkerToMemoryAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteMicromapsPropertiesEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteTimestamp",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteTimestamp2",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkCmdWriteTimestamp2KHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDebugReportMessageEXT",
+      "codec_generated": false,
+      "synchronous_reason": "callback delivery",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyAccelerationStructureKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyAccelerationStructureNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyBuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyBufferView",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyCommandPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyCuFunctionNVX",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyCuModuleNVX",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDataGraphPipelineSessionARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDebugReportCallbackEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDebugUtilsMessengerEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDeferredOperationKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDescriptorPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDescriptorSetLayout",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDescriptorUpdateTemplate",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDescriptorUpdateTemplateKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyDevice",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyEvent",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyFence",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyFramebuffer",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyGpaSessionAMD",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyImage",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyImageView",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyIndirectCommandsLayoutEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyIndirectCommandsLayoutNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyIndirectExecutionSetEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyInstance",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyMicromapEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyOpticalFlowSessionNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPipeline",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPipelineBinaryKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPipelineCache",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPipelineLayout",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPrivateDataSlot",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyPrivateDataSlotEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyQueryPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyRenderPass",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySampler",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySamplerYcbcrConversion",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySamplerYcbcrConversionKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySemaphore",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyShaderEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyShaderInstrumentationARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyShaderModule",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySurfaceKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroySwapchainKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyTensorARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyTensorViewARM",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyValidationCacheEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyVideoSessionKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkDestroyVideoSessionParametersKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkFreeCommandBuffers",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkFreeMemory",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetAccelerationStructureBuildSizesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetAccelerationStructureMemoryRequirementsNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetBufferMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetBufferMemoryRequirements2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetBufferMemoryRequirements2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetClusterAccelerationStructureBuildSizesNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDataGraphPipelineSessionMemoryRequirementsARM",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": [],
+      "deferred_output": "pDescriptor"
+    },
+    {
+      "function": "vkGetDescriptorSetHostMappingVALVE",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorSetLayoutBindingOffsetEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorSetLayoutHostMappingInfoVALVE",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorSetLayoutSizeEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorSetLayoutSupport",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDescriptorSetLayoutSupportKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceAccelerationStructureCompatibilityKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceBufferMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceBufferMemoryRequirementsKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceGroupPeerMemoryFeatures",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceGroupPeerMemoryFeaturesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageMemoryRequirementsKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageSparseMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageSparseMemoryRequirementsKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageSubresourceLayout",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceImageSubresourceLayoutKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceMemoryCommitment",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceMicromapCompatibilityEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceQueue",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceQueue2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetDeviceTensorMemoryRequirementsARM",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetGeneratedCommandsMemoryRequirementsEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetGeneratedCommandsMemoryRequirementsNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageMemoryRequirements2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageMemoryRequirements2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSparseMemoryRequirements",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSparseMemoryRequirements2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSparseMemoryRequirements2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSubresourceLayout",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSubresourceLayout2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSubresourceLayout2EXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetImageSubresourceLayout2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetLatencyTimingsLegacyNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetLatencyTimingsNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetMicromapBuildSizesEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPartitionedAccelerationStructuresBuildSizesNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalBufferProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalBufferPropertiesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalFenceProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalFencePropertiesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalSemaphoreProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalSemaphorePropertiesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceExternalTensorPropertiesARM",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFeatures",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFeatures2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFeatures2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFormatProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFormatProperties2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceFormatProperties2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceMemoryProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceMemoryProperties2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceMemoryProperties2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceMultisamplePropertiesEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceProperties2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceProperties2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceQueueFamilyDataGraphProcessingEnginePropertiesARM",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceQueueFamilyPerformanceQueryPassesKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceQueueFamilyProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceQueueFamilyProperties2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceQueueFamilyProperties2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceSparseImageFormatProperties",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceSparseImageFormatProperties2",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPhysicalDeviceSparseImageFormatProperties2KHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPipelineIndirectMemoryRequirementsNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPrivateData",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetPrivateDataEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetQueueCheckpointData2NV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetQueueCheckpointDataNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetRenderAreaGranularity",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetRenderingAreaGranularity",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetRenderingAreaGranularityKHR",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetShaderModuleCreateInfoIdentifierEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetShaderModuleIdentifierEXT",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetSleepStatusLegacyNV",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkGetTensorMemoryRequirementsARM",
+      "codec_generated": false,
+      "synchronous_reason": "immediate output storage",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkLatencySleepLegacyNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkQueueBeginDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkQueueEndDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkQueueInsertDebugUtilsLabelEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkQueueNotifyOutOfBandLegacyNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkQueueNotifyOutOfBandNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkReleaseProfilingLockKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkResetQueryPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkResetQueryPoolEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSetDeviceMemoryPriorityEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSetHdrMetadataEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSetLatencyMarkerLegacyNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSetLatencyMarkerNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSetLatencySleepModeLegacyNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkShutdownLatencyDeviceLegacyNV",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkSubmitDebugUtilsMessageEXT",
+      "codec_generated": false,
+      "synchronous_reason": "callback delivery",
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkTrimCommandPool",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkTrimCommandPoolKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUninitializePerformanceApiINTEL",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUnmapMemory",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUnregisterCustomBorderColorEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUpdateDescriptorSetWithTemplate",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUpdateDescriptorSetWithTemplateKHR",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUpdateDescriptorSets",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUpdateIndirectExecutionSetPipelineEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    },
+    {
+      "function": "vkUpdateIndirectExecutionSetShaderEXT",
+      "codec_generated": true,
+      "synchronous_reason": null,
+      "parameter_shape_reasons": []
+    }
+  ],
+  "unsupported_structures": {
+    "VkCuLaunchInfoNVX": [
+      "unbounded pointer-of-pointer pParams",
+      "unbounded pointer-of-pointer pExtras"
+    ],
+    "VkDataGraphPipelineConstantARM": [
+      "opaque pointer pConstantData"
+    ],
+    "VkDebugReportCallbackCreateInfoEXT": [
+      "guest callback pfnCallback",
+      "opaque pointer pUserData"
+    ],
+    "VkDebugUtilsMessengerCreateInfoEXT": [
+      "guest callback pfnUserCallback",
+      "opaque pointer pUserData"
+    ],
+    "SECURITY_ATTRIBUTES": [
+      "opaque pointer lpSecurityDescriptor"
+    ],
+    "VkImportMemoryHostPointerInfoEXT": [
+      "opaque pointer pHostPointer"
+    ],
+    "VkImportMemoryMetalHandleInfoEXT": [
+      "opaque pointer handle"
+    ],
+    "VkMemoryMapPlacedInfoEXT": [
+      "opaque pointer pPlacedAddress"
+    ],
+    "VkOpaqueCaptureDescriptorDataCreateInfoEXT": [
+      "opaque pointer opaqueCaptureDescriptorData"
+    ],
+    "VkOpticalFlowSessionCreatePrivateDataInfoNV": [
+      "opaque pointer pPrivateData"
+    ],
+    "VkQueryLowLatencySupportNV": [
+      "opaque pointer pQueriedLowLatencyData"
+    ]
+  },
+  "pnext_structures": 724
+}

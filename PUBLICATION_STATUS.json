@@ -12,8 +12,11 @@
   "source_push_authorized": true,
   "source_scope": "Migration and audited source/documentation only, main branch",
   "binary_release_authorization": "Conditional: only exact frozen ZIP and only when redistribution obligations are satisfied",
-  "binary_publication_allowed": false,
-  "remaining_review": "LICENSE_CLOSURE.md",
+  "binary_publication_allowed": true,
+  "remaining_review": null,
   "validated_artifact": "docs/VALIDATED_PPSA99604.json",
-  "binaries_rebuilt_this_publication_update": false
+  "binaries_rebuilt_this_publication_update": false,
+  "corresponding_source": "publication/license-closure/README.md",
+  "publication_condition": "Publish complete source companion, retained notices and checksums together with the exact frozen ZIP",
+  "owner_accepted_nonsecret_metadata": true
 }

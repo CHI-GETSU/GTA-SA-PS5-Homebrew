@@ -1,0 +1,10 @@
+{
+  "object": "emutls.o",
+  "sha256": "f12a423ab50bab567caab55986904949f3b15074d253e95b151374054b57d94d",
+  "matched_sdk_archive_sha256": "17b22ab7baec2107ee4ce4189257abbd773a9bb9ce854203e08e0581e10b72b3",
+  "source": "SDK libc/emutls.c",
+  "sdk_source_commit": "4eb701204fc3f8d31e84cf8ca272974e2be9c867",
+  "sdk_revision_record": null,
+  "source_sha256": "86813748aa5668112a0a5891601f5ae36660294a749a013fef7c3bbbd805737c",
+  "matched_official_sdk_v042_libc": true
+}

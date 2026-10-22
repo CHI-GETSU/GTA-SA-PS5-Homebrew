@@ -1,0 +1,117 @@
+[
+  {
+    "file": "src/util/os_file.c",
+    "sha256": "6b59607afd1f818d273dee3b3a6a2c00e15434389ccc82a4e87ef5541ed9daaf",
+    "kind": "modified"
+  },
+  {
+    "file": "src/glx/libgl-symbols.txt",
+    "sha256": "8bdd29aa95cf4c7578b2c97a878ffadae5ff73bb57a75ec603592b5d39913989",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/auxiliary/util/u_vbuf.c",
+    "sha256": "6a08427dd61ee10ecb3e5280ff8890f449043f06d4a4e228a643dcf21fdca5d6",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/auxiliary/util/u_threaded_context.c",
+    "sha256": "0c306e42225c48da5f06428d24298de32aa602d6732f5d416242dd4b0f50d332",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/auxiliary/indices/u_primconvert.c",
+    "sha256": "ecbde8ae34a86f8ac8d78e99412184ffa02a99408c0162c8ea03c5264bfafd83",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/auxiliary/indices/u_primconvert.h",
+    "sha256": "77ed0dbf71172bbb15e7fbc0006dd78e764f9d8e1d88eb37a32bfd03b01088ce",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/auxiliary/translate/translate.c",
+    "sha256": "c08d5c4e3bc49df214c9ff291e9b2b92ce8422b03b9361dd76ea08b28775e4f1",
+    "kind": "modified"
+  },
+  {
+    "file": "src/gallium/include/pipe/p_state.h",
+    "sha256": "117a11795ba8ecc11deb2170c9f5e914ce9b1bf13faac068762f83c64c8fb380",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_draw.c",
+    "sha256": "222131999b0bc8f11d2d5a00d97ef991530f547bb452a1365bfd5781191ff632",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_atom_storagebuf.c",
+    "sha256": "411dd292b34874e03f392745090c20af3da9041025f58f6a8191e6827b53c9be",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_extensions.c",
+    "sha256": "19d4950824436ad3d342abd7d854c8b45ff1f8575c4d4082e6936b1be9b8d921",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_format.c",
+    "sha256": "08a7d42c0b47e888a19ad5b874adbf327f001ae26d019621bb10d672e652f271",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_manager.c",
+    "sha256": "b135c2d831d8f8160f4b7af70a51346671eb74a521469fe43730aa29a772b935",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/state_tracker/st_cb_texture.c",
+    "sha256": "eff3b55b0696e555bfe9f5fec8ea1f405e67f247ce47a02531ad9948485adad0",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/fbobject.c",
+    "sha256": "a39ad96c09b0aedc7198f5ed2b04c9aacbecbc7735a201c3a3bc03e9a0c21b10",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/renderbuffer.c",
+    "sha256": "c8c7badeae0398c10d3367252b77d5fa6dae47ca264ad1122bd6aff7374de270",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/texparam.c",
+    "sha256": "7802b28ab12c5833d0564f64543a11869421abb31884b9e89c7d4558b70fd302",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/glthread.h",
+    "sha256": "18f9a2bbe61d0b352144017c1bb4af3599b11f5d7233a57e3a501ac7155ec9d7",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/draw.c",
+    "sha256": "892cf22acf722641146399ee7733abc8088c41fa9f573c61f31b9e18af15a2c8",
+    "kind": "modified"
+  },
+  {
+    "file": "src/mesa/main/texstate.c",
+    "sha256": "816c4399991b41f707f2e9526ff804af680ba465264cc74e85d3aed88e134adb",
+    "kind": "modified"
+  },
+  {
+    "file": "src/compiler/glsl/gl_nir_lower_xfb_varying.c",
+    "sha256": "5cd88be7356b61bd2bbba392ccdd0aae2b58faccfcab6619f97c22940be1a31b",
+    "kind": "modified"
+  },
+  {
+    "file": "src/compiler/nir/nir_intrinsics.py",
+    "sha256": "7cabcc06e575cf7f85ba23053b7a97e97aa3fcb039c0a6887e457eec3022ced4",
+    "kind": "modified"
+  },
+  {
+    "file": "src/compiler/nir/nir_opt_varyings.c",
+    "sha256": "48b0aa383002a147fdd96c772b233d370a1d20c7fbd2543d31633e43d2625763",
+    "kind": "modified"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "archive": "PS5_Mesa-RADV-01d70579.tar",
+    "revision": "01d70579b8d410d6a482e36c6f184798ae4c83ad",
+    "sha256": "8c5e451fd52ef1665d2d0ba1431f4e90495df46413c2f1fe33d5ca76978d5949"
+  },
+  {
+    "archive": "PS5_Mesa-Zink-e4607ef6.tar",
+    "revision": "e4607ef697fe3df8d1ebc329bf1917d041843306",
+    "sha256": "39a886b218faa35779b648c1ef4320e2fec6937fff4b2d67673af252adb592f8"
+  },
+  {
+    "archive": "PS5_PayloadSDK-RADV-95c08f27.tar",
+    "revision": "95c08f27386fc698f6bbe21dde3030140a41d10b",
+    "sha256": "32f1d36dbd1489ae93137ba252cc34e3e760948e5d06bf98233422aa82786c2b"
+  },
+  {
+    "archive": "PS5_Vulkan-8aee3afb.tar",
+    "revision": "8aee3afb37bcfad06f0c7d263b901040f08ebbd0",
+    "sha256": "a36df33489509fff183e9e42adbf96c86271402f6a7656875167d4c0efded361"
+  }
+]

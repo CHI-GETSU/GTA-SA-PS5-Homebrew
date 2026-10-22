@@ -4,7 +4,7 @@ Run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS
 
 **Beta: `v0.1.0-beta` · PS5 title ID: `PPSA99604`**
 
-> **Tested on a real PS5 by the project owner:** direct launch, DualSense, AUTO2 and right-stick camera work. Select **Joypad** in GTA during the first controller setup. The validated binaries are frozen; this source update does not rebuild or change them. Binary release publication remains withheld pending the specific source/relink review in [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md).
+> **Tested on a real PS5 by the project owner:** direct launch, DualSense, AUTO2 and right-stick camera work. Select **Joypad** in GTA during the first controller setup. The validated binaries are frozen; this source update does not rebuild or change them. The release pairs the exact tested ZIP with its complete corresponding-source companion and notices; see [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md).
 
 > **You must legally obtain and supply your own compatible copy of the classic PC game. GTA San Andreas, its executable, game data and personal saves are not included. The Definitive Edition is not supported.**
 
@@ -102,7 +102,7 @@ The prefix can be shared with the previous R4 installation. **Do not delete or m
 - The custom 32-bit `dinput8.dll` and the `dinput8=b` override are required. Do not replace them with a generic ASI loader.
 - RoSA, MMGE 3 and other graphics mods are not included or validated by this beta.
 - A complete rebuild on a separate clean Nobara host has not been verified. Dependency retrieval and some runtime/source-closure steps remain documented work.
-- Binary publication remains blocked pending the corresponding-source/license and metadata review described in [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md). A locally prepared ZIP is not an authorization to redistribute it.
+- Download both the homebrew ZIP and the corresponding-source companion from [v0.1.0-beta](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases/tag/v0.1.0-beta). The complete source and license materials accompany the frozen binary distribution.
 
 ## Credits & Acknowledgements
 

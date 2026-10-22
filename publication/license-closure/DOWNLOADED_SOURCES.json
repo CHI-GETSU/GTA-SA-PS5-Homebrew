@@ -1,0 +1,66 @@
+[
+  {
+    "file": "curl-8.18.0.tar.xz",
+    "url": "https://curl.se/download/curl-8.18.0.tar.xz",
+    "sha256": "40df79166e74aa20149365e11ee4c798a46ad57c34e4f68fd13100e2c9a91946",
+    "bytes": 2801444,
+    "recipe_hash_verified": true,
+    "status": "downloaded"
+  },
+  {
+    "file": "libpsl-0.21.5.tar.gz",
+    "url": "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz",
+    "sha256": "1dcc9ceae8b128f3c0b3f654decd0e1e891afc6ff81098f227ef260449dae208",
+    "bytes": 7624251,
+    "recipe_hash_verified": true,
+    "status": "downloaded"
+  },
+  {
+    "file": "openssl-3.5.2.tar.gz",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.2/openssl-3.5.2.tar.gz",
+    "sha256": "c53a47e5e441c930c3928cf7bf6fb00e5d129b630e0aa873b08258656e7345ec",
+    "bytes": 53180161,
+    "recipe_hash_verified": true,
+    "status": "downloaded"
+  },
+  {
+    "file": "zlib-1.3.2.tar.gz",
+    "url": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.gz",
+    "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16",
+    "bytes": 1502830,
+    "recipe_hash_verified": true,
+    "status": "downloaded"
+  },
+  {
+    "file": "zstd-1.5.6.tar.gz",
+    "url": "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz",
+    "sha256": "8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1",
+    "bytes": 2406875,
+    "recipe_hash_verified": true,
+    "status": "downloaded"
+  },
+  {
+    "file": "sdk-4eb70120.tar.gz",
+    "url": "https://codeload.github.com/ps5-payload-dev/sdk/tar.gz/4eb701204fc3f8d31e84cf8ca272974e2be9c867",
+    "sha256": "fc9f5974e540c4d4af912f0661cf44075651e67a4d0070a6e8ad44e01bee8ac2",
+    "bytes": 3381771,
+    "recipe_hash_verified": false,
+    "status": "downloaded"
+  },
+  {
+    "file": "pacbrew-1687e827.tar.gz",
+    "url": "https://codeload.github.com/ps5-payload-dev/pacbrew-repo/tar.gz/1687e827675c66e1b040751c7f0811222bd3aea0",
+    "sha256": "0b05d8c04597acf3b8a056b22b83b19e017ceac59f3cb1af0c149229997ecbbe",
+    "bytes": 49774,
+    "recipe_hash_verified": false,
+    "status": "downloaded"
+  },
+  {
+    "file": "llvm-project-18.1.8.src.tar.xz",
+    "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/llvm-project-18.1.8.src.tar.xz",
+    "sha256": "0b58557a6d32ceee97c8d533a59b9212d87e0fc4d2833924eb6c611247db2f2a",
+    "bytes": 132067260,
+    "recipe_hash_verified": false,
+    "status": "downloaded"
+  }
+]

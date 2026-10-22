@@ -1,0 +1,414 @@
+[
+  {
+    "variant": "ps5",
+    "preferred_source_files_compared": 12498,
+    "mismatches": [],
+    "additional_source_overlay": [
+      {
+        "file": "dlls/ntdll/pw_qpc_clock.h",
+        "sha256": "d263ce02006d46de3c96f64f9e1565cd3809fd2b728ae90ba140f63624e032f0"
+      },
+      {
+        "file": "dlls/win32u/pw_key_shared.h",
+        "sha256": "94903db545f271abbb47b826c27cb2f37e2e1fe1e696f89c6287203f5b9e5483"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch.h",
+        "sha256": "51fac94645a218a6d15af2ae90a2ca1a0a72f9c793b3835912adb62530a6bf37"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_pe.c",
+        "sha256": "3c3739a25660dd01a1b584530a1473b00d8d33301ba94b8d0e8abe3e697b94aa"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_unix.c",
+        "sha256": "f87f446c1731687a52b0fed6cbf2dafc3a00624de46e3cb84fbc5c12ddeef97f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.c",
+        "sha256": "0be71130e04a5640b1e3258afe39458965c17d5f82b737e4a23180a9fd10c80e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.h",
+        "sha256": "296df83079bfe724415f5ae83609bfba60ffc5ad9d09df6507bf5bccd2c8a1fd"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec_unix.c",
+        "sha256": "a17d22a038d9a6f2a3c3acfc0b0acb18b5dfe55f930ba9c994c8427268e42b0f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.c",
+        "sha256": "56eab72e73c96e6b7211390cba4a82388d850e3f3fca48c162a16a5508970e11"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.h",
+        "sha256": "9c4f17658581d597bdaebfd1af3307af5723455e70c7591c50b4c6a9a3ff2dff"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream_unix.c",
+        "sha256": "80d13db39ffe1ecfdc7571fb2b8c738860e8874ab0e3cdf937f5b7141dcc7d6a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_disable_guard.h",
+        "sha256": "aa00f800de35c2f97986d829fc973a6f94ba8e47fb6ed9193203a307000f7d9a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_function_names.h",
+        "sha256": "ae0375b95c03ad701885bd1a71e0c6059b02d9844184318cba9d08ae4fb571ab"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated.c",
+        "sha256": "f131414edd347d34c60381d631a980cb9591d035817213238ea7895bb027d53b"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_manifest.json",
+        "sha256": "bf8ac6fddb2e992813e775fb5a5bec115eb776f486b5da5080e08124fee570c6"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_roundtrip.c",
+        "sha256": "43fd5dd1a6cc9e01ef6f9ff505d8d89fcad6a9849cf2e9463cf992c68ac19f4e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_unix.c",
+        "sha256": "aa2e275863d4dac2b21feed8c603ed78df285dc58a1abef32c9f4b827fa57fb7"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_interval.h",
+        "sha256": "263feb347b2676adfef1bf4822781927b774c331820edfc6c239ccf9d00bf9f8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.c",
+        "sha256": "1ae8a9bb79f59149d9360f26f312b2398012c19b2684e342b3ec7b1fdc1e7396"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.h",
+        "sha256": "b86c52fc2e295e7842c9e10b03c53d2e910aca5eb504421de33a7b7199e2c237"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_progress_guard.h",
+        "sha256": "654728155617c010759082e39a044478e3694cfd8e84a10dbe0704d8580e0b42"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.c",
+        "sha256": "324089bf4feecaea99d72ce686b9bcbf50a2d14ec9e4a0f36bf3d15c1cf00a87"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.h",
+        "sha256": "64ff1296be009a34f903f8a54cd1489a703dd49b49fd1d1126f7f8358451f8e1"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.c",
+        "sha256": "fffdb534920a846986a79c70129a047aa70c20a02c35aff60b00336672d5eee9"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.h",
+        "sha256": "0174a7bb1e815cd0813d2a2b299f8621fba50f4b34b12f0b4cfe4905de9592ac"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc_unix.c",
+        "sha256": "ac5189f6971b065459489b93c762c38bdec8b197f2deea96dfe538a4c1762c94"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.c",
+        "sha256": "2664984b9c8438550d14a98517b035bf96c5aa00dd74aba35eb5b4caeee37573"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.h",
+        "sha256": "b078c5edfe20675713e9feb1217491aa9d9199787da4498f99347838788c123e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache_unix.c",
+        "sha256": "d42d26265605d0d1d0f3b3ab94bd78a364337cdfb779bb11cd43c131b3d9bef8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.c",
+        "sha256": "b4066886723998ef1a6297e200065c543466bbcce7eab9544abba4b4e5776b0d"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.h",
+        "sha256": "0d59fa3db577d25d40bb58febc71130325a6d7a00d8333c43686cf4981f66174"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire_unix.c",
+        "sha256": "84aa977a9fdfd2c55ce33fa6894b759ac7be5e3b2c0110f36fe1c9d9aa082a7b"
+      }
+    ],
+    "note": "Complete delta covers tracked files; overlay supplies staged-in generated/platform files that were untracked during compilation."
+  },
+  {
+    "variant": "host",
+    "preferred_source_files_compared": 12498,
+    "mismatches": [],
+    "additional_source_overlay": [
+      {
+        "file": "dlls/ntdll/pw_qpc_clock.h",
+        "sha256": "d263ce02006d46de3c96f64f9e1565cd3809fd2b728ae90ba140f63624e032f0"
+      },
+      {
+        "file": "dlls/win32u/pw_key_shared.h",
+        "sha256": "94903db545f271abbb47b826c27cb2f37e2e1fe1e696f89c6287203f5b9e5483"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch.h",
+        "sha256": "51fac94645a218a6d15af2ae90a2ca1a0a72f9c793b3835912adb62530a6bf37"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_pe.c",
+        "sha256": "3c3739a25660dd01a1b584530a1473b00d8d33301ba94b8d0e8abe3e697b94aa"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_unix.c",
+        "sha256": "f87f446c1731687a52b0fed6cbf2dafc3a00624de46e3cb84fbc5c12ddeef97f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.c",
+        "sha256": "0be71130e04a5640b1e3258afe39458965c17d5f82b737e4a23180a9fd10c80e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.h",
+        "sha256": "296df83079bfe724415f5ae83609bfba60ffc5ad9d09df6507bf5bccd2c8a1fd"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec_unix.c",
+        "sha256": "a17d22a038d9a6f2a3c3acfc0b0acb18b5dfe55f930ba9c994c8427268e42b0f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.c",
+        "sha256": "56eab72e73c96e6b7211390cba4a82388d850e3f3fca48c162a16a5508970e11"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.h",
+        "sha256": "9c4f17658581d597bdaebfd1af3307af5723455e70c7591c50b4c6a9a3ff2dff"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream_unix.c",
+        "sha256": "80d13db39ffe1ecfdc7571fb2b8c738860e8874ab0e3cdf937f5b7141dcc7d6a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_disable_guard.h",
+        "sha256": "aa00f800de35c2f97986d829fc973a6f94ba8e47fb6ed9193203a307000f7d9a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_function_names.h",
+        "sha256": "ae0375b95c03ad701885bd1a71e0c6059b02d9844184318cba9d08ae4fb571ab"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated.c",
+        "sha256": "f131414edd347d34c60381d631a980cb9591d035817213238ea7895bb027d53b"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_manifest.json",
+        "sha256": "bf8ac6fddb2e992813e775fb5a5bec115eb776f486b5da5080e08124fee570c6"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_roundtrip.c",
+        "sha256": "43fd5dd1a6cc9e01ef6f9ff505d8d89fcad6a9849cf2e9463cf992c68ac19f4e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_unix.c",
+        "sha256": "aa2e275863d4dac2b21feed8c603ed78df285dc58a1abef32c9f4b827fa57fb7"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_interval.h",
+        "sha256": "263feb347b2676adfef1bf4822781927b774c331820edfc6c239ccf9d00bf9f8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.c",
+        "sha256": "1ae8a9bb79f59149d9360f26f312b2398012c19b2684e342b3ec7b1fdc1e7396"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.h",
+        "sha256": "b86c52fc2e295e7842c9e10b03c53d2e910aca5eb504421de33a7b7199e2c237"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_progress_guard.h",
+        "sha256": "654728155617c010759082e39a044478e3694cfd8e84a10dbe0704d8580e0b42"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.c",
+        "sha256": "324089bf4feecaea99d72ce686b9bcbf50a2d14ec9e4a0f36bf3d15c1cf00a87"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.h",
+        "sha256": "64ff1296be009a34f903f8a54cd1489a703dd49b49fd1d1126f7f8358451f8e1"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.c",
+        "sha256": "fffdb534920a846986a79c70129a047aa70c20a02c35aff60b00336672d5eee9"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.h",
+        "sha256": "0174a7bb1e815cd0813d2a2b299f8621fba50f4b34b12f0b4cfe4905de9592ac"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc_unix.c",
+        "sha256": "ac5189f6971b065459489b93c762c38bdec8b197f2deea96dfe538a4c1762c94"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.c",
+        "sha256": "2664984b9c8438550d14a98517b035bf96c5aa00dd74aba35eb5b4caeee37573"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.h",
+        "sha256": "b078c5edfe20675713e9feb1217491aa9d9199787da4498f99347838788c123e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache_unix.c",
+        "sha256": "d42d26265605d0d1d0f3b3ab94bd78a364337cdfb779bb11cd43c131b3d9bef8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.c",
+        "sha256": "b4066886723998ef1a6297e200065c543466bbcce7eab9544abba4b4e5776b0d"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.h",
+        "sha256": "0d59fa3db577d25d40bb58febc71130325a6d7a00d8333c43686cf4981f66174"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire_unix.c",
+        "sha256": "84aa977a9fdfd2c55ce33fa6894b759ac7be5e3b2c0110f36fe1c9d9aa082a7b"
+      }
+    ],
+    "note": "Complete delta covers tracked files; overlay supplies staged-in generated/platform files that were untracked during compilation."
+  },
+  {
+    "variant": "r4-controller",
+    "preferred_source_files_compared": 12499,
+    "mismatches": [],
+    "additional_source_overlay": [
+      {
+        "file": "dlls/dinput/joystick_xinput.c",
+        "sha256": "77dbe9caadd450ffb1ffd75238425dd5d477e516e131027f89fb5e2a863ecb66"
+      },
+      {
+        "file": "dlls/ntdll/pw_qpc_clock.h",
+        "sha256": "d263ce02006d46de3c96f64f9e1565cd3809fd2b728ae90ba140f63624e032f0"
+      },
+      {
+        "file": "dlls/win32u/pw_key_shared.h",
+        "sha256": "94903db545f271abbb47b826c27cb2f37e2e1fe1e696f89c6287203f5b9e5483"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch.h",
+        "sha256": "51fac94645a218a6d15af2ae90a2ca1a0a72f9c793b3835912adb62530a6bf37"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_pe.c",
+        "sha256": "3c3739a25660dd01a1b584530a1473b00d8d33301ba94b8d0e8abe3e697b94aa"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_batch_unix.c",
+        "sha256": "f87f446c1731687a52b0fed6cbf2dafc3a00624de46e3cb84fbc5c12ddeef97f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.c",
+        "sha256": "0be71130e04a5640b1e3258afe39458965c17d5f82b737e4a23180a9fd10c80e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec.h",
+        "sha256": "296df83079bfe724415f5ae83609bfba60ffc5ad9d09df6507bf5bccd2c8a1fd"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_codec_unix.c",
+        "sha256": "a17d22a038d9a6f2a3c3acfc0b0acb18b5dfe55f930ba9c994c8427268e42b0f"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.c",
+        "sha256": "56eab72e73c96e6b7211390cba4a82388d850e3f3fca48c162a16a5508970e11"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream.h",
+        "sha256": "9c4f17658581d597bdaebfd1af3307af5723455e70c7591c50b4c6a9a3ff2dff"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_command_stream_unix.c",
+        "sha256": "80d13db39ffe1ecfdc7571fb2b8c738860e8874ab0e3cdf937f5b7141dcc7d6a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_disable_guard.h",
+        "sha256": "aa00f800de35c2f97986d829fc973a6f94ba8e47fb6ed9193203a307000f7d9a"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_function_names.h",
+        "sha256": "ae0375b95c03ad701885bd1a71e0c6059b02d9844184318cba9d08ae4fb571ab"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated.c",
+        "sha256": "f131414edd347d34c60381d631a980cb9591d035817213238ea7895bb027d53b"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_manifest.json",
+        "sha256": "bf8ac6fddb2e992813e775fb5a5bec115eb776f486b5da5080e08124fee570c6"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_roundtrip.c",
+        "sha256": "43fd5dd1a6cc9e01ef6f9ff505d8d89fcad6a9849cf2e9463cf992c68ac19f4e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_generated_unix.c",
+        "sha256": "aa2e275863d4dac2b21feed8c603ed78df285dc58a1abef32c9f4b827fa57fb7"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_interval.h",
+        "sha256": "263feb347b2676adfef1bf4822781927b774c331820edfc6c239ccf9d00bf9f8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.c",
+        "sha256": "1ae8a9bb79f59149d9360f26f312b2398012c19b2684e342b3ec7b1fdc1e7396"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_present_pe.h",
+        "sha256": "b86c52fc2e295e7842c9e10b03c53d2e910aca5eb504421de33a7b7199e2c237"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_progress_guard.h",
+        "sha256": "654728155617c010759082e39a044478e3694cfd8e84a10dbe0704d8580e0b42"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.c",
+        "sha256": "324089bf4feecaea99d72ce686b9bcbf50a2d14ec9e4a0f36bf3d15c1cf00a87"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_retire.h",
+        "sha256": "64ff1296be009a34f903f8a54cd1489a703dd49b49fd1d1126f7f8358451f8e1"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.c",
+        "sha256": "fffdb534920a846986a79c70129a047aa70c20a02c35aff60b00336672d5eee9"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc.h",
+        "sha256": "0174a7bb1e815cd0813d2a2b299f8621fba50f4b34b12f0b4cfe4905de9592ac"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_spsc_unix.c",
+        "sha256": "ac5189f6971b065459489b93c762c38bdec8b197f2deea96dfe538a4c1762c94"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.c",
+        "sha256": "2664984b9c8438550d14a98517b035bf96c5aa00dd74aba35eb5b4caeee37573"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache.h",
+        "sha256": "b078c5edfe20675713e9feb1217491aa9d9199787da4498f99347838788c123e"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_template_cache_unix.c",
+        "sha256": "d42d26265605d0d1d0f3b3ab94bd78a364337cdfb779bb11cd43c131b3d9bef8"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.c",
+        "sha256": "b4066886723998ef1a6297e200065c543466bbcce7eab9544abba4b4e5776b0d"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire.h",
+        "sha256": "0d59fa3db577d25d40bb58febc71130325a6d7a00d8333c43686cf4981f66174"
+      },
+      {
+        "file": "dlls/winevulkan/pw_vk_wire_unix.c",
+        "sha256": "84aa977a9fdfd2c55ce33fa6894b759ac7be5e3b2c0110f36fe1c9d9aa082a7b"
+      }
+    ],
+    "note": "Complete delta covers tracked files; overlay supplies staged-in generated/platform files that were untracked during compilation."
+  }
+]

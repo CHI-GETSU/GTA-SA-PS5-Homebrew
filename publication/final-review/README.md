@@ -12,3 +12,5 @@ These records are data, not build instructions to execute blindly. Absolute pers
 The portable local RADV link adaptation is `runtime-adaptations/radv-mkstemp/link_radv_prx.sh`: set PROSPERO_REPO_ROOT to matching Prospero Win source and provide the pinned RADV checkout, output directory, native conversion tool and PIE script as its four arguments. RADV_MKSTEMP_SOURCE is an optional shim override. No build was run to produce these evidence files.
 
 See the root LICENSE_CLOSURE.md for current completed checks and remaining distribution materials. This record does not relicense upstream source or make the tested binary ZIP automatically redistributable.
+
+The later `../license-closure/` materials complete the previously open recursive static-input map and add the Wine untracked/generated overlays missing from the tracked-file deltas. Use their reconstruction recipes and source companion instructions.

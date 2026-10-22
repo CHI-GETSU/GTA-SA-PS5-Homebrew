@@ -1,6 +1,6 @@
 # GTA San Andreas Homebrew PS5 — v0.1.0-beta
 
-Prepared release notes. **Binary publication is withheld pending LICENSE_CLOSURE.md.** No tag or GitHub Release is published by this source update.
+First public beta for **PPSA99604**, distributed with the exact PS5-tested binaries, complete corresponding-source companion and retained third-party notices.
 
 ## This beta
 
@@ -33,3 +33,15 @@ The embedded test/hold notices describe its preparation state and have deliberat
 Thanks to **mpereiraesaa** and [Prospero Win](https://github.com/mpereiraesaa/prospero-win), **7tg** and [Sahin / Blur PS5](https://github.com/7tg/sahin), **lavavex** and the [NFS Black Box / Most Wanted PS5 contributors](https://github.com/lavavex/nfs-blackbox-ps5), and the Wine, DXVK, Mesa and PS5 homebrew tools communities. See README.md, THIRD_PARTY.md and preserved component licenses for complete attribution.
 
 This is an independent community adaptation, without official affiliation with or endorsement by the credited developers, Rockstar Games, Take-Two Interactive or Sony. Credits do not replace license obligations.
+
+### Corresponding source
+
+Download the accompanying `GTA-SA-PS5-PPSA99604-CORRESPONDING-SOURCE.tar.gz` and
+checksum for the preferred sources, actual local changes, source generators,
+SDK/PacBrew recipes and Wine/TLS reconstruction/relink materials. Start with its
+README and `project/publication/license-closure/README.md`. The source companion
+and retained third-party notices are part of this distribution; the tested
+binary ZIP is not the complete source distribution by itself. No executable or
+library was rebuilt during the final source/licensing preparation.
+
+The unchanged ZIP contains non-secret historical build-path and prefix host-name metadata. The owner explicitly authorized retaining them to preserve the exact tested asset. No password, API token, personal save or commercial game file is included in this distribution.

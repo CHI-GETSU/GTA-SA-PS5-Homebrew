@@ -10,7 +10,7 @@ The root `LICENSE` contains GPL version 3. The combined native titles and launch
 
 Source code and binary distribution are separate review scopes. Sharing source under its existing licenses does not by itself satisfy every requirement for distributing the already compiled application. GPL v3 section 1 defines Corresponding Source; section 6 addresses distribution of object code. LGPL components also have source/relinking requirements applicable to their particular combination. The project must establish and provide the relevant sources, modifications, scripts and access before clearing a binary release.
 
-See `PUBLICATION_REVIEW.md` for the concrete unresolved components. No non-redistributable component has been knowingly included in the staged source. No claim is made that every binary source-closure obligation has already been satisfied. Unknown or incomplete cases block binary publication; approval to push source is not approval to bypass those conditions.
+The v0.1.0-beta source-material completion and selected source reconstruction/relink route are documented in `publication/license-closure/README.md` and `LICENSE_CLOSURE.md`. The complete corresponding-source companion, notices and checksums must accompany the unchanged binary ZIP on the same Release. This completion applies to that reviewed combination; it does not automatically clear future dependency or binary changes.
 
 The [GPL v3 text](https://www.gnu.org/licenses/gpl-3.0.html) and [LGPL 2.1 text](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html), together with the preserved component licenses, are the primary references.
 

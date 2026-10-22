@@ -1,0 +1,114 @@
+[
+  {
+    "file": "src/amd/common/amd_cp_packets_gfx11.h",
+    "sha256": "87e31201a97df308e25d64f6d3676f21a952e864417da126342420adebc431d6"
+  },
+  {
+    "file": "src/amd/common/amd_cp_packets_gfx12.h",
+    "sha256": "56febe10a0ff570c7aefd443d8d544d7d1da3c7fe79b17f351a94f2681131dd0"
+  },
+  {
+    "file": "src/amd/common/amdgfxregs.h",
+    "sha256": "25107bba89c860282cd94422d7e27b959eefc30e04b39ed0dd09bfa2af0610f8"
+  },
+  {
+    "file": "src/amd/common/gfx10_format_table.c",
+    "sha256": "2cd48af0be39a81cf39f54772ea65b25bfe5ab71988a66fc49f0cb77a53b7267"
+  },
+  {
+    "file": "src/amd/common/sid_tables.h",
+    "sha256": "dd878bb8aa58df25f19d77655c2aa6f615f597fb535e13420f6516da76484a27"
+  },
+  {
+    "file": "src/amd/compiler/aco_builder.h",
+    "sha256": "cee887b5e82705c31074acc59b0e23d01f49b3ee4c525a541611c6086fa2785f"
+  },
+  {
+    "file": "src/amd/compiler/aco_opcodes.cpp",
+    "sha256": "ee72444ffcd92238e9ba81e870ee6cc265afb41d04c2d80734e0d29158989ced"
+  },
+  {
+    "file": "src/amd/compiler/aco_opcodes.h",
+    "sha256": "36f879b20a57eb9b306e98772e426b4b5f535eedd605072eb9c30dc455af9afc"
+  },
+  {
+    "file": "src/compiler/builtin_types.c",
+    "sha256": "689eed3087ed277bd5bfb379067941727e88a12dea395327e3d03210a098234d"
+  },
+  {
+    "file": "src/compiler/builtin_types.h",
+    "sha256": "bbd87e8770e7bad40740528b631d0e42a0d19275e304519a7444f17a716caded"
+  },
+  {
+    "file": "src/compiler/nir/nir_builder_opcodes.h",
+    "sha256": "4a6d3ef682dcb423e9d3d5ea7f99ca49b50c588a65f9e0f96df8371fbaea0037"
+  },
+  {
+    "file": "src/compiler/nir/nir_constant_expressions.c",
+    "sha256": "37aeba920bb4b8ba31a3637300dd65a328d6303b090d9de239654429a8f3a16d"
+  },
+  {
+    "file": "src/compiler/nir/nir_intrinsics.c",
+    "sha256": "d190fc2f32e2b12cd099aa3b295524a3f8989f7688039012480d8972d6caf2ad"
+  },
+  {
+    "file": "src/compiler/nir/nir_intrinsics.h",
+    "sha256": "2d6f9e713863ce5a5fa51d4ed684896ce62fd347f289ae7a6c458d4b0069c8ee"
+  },
+  {
+    "file": "src/compiler/nir/nir_intrinsics_indices.h",
+    "sha256": "65c989ac728f24eaaea97e1bb3f7135fc2645f52b6db56191308cf2638d69edd"
+  },
+  {
+    "file": "src/compiler/nir/nir_opcodes.c",
+    "sha256": "abb7a1fcdc21b0572eb95dbc0af65032cf24333d13a6e6b13391171fdf564a3c"
+  },
+  {
+    "file": "src/compiler/nir/nir_opcodes.h",
+    "sha256": "c0614e3a5d421c17720e449d82f24087c9c855a9b3c0a7eec3a72dd193063922"
+  },
+  {
+    "file": "src/compiler/nir/nir_opt_algebraic.c",
+    "sha256": "a6bc7d2f4642f67e381dd097e369c43f953e440a7fcab5c3aee12ee1c7537eff"
+  },
+  {
+    "file": "src/compiler/spirv/spirv_info.c",
+    "sha256": "a3edbaf0cd7dc8e813ac3669f5ce4ff0d1282fd190acaf6a820eb1c9b58e5717"
+  },
+  {
+    "file": "src/compiler/spirv/spirv_info.h",
+    "sha256": "88d630bb423d518dd346655ecfe39e469330a74af2dc0505cbc1472596d5a93d"
+  },
+  {
+    "file": "src/compiler/spirv/vtn_gather_types.c",
+    "sha256": "1b1780378eb6f59b7a143f9aba949a759984fa3b001ce5f6f524b87ee700e4e5"
+  },
+  {
+    "file": "src/compiler/spirv/vtn_generator_ids.h",
+    "sha256": "ffa3a78e0ed461db1eb39e05e224c4e7d369c78162c98925f9f629fa47dca7a1"
+  },
+  {
+    "file": "src/util/format/u_format_gen.h",
+    "sha256": "e281cf421ae9d55cb9c67800620a700434f4ddb7e734785b041f48dd9184b1a2"
+  },
+  {
+    "file": "src/util/format/u_format_pack.h",
+    "sha256": "ef31a9bb8c2876e482a1cdc356a8c15ea03eb2d68e59a13c93a81d6b25d65f39"
+  },
+  {
+    "file": "src/util/format/u_format_table.c",
+    "sha256": "64dc83032f6ee10e0df356eb23258b4e0acebaa32cc3c0baba374567ccf472ae"
+  },
+  {
+    "file": "src/util/format_srgb.c",
+    "sha256": "7655886fb99a1d91cc58e069ea2da424d5f928d2cb4c4f5a1311f1c648e48374"
+  },
+  {
+    "file": "src/util/shader_stats.h",
+    "sha256": "0b9207aee0c7e0fc22d26ba29ccce7983ddad999254eff168411cabc82a283ee"
+  },
+  {
+    "file": "src/vulkan/util/vk_struct_type_cast.h",
+    "sha256": "024f44ada68a5fa14bc80e97b16d8b13f0d94e09cf798caa16e1dd62db7e18d4"
+  }
+]
