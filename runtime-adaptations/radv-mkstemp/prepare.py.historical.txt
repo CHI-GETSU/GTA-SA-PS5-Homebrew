@@ -1,0 +1,46 @@
+"""Generate a narrowly adapted copy of the pinned official RADV link recipe."""
+from pathlib import Path
+import hashlib
+import json
+import shutil
+
+work = Path(__file__).resolve().parent
+repo = work.parents[1]
+original = repo / "tools/link_radv_prx.sh"
+expected = "3581d6c3e261af58a2071624d98e80bcb0e17b811734281f3ed23752857b9feb"
+assert hashlib.sha256(original.read_bytes()).hexdigest() == expected
+text = original.read_text()
+root = 'root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)'
+assert text.count(root) == 1
+text = text.replace(root, 'root=${PROSPERO_REPO_ROOT:?set PROSPERO_REPO_ROOT}')
+anchor = 'radv_link_recipe "$work" "$sdk" "$archive"\n'
+assert text.count(anchor) == 1
+text = text.replace(anchor, anchor + '''
+# Local adaptation only: satisfy ACO's optional CLRX mkstemp call internally.
+"$sdk/bin/prospero-clang" -std=c11 -O2 -Wall -Wextra -Werror -fPIC \\
+    -c "$root/build/radv-mkstemp/mkstemp.c" -o "$work/obj/pw_radv_mkstemp.o"
+radv_link_inputs+=("$work/obj/pw_radv_mkstemp.o")
+# The PS5 compiler's nodllstorageclass setting overrides C visibility.
+# Localize in the generated linker map instead (never edit the recipe).
+sed -i '/    local:/a\\        mkstemp;' "$work/build/radv-platform-local.map"
+''')
+(work / "link_radv_prx.local.sh").write_text(text)
+stage = work / "wine-ps5"
+stage.mkdir(exist_ok=True)
+baseline = repo / ".deps/wine-ps5"
+if not (stage / "prx").exists():
+    shutil.copytree(baseline / "prx", stage / "prx")
+for name in ["source", "freetype", "pe"]:
+    path = stage / name
+    if not path.exists():
+        path.symlink_to(baseline / name, target_is_directory=True)
+if not (stage / "report.json").exists():
+    shutil.copy2(baseline / "report.json", stage / "report.json")
+(work / "provenance.json").write_text(json.dumps({
+    "official_link_recipe_sha256": expected,
+    "baseline_zip_sha256": hashlib.sha256((repo / "release/PPSA99995.zip").read_bytes()).hexdigest(),
+    "baseline_prx_sha256": hashlib.sha256((baseline / "prx/sce_module/libvulkan.prx").read_bytes()).hexdigest(),
+    "console_validated": False,
+    "adaptation": "Hidden mkstemp returns -1/ENOSYS; optional CLRX diagnostic refuses safely.",
+}, indent=2) + "\n")
+print(stage)

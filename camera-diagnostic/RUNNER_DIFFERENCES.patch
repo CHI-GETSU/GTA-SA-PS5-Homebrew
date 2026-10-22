@@ -1,0 +1,53 @@
+--- previous-auto2/wine64_main.c
++++ homebrew/wine64_main.c
+@@ -60,8 +60,8 @@
+ #include <time.h>
+ #include <unistd.h>
+ 
+-#define PW_TITLE_ID "PPSA99995"
+-#define PW_APP_NAME "prospero-win-wine64"
++#define PW_TITLE_ID "PPSA99405"
++#define PW_APP_NAME "gta-sa-homebrew-r4"
+ 
+ /* Where the title's Wine runtime can be seen: /app0 inside the sandbox;
+  * once /data is granted the process sees the real root, where /app0 does
+@@ -232,7 +232,7 @@
+ 
+ enum { PAD_CREATE = 0x1u, PAD_OPTIONS = 0x8u, PAD_UP = 0x10u, PAD_RIGHT = 0x20u,
+        PAD_DOWN = 0x40u, PAD_LEFT = 0x80u, PAD_L1 = 0x400u, PAD_R1 = 0x800u,
+-       PAD_CROSS = 0x4000u, PAD_SQUARE = 0x8000u, PAD_CLOSE = PAD_OPTIONS | PAD_CREATE };
++       PAD_CROSS = 0x4000u, PAD_SQUARE = 0x8000u, PAD_CLOSE = PAD_OPTIONS | 0x100000u };
+ /* The pad core needs a key map to open; the title reads raw edges and maps
+  * them with the game's bindings (pw_game_profile). */
+ static const PwPadKeyMap pad_open_map[] = { { PAD_CROSS, 0x20, 0, 0, "cross" } };
+@@ -634,6 +634,9 @@
+ static void on_exit_report(void)
+ {
+     PS5LOG_LOG("PW_WINE64 exit sink_calls=%lu", sink_calls);
++    /* Sahin's launcher wrote this one-shot request before LoadExec game.bin.
++     * Taking it distinguishes return-from-game from a new Home-screen launch. */
++    (void)unlink("/data/prospero-win/return-PPSA99405");
+     restart_title(NULL, launch.cycle + 1u, "wine-exit");
+     pw_diagnostics_close("wine64-exit");
+ }
+@@ -978,6 +981,11 @@
+         return 1;
+     }
+     (void)pw_wine_launch_parse(argc, argv, catalog, catalog_count, &launch);
++    if (launch.mode != PW_WINE_LAUNCH_GAME && !launch.refused) {
++        char profile_word[]="profile=gta-sa-homebrew";
++        char *autostart[]={profile_word};
++        (void)pw_wine_launch_parse(1,autostart,catalog,catalog_count,&launch);
++    }
+     (void)pw_diagnostics_open(library_root, PW_BUILD_ID,
+                               launch.app ? launch.app->id : "launcher", launch.cycle);
+     PS5LOG_LOG("PW_WINE64 args argc=%d mode=%s profile=%s cycle=%u refused=%u", argc,
+@@ -1479,7 +1487,7 @@
+         }
+         if (!presented) usleep(PW_WINE64_TICK_US);
+ 
+-        /* Closing: Options+Create held for a second, or the deadline, asks
++        /* Closing: Options+Touchpad held for a second, or the deadline, asks
+          * the game to close with Alt+F4; Wine's exit then restarts the
+          * title (on_exit_report). A game that does not close is left. */
+         if (pad_status == PW_OK && (pad.core.pressed_edges & PAD_CREATE) &&

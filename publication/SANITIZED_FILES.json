@@ -1,0 +1,11 @@
+[
+  "build-launcher-local.sh",
+  "render-host-local.sh",
+  "build-opengl-local.sh",
+  "finish-opengl-local.sh",
+  "package_homebrew.py",
+  "runner/build_native_target.py",
+  "r4-dinput-sources/test_host.py",
+  "runtime-adaptations/radv-mkstemp/linked-shim-disassembly.txt",
+  "runtime-adaptations/radv-mkstemp/linked-aco-disassembly.txt"
+]

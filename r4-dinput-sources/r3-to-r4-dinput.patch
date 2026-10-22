@@ -1,0 +1,48 @@
+--- a/dlls/dinput/joystick_xinput.c
++++ b/dlls/dinput/joystick_xinput.c
+@@ -16,7 +16,7 @@
+     struct dinput_device base;
+     HMODULE module;
+     DWORD (WINAPI *get_state)(DWORD, XINPUT_STATE *);
+-    BOOL acquired;
++    BOOL acquired, gta_ps2;
+     DWORD last_result, next_log, next_health, next_error;
+     HRESULT last_acquire;
+     BOOL acquire_logged;
+@@ -34,6 +34,11 @@
+     GetEnvironmentVariableW(L"PW_DINPUT_SESSION",session,ARRAY_SIZE(session));
+     ERR("PW_PADDIAG R2 attach pe_bits=%u path=%s enabled=%s session=%s\n",
+         (unsigned)(8*sizeof(void *)),debugstr_w(path),debugstr_w(flag),debugstr_w(session));
++}
++/* GTA consumes POV as left-stick motion; PS2 D-pad actions use buttons 13..16. */
++static BOOL gta_ps2(void) {
++    WCHAR text[2];
++    return GetEnvironmentVariableW(L"PW_DINPUT_GTA_PS2",text,ARRAY_SIZE(text)) == 1 && text[0] == '1';
+ }
+ static HMODULE open_xinput(DWORD (WINAPI **get_state)(DWORD,XINPUT_STATE *)) {
+     WCHAR path[MAX_PATH];
+@@ -142,6 +147,8 @@
+         if(unhook) dinput_hooks_unacquire_device(iface);
+         return DIERR_INPUTLOST;
+     }
++    if (!impl->state_calls && impl->gta_ps2)
++        ERR("PW_PS2_R4 bridge pe_bits=%u pov=neutral buttons=PS2-standard axes=X,Y,Z,Rz triggers=Rx,Ry\n", (unsigned)(8*sizeof(void *)));
+     impl->state=state;
+     axes[0]=state.Gamepad.sThumbLX; axes[1]=state.Gamepad.sThumbLY?-1-state.Gamepad.sThumbLY:0;
+     axes[2]=state.Gamepad.sThumbRX; axes[5]=state.Gamepad.sThumbRY?-1-state.Gamepad.sThumbRY:0;
+@@ -152,6 +159,7 @@
+     y=!!(state.Gamepad.wButtons&XINPUT_GAMEPAD_DPAD_DOWN)-!!(state.Gamepad.wButtons&XINPUT_GAMEPAD_DPAD_UP);
+     if(y<0) pov=x<0?31500:x>0?4500:0; else if(y>0) pov=x<0?22500:x>0?13500:18000;
+     else if(x) pov=x<0?27000:9000;
++    if (impl->gta_ps2) pov=-1;
+     store_value(impl,6,pov,time,seq);
+     for(i=0;i<16;++i) { BOOL pressed=!!(state.Gamepad.wButtons&buttons[i]);
+         if(i==4) pressed=state.Gamepad.bLeftTrigger>30; if(i==5) pressed=state.Gamepad.bRightTrigger>30;
+@@ -207,6 +215,7 @@
+     if(!enabled() || !IsEqualGUID(guid,&controller_guid)) return DIERR_DEVICENOTREG;
+     if(!(impl=calloc(1,sizeof(*impl)))) return E_OUTOFMEMORY;
+     if(!(impl->module=open_xinput(&impl->get_state))) { free(impl); return DIERR_DEVICENOTREG; }
++    impl->gta_ps2=gta_ps2();
+     dinput_device_init(&impl->base,&joystick_vtbl,guid,dinput);
+     impl->base.dwCoopLevel=DISCL_NONEXCLUSIVE|DISCL_BACKGROUND;
+     fill_instance(&impl->base.instance,dinput->dwVersion); impl->base.caps.dwDevType=impl->base.instance.dwDevType;

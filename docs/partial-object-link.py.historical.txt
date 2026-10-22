@@ -1,0 +1,32 @@
+"""Recompile one native object, relink/sign the title using copied objects."""
+from pathlib import Path
+import os,re,subprocess
+root=Path(__file__).resolve().parent
+repo=Path('${ENGINE_ROOT}')
+foundation=repo/'.deps/ps5-native-app-boilerplate'
+sdk=foundation/'.deps/native/ps5-payload-sdk'
+build=root/'native-build'
+env=dict(os.environ,PS5_PAYLOAD_SDK=str(sdk),LLVM_CONFIG='/usr/lib64/llvm18/bin/llvm-config',TMPDIR=str(root/'tmp'))
+(root/'tmp').mkdir(exist_ok=True)
+cc=['sh',str(foundation/'tooling/prospero-clang18')]
+args=['-std=c11','-DPW_BUILD_ID="644e32e4-gtasa-homebrew-r4"','-O2','-Wall','-Wextra','-Werror',
+      '-ffunction-sections','-fdata-sections','-I'+str(repo/'include'),'-I'+str(repo/'src'),
+      '-I'+str(root/'native-source'),'-I'+str(root/'native-source/ps5log'),
+      '-DPW_WINE64_SCRIPT=0','-DPW_WINE64_SECONDS=0','-DPW_WINE64_SCRIPT_CYCLES=2','-DPW_WINE64_WAIT_WATCHDOG=0',
+      '-c',str(root/'native-source/wine64_main.c'),'-o',str(build/'obj/native_wine64_main.c.o')]
+subprocess.run(cc+args,env=env,check=True)
+script=(repo/'tools/build_native.sh').read_text()
+sources=re.search(r'sources=\((.*?)\)',script,re.S).group(1).split()
+objects=[str(build/'obj'/(s.replace('/','_')+'.o')) for s in sources]
+objects += [str(build/'obj/ps5log.o'),str(build/'obj/ps5log_ps5_net.o')]
+subprocess.run([str(sdk/'bin/prospero-lld'),'-T',str(foundation/'tooling/native/ps5-pie-high.ld'),
+    '--eh-frame-hdr','-e','_start','-o',str(build/'llvm-pie.elf'),str(build/'obj/app_crt.o'),*objects,
+    '--as-needed',*[str(p) for p in sorted((sdk/'target/lib').glob('*.so'))],
+    str(build/'import-stubs/libSceAgc.so'),str(build/'import-stubs/libSceAgcDriver.so')],env=env,check=True)
+tool=foundation/'build/host/ps5-native-tool-9c0b994a048521af6fb84c73ded364504fe250e9'
+subprocess.run([str(tool),'link','--in',str(build/'llvm-pie.elf'),'--out',str(build/'eboot.elf'),
+    '--stub-dir',str(sdk/'target/lib'),'--module-sdk','0x02000009','--stub',str(build/'import-stubs/libSceAgc.so'),
+    '--stub',str(build/'import-stubs/libSceAgcDriver.so'),'--companion-sdk','0x08050001','--file-name','eboot.elf'],check=True)
+subprocess.run([str(tool),'self','--sign','--in',str(build/'eboot.elf'),'--out',str(root/'game.bin'),
+                '--magic','0x1D3D154F'],check=True)
+print('Native title: one object rebuilt; original native build untouched')

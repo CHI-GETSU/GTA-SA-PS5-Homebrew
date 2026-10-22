@@ -1,0 +1,436 @@
+[
+  {
+    "member": "drive_c/windows/rundll.exe",
+    "bytes": 255,
+    "sha256": "d4f3a23e5691daedd5db6dea67cf262bdf6d705f71b1b46ec1144aaa4e6396f8",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system/ddeml.dll",
+    "bytes": 1645,
+    "sha256": "f8bf9ffba4342512dc5a3cedf2ed848ebf7ffbc73e059e0445a6cea8465ead3b",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system/mmsystem.dll",
+    "bytes": 6832,
+    "sha256": "f823bc8ffaa23160140dbcffc5616cfe6a1cb36b9a29456bca2042166bfe6235",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system32/d3d10core.dll",
+    "bytes": 966656,
+    "sha256": "b544801782b1f947de24c2e8dfb95dacf7820b2b38e08f587afd838296d2a36b",
+    "format": "PE",
+    "wine_string_present": false
+  },
+  {
+    "member": "drive_c/windows/system32/d3d11.dll",
+    "bytes": 4231168,
+    "sha256": "16e9f5258a055870e78ecd071f3455943e88c1cea5242f9abfacac8cc1c652a6",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system32/d3d8.dll",
+    "bytes": 1478656,
+    "sha256": "c880d760b1c2e1b15e2da704b7a70441816e31a0bd53f8c0883748100d933809",
+    "format": "PE",
+    "wine_string_present": false
+  },
+  {
+    "member": "drive_c/windows/system32/d3d9.dll",
+    "bytes": 3952640,
+    "sha256": "bb7e5039872181f1a8907de77192e44e018a25ccda169d4b6f7dd43b985704e9",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system32/dxgi.dll",
+    "bytes": 2789376,
+    "sha256": "da6df75e38b5a37cb9e0c277e7b2d9478ed555c25a768729ea39cb96aa39b5fa",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/system32/spool/drivers/win40/0/wineps16.drv",
+    "bytes": 482,
+    "sha256": "b2a784ed83102f820e59c3efa754791558fdaf4a7abaded822ceeeb5f50b807b",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/avifile.dll",
+    "bytes": 2837,
+    "sha256": "3f306c5ccbd2a68873c56f17bb778f85571638a8b133bbf3e24fd4b6a6ef2682",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/comm.drv",
+    "bytes": 807,
+    "sha256": "0c9c001d44a1676735382846a66c9dca4657e4c27366674454556280dd6b1d41",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/commdlg.dll",
+    "bytes": 1043,
+    "sha256": "fe39f596b44d6b6497b6956dcb4130eebf28aa6ba3a20bbf1966fde56e12d4f1",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/compobj.dll",
+    "bytes": 9879,
+    "sha256": "efae975b0b33ae020f2041fe21527c432f3edc300deb6f160683b97e8b05ce28",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ctl3d.dll",
+    "bytes": 1247,
+    "sha256": "a107633902478eb88d2429b5979ffa205b822867464d9796651f6a6b2081221c",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ctl3dv2.dll",
+    "bytes": 1249,
+    "sha256": "676a5acc23a63f97c0d21c0f11904cf5d9256d5e01e97aa1d3c772db9ab60e6c",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/d3d10core.dll",
+    "bytes": 167950,
+    "sha256": "4d6ffb21aefd3ca625b53cf0bb07af54f360b264510ea437b8236470440274f7",
+    "format": "PE",
+    "wine_string_present": false
+  },
+  {
+    "member": "drive_c/windows/syswow64/d3d11.dll",
+    "bytes": 4763662,
+    "sha256": "112f344466590366321279469da738eeaeb41b126f3c91e5a8b92fc2ddebc6e0",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/d3d8.dll",
+    "bytes": 1630222,
+    "sha256": "63b1813456b56d18a1caca235951a8989bed11425d3867205f3539f03bc0b0ae",
+    "format": "PE",
+    "wine_string_present": false
+  },
+  {
+    "member": "drive_c/windows/syswow64/d3d9.dll",
+    "bytes": 4407310,
+    "sha256": "0895b26e19bdfdb3e0fd85e62e9d503a855da7933afd4b9ee5cac9936e50dcc1",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ddhelp.exe",
+    "bytes": 1032,
+    "sha256": "cbae5b921774d73c6fbcb5a9fcc54156783f360a69db802382ee8cc1585b9fe4",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/dispdib.dll",
+    "bytes": 273,
+    "sha256": "6badd2d0bcf617f6fa21db2e8bbd5ce3819c3756befff3a4a570787bbe018032",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/display.drv",
+    "bytes": 2773,
+    "sha256": "4c1083b61b93105c1ed13284d9e5d1ac873a2ea2dfe36413dd670b52aeed0913",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/dosx.exe",
+    "bytes": 1032,
+    "sha256": "cbae5b921774d73c6fbcb5a9fcc54156783f360a69db802382ee8cc1585b9fe4",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/dxgi.dll",
+    "bytes": 3125262,
+    "sha256": "05ee218a03abd1f883a08937d178ef182cbc32a7dca28f57378aaeab1ce2246d",
+    "format": "PE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/gdi.exe",
+    "bytes": 15889,
+    "sha256": "5ef5740e3cb25266f965418068112b6b6169d6f020208361d4ba77ec0ec8dcc6",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/imm.dll",
+    "bytes": 2047,
+    "sha256": "073111b5b93c858962af7008725607ea4c3a78c31e9e60152e5feb0b998f2f5b",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/keyboard.drv",
+    "bytes": 1194,
+    "sha256": "0264283d7e56520ea23e1ab9da4ed45d3d56ff57b8a6c68a3f1d1f977f384742",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/krnl386.exe",
+    "bytes": 18188,
+    "sha256": "5f695b2c493c0502ae8e5529f68695b8f260920b88d2a37ac6553540eaba2f8a",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/lzexpand.dll",
+    "bytes": 690,
+    "sha256": "73b1810d411cd9006aa7f1bd331a96bf0946466fa84077b50d2173f0cc9b435f",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/mouse.drv",
+    "bytes": 1032,
+    "sha256": "28dd369d06c85dec2d52c41dd2834de9cceecbd67448822b359c61e9053cdfd5",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/msacm.dll",
+    "bytes": 1993,
+    "sha256": "3d8bb5c4060ea8fdda72d72e21de0eaa18a8a8812f01a12b1932f5e8dfe2189a",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/msvideo.dll",
+    "bytes": 3239,
+    "sha256": "55428ec47b035028ca27c0959869aa528442ca3689158df18e141097a7abeda3",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2.dll",
+    "bytes": 6720,
+    "sha256": "36adc9639fa6613d8985e0da42e881646d41aa52eb0a35884b97f6d36f5594db",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2conv.dll",
+    "bytes": 445,
+    "sha256": "65159585b40f76accbc56f0f8e49b35d47f9870fbb5c74ffc27526605048f0b2",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2disp.dll",
+    "bytes": 4992,
+    "sha256": "23ceb41239206e8a9cf7e5c80cfbaa1022244ef324b1ce67af5425e651fb00e6",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2nls.dll",
+    "bytes": 1349,
+    "sha256": "931859fca9a5be3617f0964886db96af62fc4f015dc71664c240baed0358b1cd",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2prox.dll",
+    "bytes": 281,
+    "sha256": "c646673da1dea91b3d8a63b1297341f00eae1790c14790d069c37e16ea7a30f1",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ole2thk.dll",
+    "bytes": 452,
+    "sha256": "7035d5f748aa38fb8bd93b725340bf4b27370b36069885508b8f90b453dd52ac",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/olecli.dll",
+    "bytes": 5919,
+    "sha256": "8eb3cca1fe92ab6b0ec159c94e4adb87fc768b4a0d9cb095946a8f251aa48ef1",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/olesvr.dll",
+    "bytes": 1122,
+    "sha256": "6bc6bd5f4caf4c4b59bf3f3dff4eecd3f6be762bcc2d9d82e90b9a5d8d59f1d0",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/rasapi16.dll",
+    "bytes": 471,
+    "sha256": "8c3f1a50e127bde0319a09021f808addd15f395d20e0358db894c02ae6363709",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/setupx.dll",
+    "bytes": 9800,
+    "sha256": "228084d336175faa076d91490111fa2167063c8c3041db93081b74dacbc7c5f0",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/shell.dll",
+    "bytes": 2331,
+    "sha256": "abd044d23b717a0af4e4c2aebc422db41a7f9e3ccc4a41c0d665f72261012041",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/sound.drv",
+    "bytes": 1042,
+    "sha256": "73fa603debdf87c987ca921756ff08939c783930773bfc84af14164dd77737ac",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/storage.dll",
+    "bytes": 2184,
+    "sha256": "29e40f3ea0fee16f018696c7fb7a3c49d162ec9075ffac4ba364deb52b12067c",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/stress.dll",
+    "bytes": 820,
+    "sha256": "3d6e11d838b4aa3e6149f3c4a92a28dfc01289b6bafc2135cc96fc73a1e3d1d0",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/system.drv",
+    "bytes": 803,
+    "sha256": "add5a9479c3bcc69a00b1d5af763e189cd60155233daa0e71b7ad06da075cf5d",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/toolhelp.dll",
+    "bytes": 1657,
+    "sha256": "e5753006b9dcf5dac549082f892f28f927a5162b26b32bb0a9b0a751f62a4869",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/typelib.dll",
+    "bytes": 819,
+    "sha256": "a741c5a8260472607ca9df7092beb0118a29f69133c45b51aeb6424d624909ac",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/user.exe",
+    "bytes": 22098,
+    "sha256": "810907f21be012de79bb1226d75faebd9568ea665e20d0ea4dc303da590445c2",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/ver.dll",
+    "bytes": 809,
+    "sha256": "839a75109cbf895ca2dfadabc3e98f6b56d7ed0c315a97cccbe8ffb316960785",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/w32sys.dll",
+    "bytes": 719,
+    "sha256": "ad4166b54cf5c55b5c444f6f8c55f869ae204ebbe0e8c242028c8f49d3fa11b6",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/win32s16.dll",
+    "bytes": 2230,
+    "sha256": "48c96a114a7874a5d871d3b764e8d0d320624b4f8b923229884ca4b229b87abd",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/win87em.dll",
+    "bytes": 402,
+    "sha256": "ee580b2549e9008fb6145c4eb3d79dddf1a4d5ebfd7e4a0a4f8bcdfdd58af256",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/winaspi.dll",
+    "bytes": 541,
+    "sha256": "031035d3bf16d732820a2143a94a0087e50aa72690734258e84ca7b822cce466",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/windebug.dll",
+    "bytes": 336,
+    "sha256": "78fcf9a5c06107b7e694073f0301df158cefd232de73139e1cd9ff75fb7486a1",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/wing.dll",
+    "bytes": 826,
+    "sha256": "6c78bec7d08e786613b7fea021f7abb5fca7ff9b25519f2e54571607cd0f9383",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/winnls.dll",
+    "bytes": 1244,
+    "sha256": "7eddf2df7a067accdc6ea38d55c4671fcbdd4eb822ada4bcc92f0008165964b7",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/winsock.dll",
+    "bytes": 2582,
+    "sha256": "a97c5d920d5adb42a1b6ce80fbe2601078a8d7fcef19614f93dc72d3e9b034fb",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/syswow64/wintab.dll",
+    "bytes": 2154,
+    "sha256": "1810a8fa89a65870944c87a5bc8c8ff01d9c12998b47299179b1b7e18e832fe0",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/twain.dll",
+    "bytes": 417,
+    "sha256": "520ff2cdee0b742b6791145cc270793a14d37be39f61864cdd10ab18e9d9c605",
+    "format": "NE",
+    "wine_string_present": true
+  },
+  {
+    "member": "drive_c/windows/winhelp.exe",
+    "bytes": 257,
+    "sha256": "1fd4eeaa0b492b90ab96847020c42f13b2b84098c3678b86aa5151720c4999b1",
+    "format": "NE",
+    "wine_string_present": true
+  }
+]

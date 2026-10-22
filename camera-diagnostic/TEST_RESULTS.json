@@ -1,0 +1,13 @@
+{
+  "native_sample_vectors": "PASS: neutral and four cardinal directions using the unchanged reader/converter under UBSan",
+  "shipped_pe32_probe": [
+    "PASS shipped XInput -> shipped DirectInput Z/Rz vector 0: -2000,0",
+    "PASS shipped XInput -> shipped DirectInput Z/Rz vector 1: 2000,0",
+    "PASS shipped XInput -> shipped DirectInput Z/Rz vector 2: 0,-2000",
+    "PASS shipped XInput -> shipped DirectInput Z/Rz vector 3: 0,2000",
+    "PASS shipped XInput -> shipped DirectInput Z/Rz vector 4: 0,0",
+    "PASS R4 PE32 WoW64: POV isolation and PS2 button order; real shipped XInput PE -> real Unix library -> title sink ABI -> DirectInput, late connect, axes/buttons, heartbeat, reconnect"
+  ],
+  "production_binaries_rebuilt": false,
+  "ps5_tested_correction": false
+}

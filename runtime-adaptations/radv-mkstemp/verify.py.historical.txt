@@ -1,0 +1,92 @@
+"""Check actual linked ELF and converted PRX import/export changes, then report them."""
+from pathlib import Path
+from collections import Counter
+import base64
+import hashlib
+import json
+import re
+import subprocess
+
+work = Path(__file__).resolve().parent
+repo = work.parents[1]
+old = repo / ".deps/wine-ps5/prx"
+new = work / "wine-ps5/prx"
+readelf = "/usr/lib64/llvm18/bin/llvm-readelf"
+objdump = "/usr/lib64/llvm18/bin/llvm-objdump"
+
+def run(*args):
+    return subprocess.check_output(args, text=True)
+
+def inspect(directory):
+    result = {}
+    prefix = "before" if directory == old else "after"
+    extracted = work / (prefix + "-final-prx.elf")
+    tool = repo / ".deps/ps5-prx-foundation/build/host/ps5-native-tool"
+    run(str(tool), "self", "--extract", "--file", str(directory / "sce_module/libvulkan.prx"),
+        "--out", str(extracted))
+    for label, path in [("shared", directory / "libvulkan.shared.elf"),
+                        ("converted", extracted)]:
+        dynamic = run(readelf, "-dW", str(path))
+        symbols = run(readelf, "--dyn-syms", "-W", str(path))
+        imports, exports = [], []
+        for line in symbols.splitlines():
+            fields = line.split()
+            if len(fields) < 8 or not fields[0].rstrip(":").isdigit():
+                continue
+            (imports if fields[6] == "UND" else exports).append(fields[7])
+        result[label] = dict(needed=re.findall(r"Shared library: \[([^\]]+)\]", dynamic),
+                             imports=imports, exports=exports)
+        (work / f"{prefix}-{label}-dynamic.txt").write_text(dynamic)
+        (work / f"{prefix}-{label}-symbols.txt").write_text(symbols)
+        (work / f"{prefix}-{label}-relocations.txt").write_text(
+            run("/usr/bin/readelf", "--use-dynamic", "-rW", str(path)))
+    return result
+
+before, after = inspect(old), inspect(new)
+assert Counter(before["shared"]["imports"]) - Counter(after["shared"]["imports"]) == Counter(["mkstemp"])
+assert not (Counter(after["shared"]["imports"]) - Counter(before["shared"]["imports"]))
+assert Counter(before["shared"]["exports"]) == Counter(after["shared"]["exports"])
+assert set(before["shared"]["needed"]) - set(after["shared"]["needed"]) == {"libScePosixForWebKit.sprx"}
+assert set(before["converted"]["needed"]) - set(after["converted"]["needed"]) == {"libScePosixForWebKit.prx"}
+suffix = bytes.fromhex("518d64a635ded8c1e6b039b1c3e55230")
+nid = base64.b64encode(hashlib.sha1(b"mkstemp" + suffix).digest()[:8][::-1]).decode().rstrip("=").replace("/", "-")
+norm = lambda names: Counter(n.split("#")[0] for n in names)
+assert norm(before["converted"]["imports"]) - norm(after["converted"]["imports"]) == Counter([nid])
+assert not (norm(after["converted"]["imports"]) - norm(before["converted"]["imports"]))
+assert norm(after["converted"]["exports"]) == norm(before["converted"]["exports"])
+assert not any("WebKit" in n or "kernel_web" in n for r in after.values() for n in r["needed"])
+assert nid not in (work / "after-converted-relocations.txt").read_text()
+symbols = run(readelf, "-sW", str(new / "libvulkan.shared.elf"))
+assert re.search(r"FUNC\s+LOCAL\s+DEFAULT\s+\d+\s+mkstemp$", symbols, re.M)
+relocs = run(readelf, "-rW", str(new / "libvulkan.shared.elf"))
+assert "mkstemp" not in relocs
+shim = run(objdump, "-d", "--disassemble-symbols=mkstemp", str(new / "libvulkan.shared.elf"))
+assert "$0x4e" in shim and "$0xffffffff" in shim
+(work / "linked-shim-disassembly.txt").write_text(shim)
+aco_name = "_ZN3aco9print_asmEPNS_7ProgramE13radeon_familyRNSt3__16vectorIjNS3_9allocatorIjEEEEjP7__sFILE"
+aco = run(objdump, "-d", "--disassemble-symbols=" + aco_name, str(new / "libvulkan.shared.elf"))
+assert re.search(r"callq[^\n]*<mkstemp>\n[^\n]*testl[^\n]*\n[^\n]*\bjs\b", aco)
+(work / "linked-aco-disassembly.txt").write_text(aco)
+prx = new / "sce_module/libvulkan.prx"
+tool = repo / ".deps/ps5-prx-foundation/build/host/ps5-native-tool"
+integrity = run(str(tool), "self", "--inspect", "--file", str(prx))
+assert "integrity: valid" in integrity
+(work / "prx-inspection.txt").write_text(integrity)
+verification = dict(before=before, after=after, mkstemp_nid=nid,
+    mkstemp_local=True, dynamic_mkstemp_relocation=False, exports_unchanged=True,
+    new_external_imports=[], removed_external_imports=["mkstemp"],
+    prx_sha256=hashlib.sha256(prx.read_bytes()).hexdigest(), prx_bytes=prx.stat().st_size,
+    integrity_valid=True, console_validated=False)
+(work / "verification.json").write_text(json.dumps(verification, indent=2) + "\n")
+# Preserve the official report structure; update only the rebuilt module.
+report = json.loads((old.parent / "report.json").read_text())
+module = report["prx"]["modules"]["libvulkan"]
+module.update(built=True, bytes=prx.stat().st_size,
+    sha256=verification["prx_sha256"], needed=after["shared"]["needed"],
+    webkit_unbound=[], title_unbound=[], unresolved=[], errors=[])
+report["local_adaptations"] = [{"kind": "radv-mkstemp-enosys",
+    "source_sha256": hashlib.sha256((work / "mkstemp.c").read_bytes()).hexdigest(),
+    "recipe_sha256": hashlib.sha256((work / "link_radv_prx.local.sh").read_bytes()).hexdigest(),
+    "console_validated": False}]
+(new.parent / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+print(json.dumps({k:v for k,v in verification.items() if k not in {"before", "after"}}, indent=2))

@@ -1,0 +1,29 @@
+from pathlib import Path
+import shutil
+root=Path(__file__).resolve().parent
+base=root.parent/'correction-pause-tactile/r4-auto2'; target=root/'runner'
+for directory in ('native-source','native-build'):
+    shutil.copytree(base/directory,target/directory,dirs_exist_ok=True)
+p=target/'native-source/wine64_main.c'; text=p.read_text()
+text=text.replace('#define PW_TITLE_ID "PPSA99995"','#define PW_TITLE_ID "PPSA99405"')
+text=text.replace('#define PW_APP_NAME "prospero-win-wine64"','#define PW_APP_NAME "gta-sa-homebrew-r4"')
+old='    (void)pw_wine_launch_parse(argc, argv, catalog, catalog_count, &launch);'
+assert text.count(old)==1
+text=text.replace(old,old+'''
+    if (launch.mode != PW_WINE_LAUNCH_GAME && !launch.refused) {
+        char profile_word[]="profile=gta-sa-homebrew";
+        char *autostart[]={profile_word};
+        (void)pw_wine_launch_parse(1,autostart,catalog,catalog_count,&launch);
+    }''')
+old='    restart_title(NULL, launch.cycle + 1u, "wine-exit");'
+assert text.count(old)==1
+text=text.replace(old,'''    /* Sahin's launcher wrote this one-shot request before LoadExec game.bin.
+     * Taking it distinguishes return-from-game from a new Home-screen launch. */
+    (void)unlink("/data/prospero-win/return-PPSA99405");
+'''+old)
+text=text.replace('PAD_CLOSE = PAD_OPTIONS | PAD_CREATE','PAD_CLOSE = PAD_OPTIONS | 0x100000u')
+text=text.replace('Closing: Options+Create held','Closing: Options+Touchpad held')
+p.write_text(text)
+build=(base/'build_native_target.py').read_text().replace('644e32e4-ps2-auto2-r4','644e32e4-gtasa-homebrew-r4').replace('eboot-r4-auto2.bin','game.bin')
+(target/'build_native_target.py').write_text(build)
+print('Prepared GTA-only game.bin, own title ID, AUTO2 controls and Sahin return lifecycle')

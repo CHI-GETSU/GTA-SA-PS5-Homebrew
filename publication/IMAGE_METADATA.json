@@ -1,0 +1,285 @@
+[
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "prospero-win/sce_sys/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "ps5-opengl/docs/images/ps5-opengl-imgui.png",
+    "format": "PNG",
+    "size": [
+      1920,
+      1080
+    ],
+    "metadata_keys": [
+      "dpi"
+    ],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "ps5-opengl/docs/images/ps5-opengl-showcase.png",
+    "format": "PNG",
+    "size": [
+      1920,
+      1080
+    ],
+    "metadata_keys": [
+      "dpi"
+    ],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/native-boilerplate/sce_sys/pic1.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/native-boilerplate/sce_sys/pic0.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/native-boilerplate/sce_sys/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [
+      "dpi",
+      "gamma",
+      "srgb"
+    ],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/native-boilerplate/sce_sys/background-source.png",
+    "format": "PNG",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [
+      "Software",
+      "dpi",
+      "gamma"
+    ],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/native-boilerplate/sce_sys/launch-background-source.png",
+    "format": "PNG",
+    "size": [
+      1672,
+      941
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "third-party/lapy/ps5-payload-sdk-v0.42/samples/install_app/FAKE02932/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [
+      "chromaticity",
+      "date:create",
+      "date:modify",
+      "date:timestamp",
+      "label",
+      "label:pointsize"
+    ],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/sce_sys/pic1.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/sce_sys/pic0.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/sce_sys/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/launcher/assets/logo.png",
+    "format": "PNG",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/launcher/assets/games/gtasa.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/launcher/games/PPSA99405/sce_sys/pic1.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/launcher/games/PPSA99405/sce_sys/pic0.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-SOURCE",
+    "file": "sahin/launcher/games/PPSA99405/sce_sys/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-RELEASE",
+    "file": "PPSA99405/sce_sys/pic1.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-RELEASE",
+    "file": "PPSA99405/sce_sys/pic0.dds",
+    "format": "DDS",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-RELEASE",
+    "file": "PPSA99405/sce_sys/icon0.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-RELEASE",
+    "file": "PPSA99405/assets/logo.png",
+    "format": "PNG",
+    "size": [
+      3840,
+      2160
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  },
+  {
+    "tree": "GTA-SA-PS5-RELEASE",
+    "file": "PPSA99405/assets/games/gtasa.png",
+    "format": "PNG",
+    "size": [
+      512,
+      512
+    ],
+    "metadata_keys": [],
+    "exif_tag_count": 0,
+    "personal_metadata_candidate": false
+  }
+]

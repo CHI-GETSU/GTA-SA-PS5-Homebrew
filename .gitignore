@@ -1,0 +1,82 @@
+# Commercial games and personal profiles, at any level
+**/base-games/
+**/drive_c/
+**/prefixes/
+**/saves/
+**/GTA San Andreas User Files/
+**/gta_sa.exe
+**/gta_sa.set
+**/GTASAsf*.b
+*.img
+*.txd
+*.dff
+*.gxt
+*.ifp
+*.scm
+# Private configuration and credentials
+.env
+.env.*
+!.env.example
+**/dev.conf
+**/credentials*
+**/.aws/
+**/.ssh/
+*.key
+# Build products and downloaded dependencies
+**/build/
+**/dist/
+**/.deps/
+**/release/
+**/host-tests/
+**/tmp/
+**/cache/
+**/.cache/
+**/.venv/
+**/__pycache__/
+*.o
+*.obj
+*.a
+*.so
+*.prx
+*.dll
+*.exe
+*.elf
+*.bin
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tar.xz
+*.log
+*.pyc
+core
+core.[0-9]*
+# Keep publication evidence; do not replace it with private diagnostic logs
+
+# Local publication preparation; never pushed or included in source archives
+/.publication-local/
+/publication/audit-results-*.json
+/publication/BINARY_PATHS.json
+/publication/OFFICIAL_RUNTIME_COMPARISON.json
+/publication/commercial-reference-hashes.json
+/publication/*-release.json
+/publication/dxvk-tag*.json
+/CHEMINS_BINAIRES.md
+# Generated/extracted SDK view: the pinned bootstrap fetches the public toolchain
+/third-party/lapy/ps5-payload-sdk-v0.42/
+# Unneeded upstream demo/reference media; preserve notices and build code
+/third-party/native-boilerplate/sce_sys/*.png
+/third-party/native-boilerplate/sce_sys/*.dds
+/ps5-opengl/docs/images/
+/prospero-win/sce_sys/icon0.png
+*.set
+*.b
+*.pdb
+*.dmp
+*.env
+*.p12
+*.pfx
+*.kdbx
+**/.netrc
+**/.git-credentials
+**/.npmrc

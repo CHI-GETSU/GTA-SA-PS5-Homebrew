@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Rebuild only the local RADV link adaptation and its separate package.
+set -euo pipefail
+local_work=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+repo=$(cd -- "$local_work/../.." && pwd)
+cd "$repo"
+source ../nobara-env.sh
+export PYTHONDONTWRITEBYTECODE=1
+python3 "$local_work/prepare.py"
+cc -O2 -Wall -Wextra -Werror -fno-builtin \
+    "$local_work/mkstemp.c" "$local_work/test_mkstemp.c" -o "$local_work/test_mkstemp"
+"$local_work/test_mkstemp"
+PROSPERO_REPO_ROOT="$repo" PS5_CLANG="$repo/build/clang-radv" \
+    bash "$local_work/link_radv_prx.local.sh" "$repo/.deps/PS5_Vulkan" \
+    "$local_work/wine-ps5/prx" "$repo/.deps/ps5-prx-foundation/build/host/ps5-native-tool" \
+    "$repo/.deps/ps5-prx-foundation/tooling/native/ps5-pie.ld"
+cc -O2 -Wall -Wextra -Werror -fno-builtin -DTARGET_OBJECT_TEST -DEXPECTED_ENOSYS=78 \
+    "$local_work/test_mkstemp.c" "$local_work/wine-ps5/prx/radv/obj/pw_radv_mkstemp.o" \
+    -o "$local_work/test_target_object"
+"$local_work/test_target_object"
+python3 "$local_work/verify.py"
+tools/package_release.sh --title dist/PPSA99995 --wine-ps5 "$local_work/wine-ps5" \
+    --host-wine .deps/wine-host/install/usr \
+    --cpu-dll build/wowprospero/x86_64-windows/wowprospero.dll \
+    --native-cpu build/wow64native --mesa-zink build/mesa-zink/artifacts \
+    --lapy-release build/native/lapy-helper-release.json --out "$local_work/release" --zip
+python3 "$local_work/finalize.py"

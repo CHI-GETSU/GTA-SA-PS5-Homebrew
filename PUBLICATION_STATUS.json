@@ -1,0 +1,10 @@
+{
+  "version": "v0.1.0-beta",
+  "source_ready_for_owner_review": true,
+  "push_authorized": false,
+  "binary_publication_allowed": false,
+  "license_gate": "open: exact corresponding-source/relink closure not yet established for the compiled dependency graph",
+  "binary_metadata": "Retained, disclosed, non-secret; owner decision required before binary distribution",
+  "ps5_binaries_modified": false,
+  "report": "PUBLICATION_REVIEW.md"
+}

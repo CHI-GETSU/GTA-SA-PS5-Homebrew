@@ -1,0 +1,65 @@
+"""Package adaptation provenance and verify every file in the new ZIP."""
+from pathlib import Path
+import hashlib
+import json
+import shutil
+import stat
+import zipfile
+
+work = Path(__file__).resolve().parent
+repo = work.parents[1]
+app = work / "release/PPSA99995"
+baseline = repo / "release/PPSA99995"
+verification = json.loads((work / "verification.json").read_text())
+assert hashlib.sha256((app / "win/wine/lib/wine/x86_64-unix/libvulkan.prx").read_bytes()).hexdigest() == verification["prx_sha256"]
+originals = {str(p.relative_to(baseline)): p for p in baseline.rglob("*") if p.is_file()}
+changed = [name for name, path in originals.items() if
+           hashlib.sha256(path.read_bytes()).digest() != hashlib.sha256((app / name).read_bytes()).digest()]
+assert changed == ["win/wine/lib/wine/x86_64-unix/libvulkan.prx"], changed
+assert {str(p.relative_to(app)) for p in app.rglob("*") if p.is_file()} == set(originals)
+dest = app / "LOCAL_ADAPTATIONS/radv-mkstemp"
+dest.mkdir(parents=True, exist_ok=True)
+files = ["mkstemp.c", "test_mkstemp.c", "prepare.py", "verify.py", "finalize.py", "rebuild.sh",
+         "link_radv_prx.local.sh", "provenance.json", "verification.json",
+         "linked-shim-disassembly.txt", "linked-aco-disassembly.txt", "prx-inspection.txt",
+         "before-shared-dynamic.txt", "after-shared-dynamic.txt",
+         "before-converted-dynamic.txt", "after-converted-dynamic.txt"]
+for name in files:
+    shutil.copy2(work / name, dest / name)
+shutil.copy2(work / "wine-ps5/report.json", dest / "wine-ps5-report.json")
+provenance = json.loads((work / "provenance.json").read_text())
+provenance.update(verification=verification,
+    source_files={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(dest.iterdir())},
+    changed_runtime_files=changed)
+(app / "LOCAL_ADAPTATIONS.json").write_text(json.dumps(provenance, indent=2) + "\n")
+with (app / "SOURCES.txt").open("a") as f:
+    f.write("\nLocal RADV link adaptation: mkstemp returns -1/ENOSYS (CLRX unsupported on PS5).\n"
+            "  Localized at link; no WebKit import; official sources unchanged.\n"
+            "  Source, adapted recipe, tests and hashes: LOCAL_ADAPTATIONS/radv-mkstemp/\n"
+            "  Provenance: LOCAL_ADAPTATIONS.json; console validation pending.\n")
+archive = work / "release/PPSA99995.zip"
+temporary = archive.with_suffix(".zip.new")
+with zipfile.ZipFile(temporary, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+    z.write(app, "PPSA99995")
+    for path in sorted(app.rglob("*")):
+        assert not path.is_symlink(), path
+        z.write(path, "PPSA99995/" + str(path.relative_to(app)))
+temporary.replace(archive)
+with zipfile.ZipFile(archive) as z:
+    assert z.testzip() is None
+    for entry in z.infolist():
+        assert not entry.filename.startswith("/") and ".." not in Path(entry.filename).parts
+        assert Path(entry.filename).name != "dev.conf"
+        if entry.is_dir():
+            continue
+        p = app / Path(entry.filename).relative_to("PPSA99995")
+        assert hashlib.sha256(z.read(entry)).digest() == hashlib.sha256(p.read_bytes()).digest()
+        if p.suffix == ".prx" or p.name == "eboot.bin":
+            assert (entry.external_attr >> 16) & stat.S_IXUSR, entry.filename
+result = dict(archive=str(archive), bytes=archive.stat().st_size,
+    sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),
+    baseline_archive_unchanged=hashlib.sha256((repo / "release/PPSA99995.zip").read_bytes()).hexdigest() == provenance["baseline_zip_sha256"],
+    changed_runtime_files=changed, zip_verified=True, console_validated=False)
+assert result["baseline_archive_unchanged"]
+(work / "package-verification.json").write_text(json.dumps(result, indent=2) + "\n")
+print(json.dumps(result, indent=2))

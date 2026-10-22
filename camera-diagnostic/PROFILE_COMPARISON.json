@@ -1,0 +1,176 @@
+{
+  "scope": "Local generated homebrew profile versus previous R4 profile; not a PS5 file retrieval",
+  "fields": [
+    {
+      "section": "debug",
+      "key": "env",
+      "previous": [
+        "PW_DINPUT_XINPUT=1",
+        "PW_DINPUT_GTA_PS2=1",
+        "PW_GTA_HYBRID_LEFT=1",
+        "PW_GTA_MOUSE_FLIP_Y=1"
+      ],
+      "generated": [
+        "PW_DINPUT_XINPUT=1",
+        "PW_DINPUT_GTA_PS2=1",
+        "PW_GTA_HYBRID_LEFT=1",
+        "PW_GTA_MOUSE_FLIP_Y=1"
+      ],
+      "same": true
+    },
+    {
+      "section": "debug",
+      "key": "winedebug",
+      "previous": [
+        "-all,+pwpad"
+      ],
+      "generated": [
+        "-all,+pwpad"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "circle",
+      "previous": [
+        "ctrl"
+      ],
+      "generated": [
+        "ctrl"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "cross",
+      "previous": [
+        "enter"
+      ],
+      "generated": [
+        "enter"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "down",
+      "previous": [
+        "down"
+      ],
+      "generated": [
+        "down"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "l2",
+      "previous": [
+        "s"
+      ],
+      "generated": [
+        "s"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "left",
+      "previous": [
+        "left"
+      ],
+      "generated": [
+        "left"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "mode",
+      "previous": [
+        "xinput"
+      ],
+      "generated": [
+        "xinput"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "mouse",
+      "previous": [
+        "right_stick"
+      ],
+      "generated": [
+        "right_stick"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "mouse_speed",
+      "previous": [
+        "900"
+      ],
+      "generated": [
+        "900"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "options",
+      "previous": [
+        "escape"
+      ],
+      "generated": [
+        "escape"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "r1",
+      "previous": [
+        "w"
+      ],
+      "generated": [
+        "w"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "r2",
+      "previous": [
+        "mouse_left"
+      ],
+      "generated": [
+        "mouse_left"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "right",
+      "previous": [
+        "right"
+      ],
+      "generated": [
+        "right"
+      ],
+      "same": true
+    },
+    {
+      "section": "input",
+      "key": "up",
+      "previous": [
+        "up"
+      ],
+      "generated": [
+        "up"
+      ],
+      "same": true
+    }
+  ]
+}

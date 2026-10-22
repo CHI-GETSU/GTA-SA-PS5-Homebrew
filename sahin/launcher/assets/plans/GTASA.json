@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "game": "GTASA",
+  "title": "GTA San Andreas",
+  "release": "classic",
+  "prefix": "gta-sa-ps2-r4",
+  "_about": "Sahin 01.004.000 single-game architecture, adapted to validated GTA SA R4 AUTO2.",
+  "sources": {},
+  "strip": [
+    "dinput8.dll",
+    "d3d9.dll",
+    "dsound.dll",
+    "scripts"
+  ],
+  "game_files": [],
+  "system_files": [],
+  "patches": [],
+  "ini": [],
+  "texts": [],
+  "expect": {},
+  "registry": {
+    "machine": [],
+    "user": []
+  },
+  "user_files": [],
+  "user_seeds": [
+    {
+      "from": "GTASAsf1.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf1.b"
+    },
+    {
+      "from": "GTASAsf2.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf2.b"
+    },
+    {
+      "from": "GTASAsf3.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf3.b"
+    },
+    {
+      "from": "GTASAsf4.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf4.b"
+    },
+    {
+      "from": "GTASAsf5.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf5.b"
+    },
+    {
+      "from": "GTASAsf6.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf6.b"
+    },
+    {
+      "from": "GTASAsf7.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf7.b"
+    },
+    {
+      "from": "GTASAsf8.b",
+      "file": "Documents/GTA San Andreas User Files/GTASAsf8.b"
+    }
+  ],
+  "profile": {
+    "id": "gta-sa-homebrew",
+    "name": "GTA San Andreas - homebrew R4",
+    "executable": "C:\\Games\\GTASA\\gta_sa.exe",
+    "working_directory": "C:\\Games\\GTASA",
+    "dll_overrides": "d3d8,d3d9,d3d10core,d3d11,dxgi=n;wmvcore=;dinput8=b",
+    "width": 1920,
+    "height": 1080,
+    "runtime": {},
+    "after": "gta-sa-ps2-r4.profile"
+  },
+  "pending": [],
+  "options": [],
+  "upgrades": []
+}

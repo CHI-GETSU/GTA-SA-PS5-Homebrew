@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PROJECT_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+export PS5_NATIVE_APP_TEMPLATE=${PS5_NATIVE_APP_TEMPLATE:-$PROJECT_ROOT/sahin/launcher}
+export PS5_PAYLOAD_SDK=${PS5_PAYLOAD_SDK:-$PROJECT_ROOT/sahin/launcher/.deps/native/ps5-payload-sdk}
+export PSBC_JOBS=${BUILD_JOBS:-4} PS5_CCACHE=0 PS5_SCANOUT_HEIGHT=2160 PS5_SCANOUT_FPS=120 PS5_DYNAMIC_SCANOUT=1 PS5_GPU_PRESENT_BATCH=1 PS5_DRAW_PROFILE=1 PS5_MULTIDRAW_BATCH=1 PS5_DEFERRED_DRAW_BATCH=1
+export TMPDIR=${TMPDIR:-$PROJECT_ROOT/build/tmp}
+mkdir -p "$TMPDIR"
+make -C "$PROJECT_ROOT/ps5-opengl" sdk-gl46

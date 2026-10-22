@@ -1,0 +1,97 @@
+"""Port the supplied Sahin single-game launcher to the validated GTA SA runner."""
+from pathlib import Path
+import json,zlib
+
+ROOT=Path(__file__).resolve().parent
+S=ROOT/'sahin'; L=S/'launcher'
+TITLE='PPSA99405'
+
+def change(path,old,new):
+    text=path.read_text(); assert old in text,(path,old[:100]); path.write_text(text.replace(old,new))
+
+# Isolate app-owned settings, installation records and base-game copies from Blur.
+for directory in ('src','tests'):
+    for p in (L/directory).rglob('*'):
+        if p.suffix not in ('.cpp','.hpp','.h','.c'): continue
+        text=p.read_text()
+        text=text.replace('/data/sahin','/data/gtasa-homebrew').replace('PPSA99404',TITLE)
+        p.write_text(text)
+
+param=json.loads((S/'sce_sys/param.json').read_text())
+param.update(titleId=TITLE,conceptId='99405',contentId='UP0000-'+TITLE+'_00-'+'GTASANANDREAS'.ljust(16,'0'),contentVersion='01.000.000')
+param['localizedParameters']={'defaultLanguage':'en-US','en-US':{'titleName':'GTA San Andreas'},'fr-FR':{'titleName':'GTA San Andreas'}}
+game=L/'games'/TITLE/'sce_sys'; game.mkdir(parents=True,exist_ok=True)
+(game/'param.json').write_text(json.dumps(param,indent=2)+'\n')
+(game.parent/'art').write_text('gtasa\n')
+(S/'sce_sys/param.json').write_text(json.dumps(param,indent=2)+'\n')
+
+catalog=L/'src/catalog/blackbox.cpp'
+text=catalog.read_text()
+start=text.index('    {"'+TITLE+'"'); end=text.index('\n};',start)
+text=text[:start]+'''    {"PPSA99405", "GTASA", "GTA San Andreas", "2005-06-07", "gtasa",
+     "Votre copie PC de GTA San Andreas sur PS5. Commandes PS2, pause Options et activation automatique R4.",
+     true, {0x14251b, 0x356d46, 0xb8e083, 0x0c140f}},'''+text[end:]
+catalog.write_text(text)
+
+# Identify the user's existing PC release by data, never replace its executable.
+data=Path(__file__).resolve().parents[1]/'ps5-data/prospero-win/prefixes/gta-sa-ps2-r4/drive_c/Games/GTASA/data/gta.dat'
+blob=data.read_bytes()
+base=L/'src/library/base_game.cpp'; text=base.read_text()
+start=text.index('// Blur (2010)'); end=text.index('// ---- files',start)
+text=text[:start]+f'''// GTA SA classic PC: known local data fingerprint, unknown copies get a warning.
+constexpr const char *kGtaFolders[] = {{"data", "models", "audio", "anim", "text"}};
+constexpr const char *kGtaFiles[] = {{"gta_sa.exe", "data/gta.dat", "models/gta3.img", "anim/ped.ifp"}};
+constexpr Release kGtaReleases[] = {{{{"classic", {len(blob)}, 0x{zlib.crc32(blob):08x}, false}}}};
+constexpr const char *kGtaModFiles[] = {{"dinput8.dll", "d3d9.dll", "dsound.dll", "scripts"}};
+constexpr Manifest kGta = [] {{
+    Manifest m{{"GTASA", kGtaFolders, kGtaFiles, "data/gta.dat", kGtaReleases, kGtaModFiles}};
+    m.mods_left_out = true;
+    m.accept_unknown = true;
+    return m;
+}}();
+constexpr const Manifest *kManifests[] = {{&kGta}};
+
+'''+text[end:]; base.write_text(text)
+
+plan={'schema':1,'game':'GTASA','title':'GTA San Andreas','release':'classic','prefix':'gta-sa-ps2-r4',
+      '_about':'Sahin 01.004.000 single-game architecture, adapted to validated GTA SA R4 AUTO2.',
+      'sources':{},'strip':['dinput8.dll','d3d9.dll','dsound.dll','scripts'],
+      'game_files':[],'system_files':[],'patches':[],'ini':[],'texts':[], 'expect':{},
+      'registry':{'machine':[],'user':[]},'user_files':[],'user_seeds':[],
+      'profile':{'id':'gta-sa-homebrew','name':'GTA San Andreas - homebrew R4',
+        'executable':'C:\\Games\\GTASA\\gta_sa.exe','working_directory':'C:\\Games\\GTASA',
+        'dll_overrides':'d3d8,d3d9,d3d10core,d3d11,dxgi=n;wmvcore=;dinput8=b',
+        'width':1920,'height':1080,'runtime':{},'after':'gta-sa-ps2-r4.profile'},
+      'pending':[],'options':[],'upgrades':[]}
+(L/'assets/plans/BLUR.json').rename(L/'assets/plans/BLUR.reference.json.disabled')
+(L/'assets/plans/GTASA.json').write_text(json.dumps(plan,indent=2)+'\n')
+
+# The stock writer only supports XInput/touchpad. Preserve the tested hybrid
+# keyboard bindings and diagnostic environment for this game's profile.
+change(L/'src/library/game_profile.hpp','    bool touchpad_mouse = false;',
+       '    bool ps2_controls = false; // GTA SA R4 controls\n    bool touchpad_mouse = false;')
+change(L/'src/library/game_profile.cpp','    if (!p.switches.empty())', '''    if (p.ps2_controls)
+        out += "up = up\\ndown = down\\nleft = left\\nright = right\\ncross = enter\\ncircle = ctrl\\noptions = escape\\nmouse = right_stick\\nmouse_speed = 900\\nr2 = mouse_left\\nr1 = w\\nl2 = s\\n";
+    if (!p.switches.empty())''')
+change(L/'src/library/game_profile.cpp','    text = std::move(out);',
+       '    if (p.ps2_controls) out += "\\n[debug]\\nwinedebug = -all,+pwpad\\n";\n    text = std::move(out);')
+change(L/'src/library/install_plan.cpp','        p.prefix = plan.prefix;', '''        p.prefix = plan.prefix;
+        if (plan.game == "GTASA") {
+            p.ps2_controls = true;
+            p.debug_env = {{"PW_DINPUT_XINPUT","1"},{"PW_DINPUT_GTA_PS2","1"},
+                           {"PW_GTA_HYBRID_LEFT","1"},{"PW_GTA_MOUSE_FLIP_Y","1"}};
+        }''')
+change(L/'src/library/game_install.cpp','    if (options.cursor == Cursor::touchpad)',
+       '    if (options.cursor == Cursor::touchpad && !out.profile.ps2_controls)')
+
+# App identity and hints. Do not carry Blur's unsupported DRM diagnosis over to GTA.
+p=L/'src/app/early_exit.hpp'; text=p.read_text(); start=text.index('inline constexpr const char *kEarlyExitHint ='); end=text.index(';',start)
+text=text[:start]+'''inline constexpr const char *kEarlyExitHint =
+    "GTA San Andreas s'est ferme au demarrage. Consultez /data/prospero-win/logs."'''+text[end:]; p.write_text(text)
+p=L/'src/core/i18n_strings.cpp'; text=p.read_text().replace('Blur.exe','gta_sa.exe').replace('base-games/Blur','base-games/GTASA').replace('folder named Blur','folder named GTASA').replace('Blur','GTA San Andreas'); p.write_text(text)
+for rel in ('src/main.cpp','src/ui/screens/game.cpp'):
+    p=L/rel
+    if p.exists(): p.write_text(p.read_text().replace('Blur on the PS5, from your own copy','GTA San Andreas sur PS5'))
+change(L/'tools/blackbox-assets.sh','for game in sahin; do','for game in gtasa; do')
+change(L/'tools/blackbox-assets.sh','$art/sahin-logo.png','$art/gtasa-logo.png')
+print('Adapted Sahin launcher:',TITLE,'/data/gtasa-homebrew; GTA prefix preserved')

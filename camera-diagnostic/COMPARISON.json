@@ -1,0 +1,42 @@
+[
+  {
+    "release_file": "win/wine/lib/wine/i386-windows/dinput8.dll",
+    "release_sha256": "71cddcbf57913c3205a27ded31ae824f867fa536578b9a16f542ac0c5a52a0bb",
+    "matches_previous_r4_test_build": true
+  },
+  {
+    "release_file": "win/wine/lib/wine/i386-windows/xinput1_3.dll",
+    "release_sha256": "e98f249f87c894f892579407d6c74826d5dde6a780fac1e1ddd52a6075cb13e5",
+    "matches_previous_r4_test_build": true
+  },
+  {
+    "bundle_member": "drive_c/windows/syswow64/dinput8.dll",
+    "sha256": "0091543943ec2c37524e46e59ca95343e3eca68f1d5a496df9c6b8310cb996ec",
+    "matches_previous_prefix_placeholder": true
+  },
+  {
+    "bundle_member": "drive_c/windows/syswow64/xinput1_3.dll",
+    "sha256": "43da8a325b67f5d499274804aa258d006fdbf2714f308d165d2acf23aef9d2ab",
+    "matches_previous_prefix_placeholder": true
+  },
+  {
+    "runner_source": "pw_pad_ps5.c",
+    "unchanged_from_previous_auto2": true
+  },
+  {
+    "runner_source": "pw_wine_display.c",
+    "unchanged_from_previous_auto2": true
+  },
+  {
+    "runner_source": "pw_ps2_auto_gate.h",
+    "unchanged_from_previous_auto2": true
+  },
+  {
+    "runner_source": "pw_ps2_controls.h",
+    "unchanged_from_previous_auto2": true
+  },
+  {
+    "runner_source": "pw_gta_hybrid.h",
+    "unchanged_from_previous_auto2": true
+  }
+]

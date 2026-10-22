@@ -1,0 +1,27 @@
+from pathlib import Path
+root=Path(__file__).resolve().parent/'sahin/launcher'
+p=root/'src/main.cpp'; s=p.read_text()
+s=s.replace('#include "library/game_install.hpp"','#include "library/game_install.hpp"\n#include "library/adopt_gta.hpp"')
+old='    const bool installed = kSingleGame[0] && elevated && single_game_installed(app_root, storage_root);'
+assert old in s
+s=s.replace(old,'''    if (kSingleGame[0] && elevated) {
+        store::library::InstallPlan existing;
+        std::string error;
+        if (single_game_plan(app_root,storage_root,existing))
+            (void)store::library::adopt_gta(existing,{storage_root,"/data/prospero-win"},error);
+        if (!error.empty()) hui::sys::log("[GTASA] adopt: %s",error.c_str());
+    }
+'''+old)
+p.write_text(s)
+p=root/'src/library/game_install.cpp'; s=p.read_text()
+old='''    const auto plan = effective_plan(given, options);
+    // The profile first, so the launcher never offers a game that's half gone.'''
+assert old in s
+s=s.replace(old,'''    const auto plan = effective_plan(given, options);
+    if (plan.game=="GTASA" && plan.prefix=="gta-sa-ps2-r4") {
+        error="Ce prefixe GTA est partage avec votre installation R4. Le jeu et ses sauvegardes sont conserves.";
+        return false;
+    }
+    // The profile first, so the launcher never offers a game that's half gone.''')
+p.write_text(s)
+print('Integrated non-destructive adoption of existing GTA installation')

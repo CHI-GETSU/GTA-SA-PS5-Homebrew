@@ -1,0 +1,11 @@
+# Preserve supplied bytes. Normalize only future text edits through editors;
+# the initial import must not silently rewrite upstream or binary assets.
+* -text
+*.png binary
+*.jpg binary
+*.dds binary
+*.huifont binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.gz binary

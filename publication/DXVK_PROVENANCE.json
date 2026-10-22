@@ -1,0 +1,69 @@
+{
+  "official_archive_sha256": "c00c1cd7df7ce70e89130b61c1fcd2d3a18ac473f274a219da4478147e4f3c90",
+  "files": [
+    {
+      "member": "drive_c/windows/syswow64/d3d10core.dll",
+      "official_sha256": "4d6ffb21aefd3ca625b53cf0bb07af54f360b264510ea437b8236470440274f7",
+      "bundled_sha256": "4d6ffb21aefd3ca625b53cf0bb07af54f360b264510ea437b8236470440274f7",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/syswow64/dxgi.dll",
+      "official_sha256": "05ee218a03abd1f883a08937d178ef182cbc32a7dca28f57378aaeab1ce2246d",
+      "bundled_sha256": "05ee218a03abd1f883a08937d178ef182cbc32a7dca28f57378aaeab1ce2246d",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/syswow64/d3d9.dll",
+      "official_sha256": "0895b26e19bdfdb3e0fd85e62e9d503a855da7933afd4b9ee5cac9936e50dcc1",
+      "bundled_sha256": "0895b26e19bdfdb3e0fd85e62e9d503a855da7933afd4b9ee5cac9936e50dcc1",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/syswow64/d3d11.dll",
+      "official_sha256": "112f344466590366321279469da738eeaeb41b126f3c91e5a8b92fc2ddebc6e0",
+      "bundled_sha256": "112f344466590366321279469da738eeaeb41b126f3c91e5a8b92fc2ddebc6e0",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/syswow64/d3d8.dll",
+      "official_sha256": "63b1813456b56d18a1caca235951a8989bed11425d3867205f3539f03bc0b0ae",
+      "bundled_sha256": "63b1813456b56d18a1caca235951a8989bed11425d3867205f3539f03bc0b0ae",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/system32/d3d10core.dll",
+      "official_sha256": "b544801782b1f947de24c2e8dfb95dacf7820b2b38e08f587afd838296d2a36b",
+      "bundled_sha256": "b544801782b1f947de24c2e8dfb95dacf7820b2b38e08f587afd838296d2a36b",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/system32/dxgi.dll",
+      "official_sha256": "da6df75e38b5a37cb9e0c277e7b2d9478ed555c25a768729ea39cb96aa39b5fa",
+      "bundled_sha256": "da6df75e38b5a37cb9e0c277e7b2d9478ed555c25a768729ea39cb96aa39b5fa",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/system32/d3d9.dll",
+      "official_sha256": "bb7e5039872181f1a8907de77192e44e018a25ccda169d4b6f7dd43b985704e9",
+      "bundled_sha256": "bb7e5039872181f1a8907de77192e44e018a25ccda169d4b6f7dd43b985704e9",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/system32/d3d11.dll",
+      "official_sha256": "16e9f5258a055870e78ecd071f3455943e88c1cea5242f9abfacac8cc1c652a6",
+      "bundled_sha256": "16e9f5258a055870e78ecd071f3455943e88c1cea5242f9abfacac8cc1c652a6",
+      "identical": true
+    },
+    {
+      "member": "drive_c/windows/system32/d3d8.dll",
+      "official_sha256": "c880d760b1c2e1b15e2da704b7a70441816e31a0bd53f8c0883748100d933809",
+      "bundled_sha256": "c880d760b1c2e1b15e2da704b7a70441816e31a0bd53f8c0883748100d933809",
+      "identical": true
+    }
+  ],
+  "source_commit": "a6f6dcc1eaa67946482ebdded0d1d5dc13293133",
+  "source_archive_sha256": "d0c24eb7cc8fff92e7531b67fc8b994c0799862a49ed8edf97e982e32c168eae",
+  "license": "zlib/libpng",
+  "source_submodules": "External submodules from .gitmodules still required for rebuild"
+}
