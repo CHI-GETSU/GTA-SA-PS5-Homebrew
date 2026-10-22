@@ -48,12 +48,12 @@ int main()
     assert(std::string(store::kEarlyExitHint).find("GTA San Andreas") != std::string::npos);
 
     // The runner's return request: <its library root>/return-<title>, an empty file.
-    assert(store::return_request_path("/data/prospero-win", "PPSA99405") ==
-           "/data/prospero-win/return-PPSA99405");
-    const std::string request = store::return_request_path(dir.string(), "PPSA99405");
+    assert(store::return_request_path("/data/prospero-win", "PPSA99604") ==
+           "/data/prospero-win/return-PPSA99604");
+    const std::string request = store::return_request_path(dir.string(), "PPSA99604");
     assert(store::request_return(request));
     assert(fs::exists(request) && fs::file_size(request) == 0);
-    assert(!store::request_return((dir / "nowhere" / "return-PPSA99405").string()));
+    assert(!store::request_return((dir / "nowhere" / "return-PPSA99604").string()));
 
     // prepare_launch: record then request, both there on success.
     {

@@ -1,0 +1,696 @@
+{
+  "scope": "Prepared SOURCE and RELEASE recursively, including both ZIP candidates and nested ZIP payloads; Git history and ignored local preparation files excluded. ASCII and UTF-16 ID matching plus path inventory. Original reference sources are read-only and not migration targets.",
+  "content_reference_records": 86,
+  "path_only_reference_records": 10939,
+  "archive_errors": [],
+  "records": [
+    {
+      "scope": "SOURCE",
+      "path": "AUDIT_PUBLICATION.md",
+      "occurrences": 1,
+      "sha256": "31d74caaf63dbc160770f913a56f48dd810f05332c84825d8bd29257c8d66437",
+      "bytes": 14827,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "BUILDING.md",
+      "occurrences": 1,
+      "sha256": "b1c2d9c15466d0d4d2cd76f89d42a88245a333527416d8c80cdf29b5f700b936",
+      "bytes": 5330,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "BUILD_NOBARA.md",
+      "occurrences": 2,
+      "sha256": "351af447f96dd37948440c27125fb69eff32126a7c4592a5b1158810fc5b8474",
+      "bytes": 4780,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "CHANGELOG.md",
+      "occurrences": 1,
+      "sha256": "8286169b0e1c72b752c83cf48992d1cf5feed92d7cd98221635f0a4a6fdd9544",
+      "bytes": 833,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "CHEMINS_BINAIRES.md",
+      "occurrences": 1054,
+      "sha256": "8754f24d4a6f4c3d8f361228b1583c98156f6dfaa0766977636371a0a7a008fc",
+      "bytes": 247944,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "CORRESPONDING_SOURCE.md",
+      "occurrences": 2,
+      "sha256": "7fe5b7f64907cf4409cf3f9f88b19800da91e46083700d2ff551f90e424ba70c",
+      "bytes": 4061,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "DEPENDENCIES.md",
+      "occurrences": 1,
+      "sha256": "9daa31e20afac401b758a7f1cf9469cec58a8ed038e0a53221a6cc6fb6b18be9",
+      "bytes": 4347,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "PUBLICATION_FILES.txt",
+      "occurrences": 2,
+      "sha256": "aa44a11fe9160a9fe579d6207a3c5d3231b912ab51d579cec6f2d9310ac22461",
+      "bytes": 132796,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "PUBLICATION_REVIEW.md",
+      "occurrences": 2,
+      "sha256": "c4dada8a01cb3ec9c737a0a6e9e702ff14d63d55012fcdeb0b9ff183de924d89",
+      "bytes": 8307,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "README.md",
+      "occurrences": 3,
+      "sha256": "26062d3823dd5e6fc3101f9e62b37d0237de01edbe931ccdbcee6475dccdd55b",
+      "bytes": 9886,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "RELEASE_NOTES_v0.1.0-beta.md",
+      "occurrences": 3,
+      "sha256": "80588123d4ca14027ff42e2035cdd92668b6e0210b607fe6f22800278c89dcca",
+      "bytes": 2724,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "RELEASE_PREPARATION.md",
+      "occurrences": 2,
+      "sha256": "c3ee1788c22d17e8179e33df5532e5f57e80c829c87da45fc1d03af8faf7b1e5",
+      "bytes": 5101,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "SHA256SUMS",
+      "occurrences": 2,
+      "sha256": "dc273697d5864bd5e48fd87352cadfc279b2ab51e8de95118878f0209bbc28cd",
+      "bytes": 318575,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "THIRD_PARTY_PUBLICATION.md",
+      "occurrences": 1,
+      "sha256": "503506ec9722ad0c7b8a4bef06c533fa7c4fad86653064f9d517d825b003d85d",
+      "bytes": 5208,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "VALIDATION.md",
+      "occurrences": 1,
+      "sha256": "cc7c343f7a4fa06a2eab2cea786b85b7bd093e42c984c2c4990a5197ff4766da",
+      "bytes": 2073,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "build-launcher-local.sh",
+      "occurrences": 1,
+      "sha256": "ba09c75f5958f0ecfd1855bc9f82bf73db663e10a5328b6230e2cd618e52c304",
+      "bytes": 519,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "build_runner.py",
+      "occurrences": 2,
+      "sha256": "b209f34ca21ffe79ef884e974623fd2cf3527eca88cf87c17703b8bda4b229f5",
+      "bytes": 1605,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "camera-diagnostic/RUNNER_DIFFERENCES.patch",
+      "occurrences": 2,
+      "sha256": "d11f85f18f8a560cfc65fb9309ad2a5a50c4680ac43583c919cc91d361eb3142",
+      "bytes": 2521,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "camera-diagnostic/run_host_probe.py",
+      "occurrences": 1,
+      "sha256": "18d0edd36f0a1bc70a7075d845420524e96292d66e74f57d70d2ffc649b36a97",
+      "bytes": 2321,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "docs/adapt_sahin.py.historical.txt",
+      "occurrences": 2,
+      "sha256": "d60e42d73c4f7a08e1402fe8cd18732cf7098fc5858217cd0e47ee90ab187590",
+      "bytes": 6280,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "docs/prepare_runner.py.historical.txt",
+      "occurrences": 2,
+      "sha256": "d3755cf26d29dca17d740dc407531db0cc0942921696d29504335789948d52f8",
+      "bytes": 1752,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "package_homebrew.py",
+      "occurrences": 1,
+      "sha256": "c9a74cdf7821e09d415d73e44cbb944efd062c35784f4357c7076a70b88d9c89",
+      "bytes": 1453,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/BINARY_PATHS.json",
+      "occurrences": 2108,
+      "sha256": "e34edcdc7e3b749176467970879fd7b9f0b9314c21e2c302720770ad9a5fdf54",
+      "bytes": 3868887,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/IMAGE_METADATA.json",
+      "occurrences": 8,
+      "sha256": "645214a95d68c12724c945d18970fefafc96de1592ec76f40f80a8401fbdeae4",
+      "bytes": 5839,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/INPUTS.json",
+      "occurrences": 1,
+      "sha256": "15268f40d795102f39c183265ab67e2970178a0721fcef28469b873da722cf9c",
+      "bytes": 317,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/OFFICIAL_RUNTIME_COMPARISON.json",
+      "occurrences": 1054,
+      "sha256": "e7162b267c20020e5d0cea249ae7679d93b10e959b16332c7bca6cf90a176346",
+      "bytes": 669945,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/audit-results-release.json",
+      "occurrences": 4752,
+      "sha256": "d6ac9ceace9d2de2f61022c81d5ab2719dc1c6d17a3bc7a0d101a008411277d4",
+      "bytes": 915039,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/audit-results-source.json",
+      "occurrences": 5,
+      "sha256": "d864f8faf943d640e78cdf82e8f694e1cd72966a579376a931f64e55804a6502",
+      "bytes": 1200634,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/compare_official.py",
+      "occurrences": 1,
+      "sha256": "139b4813de06b2511bd13a1bce9474a06a91decb41cf40aca34dc00f4c8dd6e8",
+      "bytes": 2337,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "publication/verify.py",
+      "occurrences": 3,
+      "sha256": "14949011ee09b0830f5e7c7306cc39341bbc49783a3ec249519e43aa9896f0be",
+      "bytes": 2310,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "render-host-local.sh",
+      "occurrences": 1,
+      "sha256": "53840887a50b73811a1eca0f56b3cbbb8ae59d18580e0c36afd49a2e59288766",
+      "bytes": 415,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "runner/native-source/wine64_main.c",
+      "occurrences": 2,
+      "sha256": "5d8c982cd258e27c2dde4d0b72e9c5912721a9a0285034e469e4aa6eb82be8ed",
+      "bytes": 80255,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/docs/prospero-blackbox-README.md",
+      "occurrences": 1,
+      "sha256": "ec7afaa4f22e1b15d30f398cbccd92e4900b0f2fc76d24f30b36853e1c509978",
+      "bytes": 3278,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/games/PPSA99405/sce_sys/param.json",
+      "occurrences": 2,
+      "sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "bytes": 881,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/host/store_main.cpp",
+      "occurrences": 8,
+      "sha256": "42a07c7fb28bd5c68dc02deca4b1547a4eb4814395aade142c35c613380cc201",
+      "bytes": 52307,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/src/app/store.cpp",
+      "occurrences": 1,
+      "sha256": "8049eb394d6c8213ae6d2897abb1694b6a863bfac56f6b5826725e25e4a9b595",
+      "bytes": 201565,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/src/catalog/blackbox.cpp",
+      "occurrences": 1,
+      "sha256": "fdf4ae0d2fa45a117d9d0d8da0e6be584f3d3425b6c38e1742c94f0f832311e7",
+      "bytes": 1448,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/src/catalog/blackbox.hpp",
+      "occurrences": 2,
+      "sha256": "dc9625d28057ecd81b99d24164dde42aa96183e66890ac74d5ae0a2af544b35f",
+      "bytes": 1929,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/tests/store_early_exit_test.cpp",
+      "occurrences": 4,
+      "sha256": "4e5809d76ae314a951f14d04bf3fa55120cd575d7c52a2b812c4afb06c42d185",
+      "bytes": 5989,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/launcher/tests/store_service_test.cpp",
+      "occurrences": 2,
+      "sha256": "e71fbe9e5f3b273cbd8ccd734f4f076fd8a732ca198dd207e2da814b609497c2",
+      "bytes": 9105,
+      "binary": false
+    },
+    {
+      "scope": "SOURCE",
+      "path": "sahin/sce_sys/param.json",
+      "occurrences": 2,
+      "sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "bytes": 881,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "AUDIT_PUBLICATION.md",
+      "occurrences": 1,
+      "sha256": "31d74caaf63dbc160770f913a56f48dd810f05332c84825d8bd29257c8d66437",
+      "bytes": 14827,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "BUILDING.md",
+      "occurrences": 1,
+      "sha256": "b1c2d9c15466d0d4d2cd76f89d42a88245a333527416d8c80cdf29b5f700b936",
+      "bytes": 5330,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "CORRESPONDING_SOURCE.md",
+      "occurrences": 2,
+      "sha256": "7fe5b7f64907cf4409cf3f9f88b19800da91e46083700d2ff551f90e424ba70c",
+      "bytes": 4061,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "DEPENDENCIES.md",
+      "occurrences": 1,
+      "sha256": "9daa31e20afac401b758a7f1cf9469cec58a8ed038e0a53221a6cc6fb6b18be9",
+      "bytes": 4347,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/SOURCES.txt",
+      "occurrences": 1,
+      "sha256": "23dddde41c919b8a27750a0d8af3bde2edf7301bb930f8c82e6fa396ff29a514",
+      "bytes": 4339,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/eboot.bin",
+      "occurrences": 1,
+      "sha256": "4863f5e0a1bf71f6bcc97934caa0fc651f5a946e5e16fb8676da9741026e7d34",
+      "bytes": 32514605,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/game.bin",
+      "occurrences": 4,
+      "sha256": "1cdb21709fff4ae601bc51b9a998f64ca772c6904b7af6d1fdb883661045fca6",
+      "bytes": 145833,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/lapy-manifest.json",
+      "occurrences": 1,
+      "sha256": "eaa222e633ca0f4ca03abd3b1def18c42350eaabef5750ee60e43e133fc91c83",
+      "bytes": 608,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/lapy.elf",
+      "occurrences": 1,
+      "sha256": "d53ac38b01c89c4f70f41d7cae9ca3e706eeb7c194cb7c9ccc58cdebf9158347",
+      "bytes": 155032,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PPSA99405/sce_sys/param.json",
+      "occurrences": 2,
+      "sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "bytes": 881,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "PUBLICATION_REVIEW.md",
+      "occurrences": 2,
+      "sha256": "c4dada8a01cb3ec9c737a0a6e9e702ff14d63d55012fcdeb0b9ff183de924d89",
+      "bytes": 8307,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "README.md",
+      "occurrences": 3,
+      "sha256": "c0b10d7596097ee56f04f6a949ff134418659eab8b4e3e14dc640d3838d1377d",
+      "bytes": 9945,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "RELEASE_NOTES_v0.1.0-beta.md",
+      "occurrences": 3,
+      "sha256": "80588123d4ca14027ff42e2035cdd92668b6e0210b607fe6f22800278c89dcca",
+      "bytes": 2724,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "RELEASE_PREPARATION.md",
+      "occurrences": 2,
+      "sha256": "c3ee1788c22d17e8179e33df5532e5f57e80c829c87da45fc1d03af8faf7b1e5",
+      "bytes": 5101,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "SHA256SUMS",
+      "occurrences": 1855,
+      "sha256": "9f6bf299b3b929875c9aef072130b55610b26a064c1378f927e5cc5edcb0f4a1",
+      "bytes": 224259,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "VALIDATION.md",
+      "occurrences": 1,
+      "sha256": "cc7c343f7a4fa06a2eab2cea786b85b7bd093e42c984c2c4990a5197ff4766da",
+      "bytes": 2073,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/FILES.txt",
+      "occurrences": 1855,
+      "sha256": "a374ece4e318b256869d42abc8bad9933a9e3aae18080e3607c7b0f14cabbb2f",
+      "bytes": 99547,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip",
+      "occurrences": 3710,
+      "sha256": "778b74aa054e0f589ff860b14ebd0c369bb29f9f3dbf2008e926e33050afc3d0",
+      "bytes": 306090341,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/SOURCES.txt",
+      "occurrences": 1,
+      "sha256": "23dddde41c919b8a27750a0d8af3bde2edf7301bb930f8c82e6fa396ff29a514",
+      "bytes": 4339,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/eboot.bin",
+      "occurrences": 1,
+      "sha256": "4863f5e0a1bf71f6bcc97934caa0fc651f5a946e5e16fb8676da9741026e7d34",
+      "bytes": 32514605,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/game.bin",
+      "occurrences": 4,
+      "sha256": "1cdb21709fff4ae601bc51b9a998f64ca772c6904b7af6d1fdb883661045fca6",
+      "bytes": 145833,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/lapy-manifest.json",
+      "occurrences": 1,
+      "sha256": "eaa222e633ca0f4ca03abd3b1def18c42350eaabef5750ee60e43e133fc91c83",
+      "bytes": 608,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/lapy.elf",
+      "occurrences": 1,
+      "sha256": "d53ac38b01c89c4f70f41d7cae9ca3e706eeb7c194cb7c9ccc58cdebf9158347",
+      "bytes": 155032,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/sce_sys/param.json",
+      "occurrences": 2,
+      "sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "bytes": 881,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/README.md",
+      "occurrences": 3,
+      "sha256": "28138f6854668ff2a5ab195fa54bea67a9960187a8b3f1ffc931a914f9794ffb",
+      "bytes": 8480,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PUBLICATION_REVIEW.md",
+      "occurrences": 2,
+      "sha256": "e70dec1fc8519a2190021125eb3d412215a896f010e0ac6addbc6d90a567e9e0",
+      "bytes": 7847,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/RELEASE_NOTES_v0.1.0-beta.md",
+      "occurrences": 3,
+      "sha256": "0f94151a180d9f68ce23f210fe8f79c52fa741d0dd0f345d81201f694ebf03e3",
+      "bytes": 1737,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/MANIFEST.json",
+      "occurrences": 1,
+      "sha256": "a8012ee0cdef27fa9f4ee3a9b51965e99be59c96d8f31f33e08baa519777db5e",
+      "bytes": 538,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/FILES.txt",
+      "occurrences": 1855,
+      "sha256": "6813dea4333763637b73b61e8110e4443408b1ecbaebde8c5b07c987c2ec1a13",
+      "bytes": 99686,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip",
+      "occurrences": 3710,
+      "sha256": "bd50d4c0362c341af9b3e383688586b885ef21b6da6e8e2ec72c4ac185e06ff8",
+      "bytes": 306110217,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/SOURCES.txt",
+      "occurrences": 1,
+      "sha256": "23dddde41c919b8a27750a0d8af3bde2edf7301bb930f8c82e6fa396ff29a514",
+      "bytes": 4339,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/eboot.bin",
+      "occurrences": 1,
+      "sha256": "4863f5e0a1bf71f6bcc97934caa0fc651f5a946e5e16fb8676da9741026e7d34",
+      "bytes": 32514605,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/game.bin",
+      "occurrences": 4,
+      "sha256": "1cdb21709fff4ae601bc51b9a998f64ca772c6904b7af6d1fdb883661045fca6",
+      "bytes": 145833,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/lapy-manifest.json",
+      "occurrences": 1,
+      "sha256": "eaa222e633ca0f4ca03abd3b1def18c42350eaabef5750ee60e43e133fc91c83",
+      "bytes": 608,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/lapy.elf",
+      "occurrences": 1,
+      "sha256": "d53ac38b01c89c4f70f41d7cae9ca3e706eeb7c194cb7c9ccc58cdebf9158347",
+      "bytes": 155032,
+      "binary": true
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PPSA99405/sce_sys/param.json",
+      "occurrences": 2,
+      "sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "bytes": 881,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/README.md",
+      "occurrences": 3,
+      "sha256": "c0b10d7596097ee56f04f6a949ff134418659eab8b4e3e14dc640d3838d1377d",
+      "bytes": 9945,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/PUBLICATION_REVIEW.md",
+      "occurrences": 2,
+      "sha256": "c4dada8a01cb3ec9c737a0a6e9e702ff14d63d55012fcdeb0b9ff183de924d89",
+      "bytes": 8307,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/RELEASE_NOTES_v0.1.0-beta.md",
+      "occurrences": 3,
+      "sha256": "80588123d4ca14027ff42e2035cdd92668b6e0210b607fe6f22800278c89dcca",
+      "bytes": 2724,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/CORRESPONDING_SOURCE.md",
+      "occurrences": 2,
+      "sha256": "7fe5b7f64907cf4409cf3f9f88b19800da91e46083700d2ff551f90e424ba70c",
+      "bytes": 4061,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/RELEASE_PREPARATION.md",
+      "occurrences": 2,
+      "sha256": "c3ee1788c22d17e8179e33df5532e5f57e80c829c87da45fc1d03af8faf7b1e5",
+      "bytes": 5101,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/AUDIT_PUBLICATION.md",
+      "occurrences": 1,
+      "sha256": "31d74caaf63dbc160770f913a56f48dd810f05332c84825d8bd29257c8d66437",
+      "bytes": 14827,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/BUILDING.md",
+      "occurrences": 1,
+      "sha256": "b1c2d9c15466d0d4d2cd76f89d42a88245a333527416d8c80cdf29b5f700b936",
+      "bytes": 5330,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/DEPENDENCIES.md",
+      "occurrences": 1,
+      "sha256": "9daa31e20afac401b758a7f1cf9469cec58a8ed038e0a53221a6cc6fb6b18be9",
+      "bytes": 4347,
+      "binary": false
+    },
+    {
+      "scope": "RELEASE",
+      "path": "artifacts/v0.1.0-beta/review-2/GTA-SA-PS5-Homebrew-v0.1.0-beta.zip!/VALIDATION.md",
+      "occurrences": 1,
+      "sha256": "cc7c343f7a4fa06a2eab2cea786b85b7bd093e42c984c2c4990a5197ff4766da",
+      "bytes": 2073,
+      "binary": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Proposed source Git index including recovered patches; nested ZIP/gzip/tar fixtures scanned as data; own Git history checked separately; compiled ZIP not uploaded",
+  "files_at_initial_scan": 2835,
+  "expanded_entries_at_initial_scan": 2837,
+  "archive_errors": 0,
+  "critical_secret_or_prohibited_file_findings": 0,
+  "commercial_reference_hash_matches": 0,
+  "classified_findings": {
+    "email": 83,
+    "host_home": 3,
+    "private_network": 4
+  },
+  "classification": "Public upstream copyright contacts preserved; three files use generic home-path test/lint fixtures; four files contain technical/example private-network strings, unchanged by migration. No personal build-home path is present in added source records.",
+  "validated_zip_sha256": "4aa16e1a012d07a92f29d4607e6d13d5a440b40fba4193b8afc9bfc6575206ee",
+  "validated_binary_hashes": {
+    "eboot.bin": "94e3ccad4b995d31e9f0a7ead99e9c52469357631ead2485b0c3ddc71e9dc4f0",
+    "game.bin": "1dc85d9e140f4c50cc53c6a54fb4e168eb514b63817b09ea9ccd3865bb525e5d",
+    "lapy.elf": "c1e6e6100683aba8467fb65e3381501f139c67956bc6916cc95908818fed2376"
+  },
+  "source_only_publication": true,
+  "binary_release_allowed": false,
+  "limits": "Heuristic scan and known hashes/provenance; not proof against arbitrary unknown secrets or transformed commercial data."
+}

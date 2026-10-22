@@ -60,7 +60,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#define PW_TITLE_ID "PPSA99405"
+#define PW_TITLE_ID "PPSA99604"
 #define PW_APP_NAME "gta-sa-homebrew-r4"
 
 /* Where the title's Wine runtime can be seen: /app0 inside the sandbox;
@@ -636,7 +636,7 @@ static void on_exit_report(void)
     PS5LOG_LOG("PW_WINE64 exit sink_calls=%lu", sink_calls);
     /* Sahin's launcher wrote this one-shot request before LoadExec game.bin.
      * Taking it distinguishes return-from-game from a new Home-screen launch. */
-    (void)unlink("/data/prospero-win/return-PPSA99405");
+    (void)unlink("/data/prospero-win/return-PPSA99604");
     restart_title(NULL, launch.cycle + 1u, "wine-exit");
     pw_diagnostics_close("wine64-exit");
 }

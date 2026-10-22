@@ -1,0 +1,70 @@
+{
+  "applied": false,
+  "files": [
+    {
+      "path": "build-launcher-local.sh",
+      "before_sha256": "ba09c75f5958f0ecfd1855bc9f82bf73db663e10a5328b6230e2cd618e52c304",
+      "after_sha256": "5aacd5bb40f2f53b60b9bf829611741465d8781803746e97c33b86e166623abc"
+    },
+    {
+      "path": "build_runner.py",
+      "before_sha256": "b209f34ca21ffe79ef884e974623fd2cf3527eca88cf87c17703b8bda4b229f5",
+      "after_sha256": "ee7934d36b25bba680b78ff41b4d011e6fa3e62b5ceaaba0917f7f38ce673f49"
+    },
+    {
+      "path": "render-host-local.sh",
+      "before_sha256": "53840887a50b73811a1eca0f56b3cbbb8ae59d18580e0c36afd49a2e59288766",
+      "after_sha256": "294aa484a76be026f88e3e0dd73e0a1fc82e09c13bf07c938bc419e5239f2a3c"
+    },
+    {
+      "path": "package_homebrew.py",
+      "before_sha256": "c9a74cdf7821e09d415d73e44cbb944efd062c35784f4357c7076a70b88d9c89",
+      "after_sha256": "88281131b1e70cdd4127b4f26f57f9458165dc92b74a05b4fe1ce8f2fd4c7159"
+    },
+    {
+      "path": "runner/native-source/wine64_main.c",
+      "before_sha256": "5d8c982cd258e27c2dde4d0b72e9c5912721a9a0285034e469e4aa6eb82be8ed",
+      "after_sha256": "917bab4cadc78c84bb88e8a6303eaaa7651bb6f78ad69d041692e0966db1707f"
+    },
+    {
+      "path": "sahin/sce_sys/param.json",
+      "before_sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "after_sha256": "58ec779431ee553fc8f46ed33600ae19c0c1b4dfcd42e87d547d592500b6efe4"
+    },
+    {
+      "path": "sahin/launcher/games/PPSA99405/sce_sys/param.json",
+      "before_sha256": "26075fb7a1b542226b59d2345ad5f7b0700836bdb650b6ab9a7515497edf6d63",
+      "after_sha256": "58ec779431ee553fc8f46ed33600ae19c0c1b4dfcd42e87d547d592500b6efe4"
+    },
+    {
+      "path": "sahin/launcher/src/catalog/blackbox.cpp",
+      "before_sha256": "fdf4ae0d2fa45a117d9d0d8da0e6be584f3d3425b6c38e1742c94f0f832311e7",
+      "after_sha256": "8949c7170978120593ca35697faee15ba9f1ca14e429c28a30c1a77f3c3f3a9d"
+    },
+    {
+      "path": "sahin/launcher/src/catalog/blackbox.hpp",
+      "before_sha256": "dc9625d28057ecd81b99d24164dde42aa96183e66890ac74d5ae0a2af544b35f",
+      "after_sha256": "a3ee4dc5aa86fc6307a55ad0eefb0ec0a21019a4075b6807be2c06ae5d27b746"
+    },
+    {
+      "path": "sahin/launcher/src/app/store.cpp",
+      "before_sha256": "8049eb394d6c8213ae6d2897abb1694b6a863bfac56f6b5826725e25e4a9b595",
+      "after_sha256": "57915a359e8d537f1cac9aa6769eac49cf3985963cdff20f1617ee766d29c24a"
+    },
+    {
+      "path": "sahin/launcher/host/store_main.cpp",
+      "before_sha256": "42a07c7fb28bd5c68dc02deca4b1547a4eb4814395aade142c35c613380cc201",
+      "after_sha256": "be0279e497712079f9bf3a621383b97ee246841c8d731f92a802f595c8bcae3f"
+    },
+    {
+      "path": "sahin/launcher/tests/store_early_exit_test.cpp",
+      "before_sha256": "4e5809d76ae314a951f14d04bf3fa55120cd575d7c52a2b812c4afb06c42d185",
+      "after_sha256": "8094b3a491c57853ac35155f27f0c6ae78607cc5f5ec7874c47952206745aff5"
+    }
+  ],
+  "directory_rename_after_patch": {
+    "from": "sahin/launcher/games/PPSA99405",
+    "to": "sahin/launcher/games/PPSA99604"
+  },
+  "no_compile": true
+}

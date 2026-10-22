@@ -1,0 +1,233 @@
+--- a/build-launcher-local.sh
++++ b/build-launcher-local.sh
+@@ -6,4 +6,4 @@
+ export PS5_ASSETS_TOOL=${PS5_ASSETS_TOOL:-$PROJECT_ROOT/assets-tools/tools/prepare-assets.sh}
+ export TMPDIR=${TMPDIR:-$PROJECT_ROOT/build/tmp}
+ mkdir -p "$TMPDIR"
+-make -C "$PROJECT_ROOT/sahin/launcher" GAME=PPSA99405 USE_CCACHE=0 BUILD_JOBS="${BUILD_JOBS:-4}" PS5_CLANG="${PS5_CLANG:-clang-18}" app
++make -C "$PROJECT_ROOT/sahin/launcher" GAME=PPSA99604 USE_CCACHE=0 BUILD_JOBS="${BUILD_JOBS:-4}" PS5_CLANG="${PS5_CLANG:-clang-18}" app
+--- a/build_runner.py
++++ b/build_runner.py
+@@ -10,7 +10,7 @@
+ if stage.exists():raise SystemExit('Use a fresh build/runner-stage; refusing to merge stale objects')
+ shutil.copytree(root/'prospero-win',stage)
+ shutil.copytree(root/'runner/native-source',stage/'native',dirs_exist_ok=True)
+-helper=root/'sahin/launcher/dist/PPSA99405'
++helper=root/'sahin/launcher/dist/PPSA99604'
+ for n in ('lapy.elf','lapy-manifest.json'):
+  if not (helper/n).is_file():raise SystemExit('Build the GTA launcher and its own-title helper first')
+ p=stage/'tools/build_native.sh';text=p.read_text()
+@@ -20,7 +20,7 @@
+ helper_download="$GTA_HELPER"
+ '''+text[end:]
+ text=text.replace('cp "$helper_download/release.json" "$build/lapy-helper-release.json"','true # helper provenance is supplied by its own-title manifest')
+-text=text.replace('title_id=PPSA99995','title_id=PPSA99405')
++text=text.replace('title_id=PPSA99995','title_id=PPSA99604')
+ text=text.replace('644e32e4','644e32e4-gtasa-homebrew-r4')
+ p.write_text(text)
+ env=dict(os.environ,GTA_HELPER=str(helper),PS5LOG_DEV_CONF=str(root/'build/no-private-dev.conf'))
+--- a/render-host-local.sh
++++ b/render-host-local.sh
+@@ -3,6 +3,6 @@
+ PROJECT_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+ export CPATH=${PROJECT_ROOT}/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/include:${PROJECT_ROOT}/ps5-opengl/build/sdk/ps5-opengl-gl46/include
+ export LIBRARY_PATH=${PROJECT_ROOT}/host-libs
+-export BUILD_JOBS=4 USE_CCACHE=0 STORE_APP=dist/PPSA99405
++export BUILD_JOBS=4 USE_CCACHE=0 STORE_APP=dist/PPSA99604
+ cd ${PROJECT_ROOT}/sahin/launcher
+ bash tools/store-host.sh
+--- a/package_homebrew.py
++++ b/package_homebrew.py
+@@ -9,7 +9,7 @@
+ p.add_argument('--output',type=Path,required=True);o=p.parse_args()
+ if o.output.exists():raise SystemExit('Output must not exist')
+ if not (o.runtime/'win').is_dir():raise SystemExit('Missing win/')
+-if json.loads((o.launcher/'sce_sys/param.json').read_text())['titleId']!='PPSA99405':raise SystemExit('Wrong title')
++if json.loads((o.launcher/'sce_sys/param.json').read_text())['titleId']!='PPSA99604':raise SystemExit('Wrong title')
+ for tree in (o.runtime,o.launcher):
+  for f in tree.rglob('*'):
+   if f.is_symlink():raise SystemExit('Symlink input refused')
+--- a/runner/native-source/wine64_main.c
++++ b/runner/native-source/wine64_main.c
+@@ -60,7 +60,7 @@
+ #include <time.h>
+ #include <unistd.h>
+ 
+-#define PW_TITLE_ID "PPSA99405"
++#define PW_TITLE_ID "PPSA99604"
+ #define PW_APP_NAME "gta-sa-homebrew-r4"
+ 
+ /* Where the title's Wine runtime can be seen: /app0 inside the sandbox;
+@@ -636,7 +636,7 @@
+     PS5LOG_LOG("PW_WINE64 exit sink_calls=%lu", sink_calls);
+     /* Sahin's launcher wrote this one-shot request before LoadExec game.bin.
+      * Taking it distinguishes return-from-game from a new Home-screen launch. */
+-    (void)unlink("/data/prospero-win/return-PPSA99405");
++    (void)unlink("/data/prospero-win/return-PPSA99604");
+     restart_title(NULL, launch.cycle + 1u, "wine-exit");
+     pw_diagnostics_close("wine64-exit");
+ }
+--- a/sahin/sce_sys/param.json
++++ b/sahin/sce_sys/param.json
+@@ -7,9 +7,9 @@
+   "attribute": 0,
+   "attribute2": 0,
+   "attribute3": 64,
+-  "conceptId": "99405",
++  "conceptId": "99604",
+   "contentBadgeType": 1,
+-  "contentId": "UP0000-PPSA99405_00-GTASANANDREAS000",
++  "contentId": "UP0000-PPSA99604_00-GTASANANDREAS000",
+   "contentVersion": "01.000.000",
+   "downloadDataSize": 256,
+   "gameIntent": {
+@@ -35,6 +35,6 @@
+   },
+   "requiredSystemSoftwareVersion": "0x0000000000000000",
+   "sdkVersion": "0x0000000000000000",
+-  "titleId": "PPSA99405",
++  "titleId": "PPSA99604",
+   "versionFileUri": ""
+ }
+--- a/sahin/launcher/games/PPSA99405/sce_sys/param.json
++++ b/sahin/launcher/games/PPSA99405/sce_sys/param.json
+@@ -7,9 +7,9 @@
+   "attribute": 0,
+   "attribute2": 0,
+   "attribute3": 64,
+-  "conceptId": "99405",
++  "conceptId": "99604",
+   "contentBadgeType": 1,
+-  "contentId": "UP0000-PPSA99405_00-GTASANANDREAS000",
++  "contentId": "UP0000-PPSA99604_00-GTASANANDREAS000",
+   "contentVersion": "01.000.000",
+   "downloadDataSize": 256,
+   "gameIntent": {
+@@ -35,6 +35,6 @@
+   },
+   "requiredSystemSoftwareVersion": "0x0000000000000000",
+   "sdkVersion": "0x0000000000000000",
+-  "titleId": "PPSA99405",
++  "titleId": "PPSA99604",
+   "versionFileUri": ""
+ }
+--- a/sahin/launcher/src/catalog/blackbox.cpp
++++ b/sahin/launcher/src/catalog/blackbox.cpp
+@@ -7,7 +7,7 @@
+ namespace
+ {
+ constexpr Game kGames[] = {
+-    {"PPSA99405", "GTASA", "GTA San Andreas", "2005-06-07", "gtasa",
++    {"PPSA99604", "GTASA", "GTA San Andreas", "2005-06-07", "gtasa",
+      "Votre copie PC de GTA San Andreas sur PS5. Commandes PS2, pause Options et activation automatique R4.",
+      true, {0x14251b, 0x356d46, 0xb8e083, 0x0c140f}},
+ };
+--- a/sahin/launcher/src/catalog/blackbox.hpp
++++ b/sahin/launcher/src/catalog/blackbox.hpp
+@@ -20,7 +20,7 @@
+ 
+ struct Game
+ {
+-    const char *id;          // its own Home-screen title, PPSA99405
++    const char *id;          // its own Home-screen title, PPSA99604
+     const char *folder;      // base-games/<folder> and the USB folder name
+     const char *name;
+     const char *released;    // ISO date, for sorting
+@@ -32,7 +32,7 @@
+ 
+ std::span<const Game> blackbox_games();
+ 
+-// The built-in game (PPSA99405), whether or not its base copy
++// The built-in game (PPSA99604), whether or not its base copy
+ // has been looked up yet.
+ inline bool blackbox_game(std::string_view id)
+ {
+--- a/sahin/launcher/src/app/store.cpp
++++ b/sahin/launcher/src/app/store.cpp
+@@ -2608,7 +2608,7 @@
+         // console first (base-games, kept for repairs).
+         if (usable)
+         {
+-            // The games' own Home apps (PPSA99405, ours) share the prefix: a game writes
++            // The games' own Home apps (PPSA99604, ours) share the prefix: a game writes
+             // its registry back when it exits, so nothing changes while one runs. Apps this
+             // manager didn't install are none of its business.
+             const auto blocking =
+--- a/sahin/launcher/host/store_main.cpp
++++ b/sahin/launcher/host/store_main.cpp
+@@ -509,20 +509,20 @@
+                 base.detail = mode == "mw-old" ? "Version 1.2: upgraded to 1.3 as it installs."
+                                                : "Version " + base.version + ".";
+                 screen.set_installer(true, true, "", "/data/homebrew");
+-                screen.set_running(mode == "mw-busy" ? std::vector<std::string>{"PPSA99405"}
++                screen.set_running(mode == "mw-busy" ? std::vector<std::string>{"PPSA99604"}
+                                                      : std::vector<std::string>{},
+                                    true);
+                 // The plan's options, as the Service publishes them.
+-                screen.set_base("PPSA99405", base,
++                screen.set_base("PPSA99604", base,
+                                 mode == "mw-installed" || mode.starts_with("mw-solo-installed"), {}, {1920,1080});
+                 if (mode.starts_with("mw-solo"))
+                 {
+                     // The game's own app: its page only (installed, the player quit to it).
+-                    screen.set_single_game("PPSA99405");
++                    screen.set_single_game("PPSA99604");
+                     if (mode == "mw-solo-installed-closed") // GTA San Andreas closed at once last time
+                         screen.set_single_notice(store::i18n::trs(store::kEarlyExitHint));
+                 }
+-                assert(screen.open_app("PPSA99405"));
++                assert(screen.open_app("PPSA99604"));
+                 settle(90);
+                 if (mode == "mw-ask")
+                 {
+@@ -568,19 +568,19 @@
+                     }
+                     screen.update(right, 1.0f / 60.0f, feedback);
+                     settle(30);
+-                    const auto kept = screen.settings().resolutions.find("PPSA99405");
++                    const auto kept = screen.settings().resolutions.find("PPSA99604");
+                     assert(kept != screen.settings().resolutions.end() && kept->second.width == 2560 &&
+                            screen.settings_changed &&
+                            screen.pending_order.kind == store::Order::Kind::game_settings &&
+                            screen.pending_order.resolution.height == 1440);
+                     assert(store::parse_settings(store::format_settings(screen.settings()))
+-                               .resolutions.at("PPSA99405")
++                               .resolutions.at("PPSA99604")
+                                .width == 2560);
+                 }
+                 else if (mode == "mw-installing" || mode == "mw-solo-installing")
+                 {
+                     // Downloading, the first stage, the box grown.
+-                    screen.set_activity({"PPSA99405", 1, 640u << 20, 1495u << 20, {}, 1,
++                    screen.set_activity({"PPSA99604", 1, 640u << 20, 1495u << 20, {}, 1,
+                                          {"Copied to the console; the USB drive can go",
+                                           "Getting Amax client 0.0.0.7 (2 of 3)"}, 0.31f});
+                     settle(60);
+@@ -588,7 +588,7 @@
+                 else if (mode == "mw-installing-files")
+                 {
+                     // Further on: the game's files, the stages before it done.
+-                    screen.set_activity({"PPSA99405", 6, 1200u << 20, 3000u << 20, {}, 4,
++                    screen.set_activity({"PPSA99604", 6, 1200u << 20, 3000u << 20, {}, 4,
+                                          {"On the console", "All 17 files ready", "Using the prefix pb-blur",
+                                           "Your copy and the mod files check out",
+                                           "Copying your game into the prefix"}, 0.72f});
+--- a/sahin/launcher/tests/store_early_exit_test.cpp
++++ b/sahin/launcher/tests/store_early_exit_test.cpp
+@@ -48,12 +48,12 @@
+     assert(std::string(store::kEarlyExitHint).find("GTA San Andreas") != std::string::npos);
+ 
+     // The runner's return request: <its library root>/return-<title>, an empty file.
+-    assert(store::return_request_path("/data/prospero-win", "PPSA99405") ==
+-           "/data/prospero-win/return-PPSA99405");
+-    const std::string request = store::return_request_path(dir.string(), "PPSA99405");
++    assert(store::return_request_path("/data/prospero-win", "PPSA99604") ==
++           "/data/prospero-win/return-PPSA99604");
++    const std::string request = store::return_request_path(dir.string(), "PPSA99604");
+     assert(store::request_return(request));
+     assert(fs::exists(request) && fs::file_size(request) == 0);
+-    assert(!store::request_return((dir / "nowhere" / "return-PPSA99405").string()));
++    assert(!store::request_return((dir / "nowhere" / "return-PPSA99604").string()));
+ 
+     // prepare_launch: record then request, both there on success.
+     {

@@ -1,0 +1,17 @@
+{
+  "i386-windows/dinput8.dll": [
+    "build/gta-sa-ps2-controls-r4/wine-build/dlls/dinput8/i386-windows/dinput8.dll"
+  ],
+  "i386-windows/xinput1_3.dll": [
+    "build/gta-sa-ps2-controls-r4/wine-build/dlls/xinput1_3/i386-windows/xinput1_3.dll",
+    "build/v0.2.0/.deps/wine-ps5/pe/i386-windows/xinput1_3.dll",
+    "build/v0.2.0/.deps/wine-ps5/build/dlls/xinput1_3/i386-windows/xinput1_3.dll"
+  ],
+  "x86_64-windows/dinput8.dll": [
+    "build/v0.2.0/.deps/wine-host/install/usr/lib/wine/x86_64-windows/dinput8.dll"
+  ],
+  "x86_64-windows/xinput1_3.dll": [
+    "build/v0.2.0/.deps/wine-ps5/pe/x86_64-windows/xinput1_3.dll",
+    "build/v0.2.0/.deps/wine-ps5/build/dlls/xinput1_3/x86_64-windows/xinput1_3.dll"
+  ]
+}

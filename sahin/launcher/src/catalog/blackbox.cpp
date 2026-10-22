@@ -7,7 +7,7 @@ namespace store::catalog
 namespace
 {
 constexpr Game kGames[] = {
-    {"PPSA99405", "GTASA", "GTA San Andreas", "2005-06-07", "gtasa",
+    {"PPSA99604", "GTASA", "GTA San Andreas", "2005-06-07", "gtasa",
      "Votre copie PC de GTA San Andreas sur PS5. Commandes PS2, pause Options et activation automatique R4.",
      true, {0x14251b, 0x356d46, 0xb8e083, 0x0c140f}},
 };

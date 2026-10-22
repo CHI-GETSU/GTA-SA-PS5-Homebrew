@@ -2608,7 +2608,7 @@ Screen::Offer Screen::offer(const App &app) const
         // console first (base-games, kept for repairs).
         if (usable)
         {
-            // The games' own Home apps (PPSA99405, ours) share the prefix: a game writes
+            // The games' own Home apps (PPSA99604, ours) share the prefix: a game writes
             // its registry back when it exits, so nothing changes while one runs. Apps this
             // manager didn't install are none of its business.
             const auto blocking =

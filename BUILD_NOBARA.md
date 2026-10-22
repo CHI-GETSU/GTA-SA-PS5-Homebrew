@@ -33,13 +33,13 @@ Les médias GTA sont dessinés par `make_art.py`. Les médias d’exemples OpenG
 
 ## Moteur
 
-Après compilation du lanceur et de son Lapy pour PPSA99405 :
+Après compilation du lanceur et de son Lapy pour PPSA99604 :
 
 ```bash
 python3 build_runner.py
 ```
 
-Le script crée `build/runner-stage` et y superpose les sources natives GTA sur la base Prospero Win. Il exige un répertoire neuf, compile tous les objets et réutilise le **helper compilé pour notre identité**, pas le helper générique d’un autre titre. Le moteur construit se trouve sous `build/runner-stage/dist/PPSA99405/eboot.bin` ; il doit devenir `game.bin` d’un candidat.
+Le script crée `build/runner-stage` et y superpose les sources natives GTA sur la base Prospero Win. Il exige un répertoire neuf, compile tous les objets et réutilise le **helper compilé pour notre identité**, pas le helper générique d’un autre titre. Le moteur construit se trouve sous `build/runner-stage/dist/PPSA99604/eboot.bin` ; il doit devenir `game.bin` d’un candidat.
 
 Le runtime Wine/DXVK/Mesa/TLS se reconstruit séparément avec les recettes de `prospero-win/tools/` et les pins de `DEPENDENCIES.md`. Le module manette exige `r4-dinput-sources/patches/joystick_xinput.c` et les sources `r4-wine/dlls/`. Les scripts R4 historiques attendent encore un Wine configuré et un préfixe synthétique : ces prérequis ne sont pas inclus sous forme de builds. La recette de reconstruction complète reste un point ouvert de l’audit.
 

@@ -1,3 +1,5 @@
+> Current PPSA99604 status: the owner reports successful PS5 testing. See [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md) and docs/VALIDATED_PPSA99604.json for the latest source/redistribution decision. The record below is historical where it describes an earlier build or review state.
+
 > Update: a subsequent user test on a fully cleaned PS5 confirmed launch and AUTO2 activation in about three seconds. First-launch Joypad selection is required for the right-stick camera. No new compiled binary was produced for that test. Earlier statements below describe their original test scope.
 
 # Validation de cette préparation

@@ -1,3 +1,9 @@
+> Current source publication audit: PPSA99604 source migration, English README/credits and corresponding-source evidence were scanned recursively before publication. No critical secret signatures, prohibited GTA/save filenames, known commercial-data hash matches or archive errors were found. Added evidence uses generic/relative paths; upstream public copyright notices remain. The frozen binaries and ZIP are unchanged, and their hashes were rechecked. See publication/final-review/SOURCE_AUDIT_SUMMARY.json and LICENSE_CLOSURE.md. The older report below is retained as historical evidence, not a claim that the owner-tested PPSA99604 build remains unvalidated.
+
+> Current PPSA99604 status: the owner reports successful PS5 testing. See [LICENSE_CLOSURE.md](LICENSE_CLOSURE.md) and docs/VALIDATED_PPSA99604.json for the latest source/redistribution decision. The record below is historical where it describes an earlier build or review state.
+
+> Release follow-up: see [RELEASE_PREPARATION.md](RELEASE_PREPARATION.md). The original source snapshot is public; binary distribution remains blocked. The historical report below is preserved.
+
 > Historical preparation report. For the current v0.1.0-beta publication decision, see [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md). Original findings are retained for traceability.
 
 # Audit de publication — GTA San Andreas Homebrew PS5

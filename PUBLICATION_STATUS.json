@@ -1,10 +1,19 @@
 {
   "version": "v0.1.0-beta",
-  "source_ready_for_owner_review": true,
-  "push_authorized": false,
+  "title_id": "PPSA99604",
+  "ps5_validated_by_owner": true,
+  "console_hashes_measured": false,
+  "validated_features": [
+    "direct launch",
+    "DualSense",
+    "AUTO2",
+    "right-stick camera with GTA Joypad mode"
+  ],
+  "source_push_authorized": true,
+  "source_scope": "Migration and audited source/documentation only, main branch",
+  "binary_release_authorization": "Conditional: only exact frozen ZIP and only when redistribution obligations are satisfied",
   "binary_publication_allowed": false,
-  "license_gate": "open: exact corresponding-source/relink closure not yet established for the compiled dependency graph",
-  "binary_metadata": "Retained, disclosed, non-secret; owner decision required before binary distribution",
-  "ps5_binaries_modified": false,
-  "report": "PUBLICATION_REVIEW.md"
+  "remaining_review": "LICENSE_CLOSURE.md",
+  "validated_artifact": "docs/VALIDATED_PPSA99604.json",
+  "binaries_rebuilt_this_publication_update": false
 }

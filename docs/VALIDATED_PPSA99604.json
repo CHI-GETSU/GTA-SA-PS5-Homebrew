@@ -1,0 +1,21 @@
+{
+  "title_id": "PPSA99604",
+  "status": "PS5 operation validated by user report; local reference frozen",
+  "validation": [
+    "launch",
+    "DualSense",
+    "AUTO2",
+    "right-stick camera after selecting Joypad in GTA"
+  ],
+  "validation_evidence": "Explicit user report in conversation; no hashes read from console; local artifact is the unchanged test ZIP supplied to the user",
+  "frozen_at_utc": "2026-10-22T02:33:54.690435+00:00",
+  "zip": "GTA-SA-PS5-PPSA99604-TEST.zip",
+  "zip_sha256": "4aa16e1a012d07a92f29d4607e6d13d5a440b40fba4193b8afc9bfc6575206ee",
+  "binaries": {
+    "eboot.bin": "94e3ccad4b995d31e9f0a7ead99e9c52469357631ead2485b0c3ddc71e9dc4f0",
+    "game.bin": "1dc85d9e140f4c50cc53c6a54fb4e168eb514b63817b09ea9ccd3865bb525e5d",
+    "lapy.elf": "c1e6e6100683aba8467fb65e3381501f139c67956bc6916cc95908818fed2376"
+  },
+  "publication_allowed": false,
+  "reason": "User authorized source publication on main; binary release conditional on completed redistribution review."
+}

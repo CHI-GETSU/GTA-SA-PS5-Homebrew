@@ -509,20 +509,20 @@ int main(int argc, char **argv)
                 base.detail = mode == "mw-old" ? "Version 1.2: upgraded to 1.3 as it installs."
                                                : "Version " + base.version + ".";
                 screen.set_installer(true, true, "", "/data/homebrew");
-                screen.set_running(mode == "mw-busy" ? std::vector<std::string>{"PPSA99405"}
+                screen.set_running(mode == "mw-busy" ? std::vector<std::string>{"PPSA99604"}
                                                      : std::vector<std::string>{},
                                    true);
                 // The plan's options, as the Service publishes them.
-                screen.set_base("PPSA99405", base,
+                screen.set_base("PPSA99604", base,
                                 mode == "mw-installed" || mode.starts_with("mw-solo-installed"), {}, {1920,1080});
                 if (mode.starts_with("mw-solo"))
                 {
                     // The game's own app: its page only (installed, the player quit to it).
-                    screen.set_single_game("PPSA99405");
+                    screen.set_single_game("PPSA99604");
                     if (mode == "mw-solo-installed-closed") // GTA San Andreas closed at once last time
                         screen.set_single_notice(store::i18n::trs(store::kEarlyExitHint));
                 }
-                assert(screen.open_app("PPSA99405"));
+                assert(screen.open_app("PPSA99604"));
                 settle(90);
                 if (mode == "mw-ask")
                 {
@@ -568,19 +568,19 @@ int main(int argc, char **argv)
                     }
                     screen.update(right, 1.0f / 60.0f, feedback);
                     settle(30);
-                    const auto kept = screen.settings().resolutions.find("PPSA99405");
+                    const auto kept = screen.settings().resolutions.find("PPSA99604");
                     assert(kept != screen.settings().resolutions.end() && kept->second.width == 2560 &&
                            screen.settings_changed &&
                            screen.pending_order.kind == store::Order::Kind::game_settings &&
                            screen.pending_order.resolution.height == 1440);
                     assert(store::parse_settings(store::format_settings(screen.settings()))
-                               .resolutions.at("PPSA99405")
+                               .resolutions.at("PPSA99604")
                                .width == 2560);
                 }
                 else if (mode == "mw-installing" || mode == "mw-solo-installing")
                 {
                     // Downloading, the first stage, the box grown.
-                    screen.set_activity({"PPSA99405", 1, 640u << 20, 1495u << 20, {}, 1,
+                    screen.set_activity({"PPSA99604", 1, 640u << 20, 1495u << 20, {}, 1,
                                          {"Copied to the console; the USB drive can go",
                                           "Getting Amax client 0.0.0.7 (2 of 3)"}, 0.31f});
                     settle(60);
@@ -588,7 +588,7 @@ int main(int argc, char **argv)
                 else if (mode == "mw-installing-files")
                 {
                     // Further on: the game's files, the stages before it done.
-                    screen.set_activity({"PPSA99405", 6, 1200u << 20, 3000u << 20, {}, 4,
+                    screen.set_activity({"PPSA99604", 6, 1200u << 20, 3000u << 20, {}, 4,
                                          {"On the console", "All 17 files ready", "Using the prefix pb-blur",
                                           "Your copy and the mod files check out",
                                           "Copying your game into the prefix"}, 0.72f});

@@ -1,0 +1,1199 @@
+{
+  "wine_prx": {
+    "matched": [
+      {
+        "component": "ntdll",
+        "sha256": "f069eeb099b5ffccd0b7e529ce5a9486f0c8623dd6e6b52d9ebf0a7bb0723933",
+        "build_report_sha256": "f069eeb099b5ffccd0b7e529ce5a9486f0c8623dd6e6b52d9ebf0a7bb0723933"
+      },
+      {
+        "component": "win32u",
+        "sha256": "ce5b336e61c5c6c09cf91757db2defa3802163a0ac2fdab62f7608e99f04d160",
+        "build_report_sha256": "ce5b336e61c5c6c09cf91757db2defa3802163a0ac2fdab62f7608e99f04d160"
+      },
+      {
+        "component": "wineserver",
+        "sha256": "18096fb41bdf5746d0ae1c71ddb1b589a552068346ef56a2b2347fdf9edf8e39",
+        "build_report_sha256": "18096fb41bdf5746d0ae1c71ddb1b589a552068346ef56a2b2347fdf9edf8e39"
+      },
+      {
+        "component": "wowprospero",
+        "sha256": "53d81f75388095a4146abafddc88b90a9fe7f100fa7ec2c16d8a9c9e97c4f830",
+        "build_report_sha256": "53d81f75388095a4146abafddc88b90a9fe7f100fa7ec2c16d8a9c9e97c4f830"
+      },
+      {
+        "component": "wineps5",
+        "sha256": "79c0590de3694196eb3437a6293158ed315f079114e1077cbd89d46e90728697",
+        "build_report_sha256": "79c0590de3694196eb3437a6293158ed315f079114e1077cbd89d46e90728697"
+      },
+      {
+        "component": "libfreetype",
+        "sha256": "941cd046d6142ce44ca413d9bf579162f6487ed7e666a246b1da698bc9981457",
+        "build_report_sha256": "941cd046d6142ce44ca413d9bf579162f6487ed7e666a246b1da698bc9981457"
+      },
+      {
+        "component": "xinput1_3",
+        "sha256": "8d6b86c371b6b25d964ba6d3d8d4d2ca13ebd9044a31427a9c7ecc30b5384154",
+        "build_report_sha256": "8d6b86c371b6b25d964ba6d3d8d4d2ca13ebd9044a31427a9c7ecc30b5384154"
+      },
+      {
+        "component": "winevulkan",
+        "sha256": "6a68c40cb1833d5d65ffc9da896c04fba35eb5b6322696a1410aca55736b6a1d",
+        "build_report_sha256": "6a68c40cb1833d5d65ffc9da896c04fba35eb5b6322696a1410aca55736b6a1d"
+      },
+      {
+        "component": "opengl32",
+        "sha256": "3df87060964e4737384e7f5f344d40c2cab881c9131fc7c05635ca9c02df72f2",
+        "build_report_sha256": "3df87060964e4737384e7f5f344d40c2cab881c9131fc7c05635ca9c02df72f2"
+      },
+      {
+        "component": "ws2_32",
+        "sha256": "442988ac9224b0e30b44e3d49dd937a269094372349cb6775a905d2f2df54907",
+        "build_report_sha256": "442988ac9224b0e30b44e3d49dd937a269094372349cb6775a905d2f2df54907"
+      },
+      {
+        "component": "crypt32",
+        "sha256": "6d3a8b5221ef08532d061b5733824c64c54826898bfaaed4a6ee859d654c5232",
+        "build_report_sha256": "6d3a8b5221ef08532d061b5733824c64c54826898bfaaed4a6ee859d654c5232"
+      },
+      {
+        "component": "dwrite",
+        "sha256": "18738d07dd95ccc07c1a77ca140a2db8a0213d27b777975d3aa4c0dd216fc55a",
+        "build_report_sha256": "18738d07dd95ccc07c1a77ca140a2db8a0213d27b777975d3aa4c0dd216fc55a"
+      },
+      {
+        "component": "secur32",
+        "sha256": "6464de2fe37f41c5768db265405f96dff8f067f081a7e5570db1c4ecda5b2f06",
+        "build_report_sha256": "6464de2fe37f41c5768db265405f96dff8f067f081a7e5570db1c4ecda5b2f06"
+      },
+      {
+        "component": "libgnutls",
+        "sha256": "0aa7bb590bd639678f9f42b1ab4a233ebf0ba9d60123ac378428955130c1b72b",
+        "build_report_sha256": "0aa7bb590bd639678f9f42b1ab4a233ebf0ba9d60123ac378428955130c1b72b"
+      }
+    ],
+    "different": [
+      {
+        "component": "libvulkan",
+        "sha256": "3ef3f43c98459763a04f17be403ee91aa742eb09e0f92022ccd8a0981850c00c",
+        "build_report_sha256": "a3505b1459788f35efa76be60dde3fed5fcefba6b81594d1ef83e4ab05f816b9"
+      }
+    ],
+    "base_wine_commit": "490f6d5dcbb2a5047345b8af88d114bbcaad69a8"
+  },
+  "tls_sources": [
+    {
+      "archive": "gnutls-3.8.13.tar.xz",
+      "sha256": "ffed8ec1bf09c2426d4f14aae377de4753b53e537d685e604e99a8b16ca9c97e",
+      "preferred_source_files_compared": 2994,
+      "modified_archive_source_files": []
+    },
+    {
+      "archive": "nettle-3.10.2.tar.gz",
+      "sha256": "fe9ff51cb1f2abb5e65a6b8c10a92da0ab5ab6eaf26e7fc2b675c45f1fb519b5",
+      "preferred_source_files_compared": 893,
+      "modified_archive_source_files": []
+    }
+  ],
+  "lapy": {
+    "elf_sha256": "c1e6e6100683aba8467fb65e3381501f139c67956bc6916cc95908818fed2376",
+    "build_manifest_elf_sha256": "c1e6e6100683aba8467fb65e3381501f139c67956bc6916cc95908818fed2376",
+    "target_title": "PPSA99604",
+    "protocol_sha256": "bb02c4aa814eaba7a7a423a31b29ff41f786212c2953678cf29434e85fa0f869",
+    "matched_preferred_sources": [
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/donor_transaction.c",
+        "sha256": "6844275eca240aab25d5d61ae030f94b50b9538116452ccb6078f6518ba876d9"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/donor_transaction.h",
+        "sha256": "c976e43a298a3621b2ff0f83f92f1304dc5c177a00d5af14c5a78a9620d2ce5b"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/lapy_elevation_protocol.h",
+        "sha256": "bb02c4aa814eaba7a7a423a31b29ff41f786212c2953678cf29434e85fa0f869"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/owned_root_daemon.c",
+        "sha256": "61b82d6845f756387f606e7571ddbbf4ab8b95eccfb8e86013ba27a835c4d3e3"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/vnode_ref_probe.c",
+        "sha256": "ef49b83a80cdc980ea6b5cdb0477110b08b10feba7e7229cbb0c7db1bf0a87f0"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/source/vnode_ref_probe.h",
+        "sha256": "13e7f3b9ba77c696209f647e5a0fb60f50a6e8112991bb4bfc63da632a6a0153"
+      },
+      {
+        "source": "third-party/lapy/PS5-Lapy-JB-Daemon-57fcc19/tools/build_owned_daemon.py",
+        "sha256": "e435ad2b102f642c63c0d18900a672a77267993dd75a27deaa94327aa3fdf07f"
+      },
+      {
+        "source": "third-party/lapy/ps5log-1ae1f918/ps5log.h",
+        "sha256": "394af67d0f8b60b3335deb53396e52855ea2daa50ca914a456ea7663f48900c6"
+      }
+    ],
+    "sdk_pin": "v0.42",
+    "remaining": "Public SDK static/input correspondence and dependency license/source access arrangement require completion; full SDK input manifest retained locally."
+  },
+  "radv": {
+    "prx_sha256": "3ef3f43c98459763a04f17be403ee91aa742eb09e0f92022ccd8a0981850c00c",
+    "prx_bytes": 24756158,
+    "mkstemp_local": true,
+    "dynamic_mkstemp_relocation": false,
+    "exports_unchanged": true,
+    "new_external_imports": [],
+    "removed_external_imports": [
+      "mkstemp"
+    ],
+    "integrity_valid": true,
+    "console_validation": "Complete PPSA99604 package validated by user; not an independent per-library test."
+  },
+  "controller_dlls": [
+    {
+      "file": "win/wine/lib/wine/i386-windows/dinput8.dll",
+      "sha256": "71cddcbf57913c3205a27ded31ae824f867fa536578b9a16f542ac0c5a52a0bb",
+      "local_controller_build_sha256": "71cddcbf57913c3205a27ded31ae824f867fa536578b9a16f542ac0c5a52a0bb",
+      "identical": true
+    },
+    {
+      "file": "win/wine/lib/wine/i386-windows/xinput1_3.dll",
+      "sha256": "e98f249f87c894f892579407d6c74826d5dde6a780fac1e1ddd52a6075cb13e5",
+      "local_controller_build_sha256": "e98f249f87c894f892579407d6c74826d5dde6a780fac1e1ddd52a6075cb13e5",
+      "identical": true
+    },
+    {
+      "file": "win/wine/lib/wine/x86_64-windows/dinput8.dll",
+      "sha256": "f2addfedde3de75d3a84a4da6c8f1250a27a166838eebfc38f0c3959577a46c2",
+      "local_controller_build_sha256": "a24ccf6cab2a17139783c0eef422cfcc20603bf963b839e1ed35b059983557d8",
+      "identical": false
+    },
+    {
+      "file": "win/wine/lib/wine/x86_64-windows/xinput1_3.dll",
+      "sha256": "3e525fcec7f3c69af409aeb0bb00b4eb21b6e1d3f3aaa4b15f386ce0bd5b895e",
+      "local_controller_build_sha256": "c5b651393664a9a22d1d4678c54e94e315df6a21c82d28a21a48af6c4cb1e562",
+      "identical": false
+    }
+  ],
+  "launcher_dependency_graph_archives": [
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libFLAC.a",
+      "sha256": "ad869b25fe9cc9f4f6b4520249129a2a9e8721f66599ab5320ee0aeb5cf678eb",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMAggressiveInstCombine.a",
+      "sha256": "f61a6c78cba169a6678efc4d6aba63dc6c9af700b9621d073ca26a2f91584c03",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMAnalysis.a",
+      "sha256": "eeb5ebf45a635f691e94feec301e17e653fd480ca9efe18423d76e657f679a1d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMAsmParser.a",
+      "sha256": "7d31a34bcc2dcb14d40c282611203d6a6ff5689b213b727791bd9d1af07af1cc",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMAsmPrinter.a",
+      "sha256": "e7dacdc0777cfd1442562ea3d86d08db38ad217299ed7b9669beed0477944873",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMBinaryFormat.a",
+      "sha256": "c54896bb7561e83cfbd1d7a3e43d8e2cb86267c3b10a2924411c96c0e3dfe3ce",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMBitReader.a",
+      "sha256": "5230ebce2f57181083322fc1f0e067d36aff8f6164ce3f2c33975360b4d3762c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMBitWriter.a",
+      "sha256": "35a3ca2417cea44f6f9af4e061d41621893580de251e103b7a0e3a009e65282f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMBitstreamReader.a",
+      "sha256": "092acc90867974e3a8b2126077d57979fbd8856338faf425f6a2a9743cdac74f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMCFGuard.a",
+      "sha256": "eb531e718c47828cae09f532950cf9da03461ab9c99c297a7a46e5ec27866dfc",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMCodeGen.a",
+      "sha256": "a93d6b8a7bdf3f84d20e4295f63ff7dd2a7d1789489e30f93fb90872fe8cb4ab",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMCore.a",
+      "sha256": "1f46a6caede95ff8ecfc768036d91a050cbd2a260655d2ca8ce91cb5d77b59ae",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMCoroutines.a",
+      "sha256": "a514933fdbea4650490931f51593c556f9aa47290bec1f8648b5e558b3fa2fa4",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMCoverage.a",
+      "sha256": "bcdf590819d760af9ee478236243d47528169bad946aed72ab423aa7418f354c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDWARFLinker.a",
+      "sha256": "8557f62a2cf3e6a15adc3bd6ea91103ad2473c07c35c2bdd74b185be8988913a",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDWP.a",
+      "sha256": "7d2020933143937758a17f50920ee4aceb89926b7969d32af651889f07522a76",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebugInfoCodeView.a",
+      "sha256": "e13d23a545dae2f24442a881cafa6e05b575b2d7d10778f5949f50eef86a2707",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebugInfoDWARF.a",
+      "sha256": "6c89dcef2172bc252b770db66f6f13316ce3270751eadb23a31eb5e8aa876867",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebugInfoGSYM.a",
+      "sha256": "2532931119a3e681dd12e05632a3fe0a97985b3031b3eb29363cba043d40f7c8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebugInfoMSF.a",
+      "sha256": "2859f9204896fb60a950522348872df074debc633e5a5a91bbce5f2315f65161",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebugInfoPDB.a",
+      "sha256": "7ee4e15019629683bf99f0d00244432f5d43cec9368669b61fde95df8abf2389",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDebuginfod.a",
+      "sha256": "07ae0c6659d68aeb988fe2cffb3e29d477949f4c61391bad5013c07eea462d87",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDemangle.a",
+      "sha256": "974d7fd27e40535f82e076ac7f2fdef98b07450e3bb2ee2c0c874f770a066859",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMDlltoolDriver.a",
+      "sha256": "afcc56363bc867cc8c7eff52251f14f5751374bde5687de5baa48b6b37e5e3ad",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMExecutionEngine.a",
+      "sha256": "e87dd3b3a78dc737b828ef0cab71aa953e1a6728463668bf34a66b2ac68ba4b5",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMExtensions.a",
+      "sha256": "bbe54a6c793730d850cd4279db90d745f2e8135301f83f395909772654e9e55b",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMFileCheck.a",
+      "sha256": "d2eddf4ff2cba4dcc1d470765b9efcdc7008382ffe730fd5af5bce317ac6b416",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMFrontendOpenACC.a",
+      "sha256": "a2a147897754d95ecc51a2a78732e438d9e7bf4185a9385b63bb3a859b4c3936",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMFrontendOpenMP.a",
+      "sha256": "4878a7370fac5976f4fe2127a53dc4700dfc13ff1f9a58df3df56c35376d4fb6",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMFuzzMutate.a",
+      "sha256": "5e448557c994efe1eb6aa6d43672673e76db050f40fb46de16257203c2c7e55c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMGlobalISel.a",
+      "sha256": "e639a9358a020e22f24a656ad02aed019134b67ece2ac7a8a3842ccdbd32160d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMIRReader.a",
+      "sha256": "906d51f3b1a9d531188283cb31dc4602b97c65640b83cc2e59942a795670dbfb",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMInstCombine.a",
+      "sha256": "0d9b88c65c240969388dcd386a12e2ca299a2ecf360d803bee6208fe8e06d065",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMInstrumentation.a",
+      "sha256": "5fdb8c8810edb528814465ccb2df33181aeb3c1dd00492f5cb0878631239d215",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMInterfaceStub.a",
+      "sha256": "c89e038c5293d7ddd264ecb674eec08ddced3cc9f00a4a91ae2803e50e818558",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMInterpreter.a",
+      "sha256": "bf3f435ca1c560f1b2c398f369bd4117582537078e2f3e507ee6708a53e0b218",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMJITLink.a",
+      "sha256": "a192b61f54119a7449fa019392ea17b8e91253019e3b1b9d32a3c42b840b47b5",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMLTO.a",
+      "sha256": "635b5d7d76fbb67a5bb3dc652e4958c70a06092e04e8a13b35cdf3c2f8daa20c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMLibDriver.a",
+      "sha256": "22c99d3bf781ba9d6b3e2852427b34d7ff9eee879666e2a138a65751cc62da09",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMLineEditor.a",
+      "sha256": "c411f85d455bce58dd87d746e7825fc3e7db2c7d7625e637a6cdb388b6d50ec7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMLinker.a",
+      "sha256": "369fad44dbc776cf9f1f5b11c91909fb99a3b149e4f1e5626782c76c234fabff",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMC.a",
+      "sha256": "5bff87f7080b4064b615dbff9dddc4d9dcfbf19eead5da60742dde74e0b411d0",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMCA.a",
+      "sha256": "8642e87171d96a21adcc6b72f2cb77839d0952f0c6ce8f46f0c31f407b828ce2",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMCDisassembler.a",
+      "sha256": "93c8696948083b437eb5877de6b7322f5a76acfaf9a32bd72fcda98471082962",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMCJIT.a",
+      "sha256": "393021af748a68c9790c62d94a7633659cf6ef63ff75eb236b94e11fa8391f88",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMCParser.a",
+      "sha256": "0b0437e94a2c70bd0f4981b02a67dbaa0c619a343fbf2feb2ab678d210dbdfc1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMMIRParser.a",
+      "sha256": "3c08785a828674ce82a3aaf649449f8a97d48bc0233afed695a933cf65e0aa2f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMObjCARCOpts.a",
+      "sha256": "4877061cec65f32ba962d4daf35fda984729bea994206f9527ef6d233a56485a",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMObject.a",
+      "sha256": "82deba70044783395e8999ae92c7254dd2bdeab0a403cc77c7060a413c8c53e6",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMObjectYAML.a",
+      "sha256": "516e6d416fdfd9baefb63c5255c59c212b1d015683cf737faa0a7d17b99ff1da",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMOption.a",
+      "sha256": "2644cbe509ddbc9ec5df26f5e69e4ec50434ac8fd8ef87de5db93dfadc9128bf",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMOrcJIT.a",
+      "sha256": "ed717a80e1d770490d4a09d7c0672698e70f7b6f246a6a23fb1a75505ee4cbaa",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMOrcShared.a",
+      "sha256": "bd13bd02c89ad044e1596f253c380a0f21eefb6ec67678505297abec493fecc3",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMOrcTargetProcess.a",
+      "sha256": "2474c0c1be371a6dd768cb65a3b8886b1f3157fc62c5e11d32efc2f9a5b84873",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMPasses.a",
+      "sha256": "05a0a88437e9074aa102031e636f420920c2b7459ca18256f8046b04b5fabfc2",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMProfileData.a",
+      "sha256": "95b2693caecb68426ba785717677c89810f35d21fb3077fceb40a43f7770f798",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMRemarks.a",
+      "sha256": "71c6e9f73c48221ced7c3ec7b91a76ea424e2773f47bec0e0d4ee154449608f3",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMRuntimeDyld.a",
+      "sha256": "91dca73fcbbd49abd8fe02e94e1dabdb7c18bb94f8d8632abfb283e8c57da1b3",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMScalarOpts.a",
+      "sha256": "a59e63cfa99b439d172832a6fed1f090a520920770dd92cdccb68cd919031601",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMSelectionDAG.a",
+      "sha256": "eb4f56f956348150b9b59b2eab1dc518b284bec648d81ecd922a19b3712c7bf9",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMSupport.a",
+      "sha256": "44223d113adbdd21d021a66a763062960309b4af879ef51d892c5cfe22346034",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMSymbolize.a",
+      "sha256": "54ff9081a2608626a3b1e0fc82aaba2f187c2e9af558ab0de801ca552cac6f33",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMTableGen.a",
+      "sha256": "ee844e042ad3ca5089a2088662b5dc25a037df95dfaf83608da5c56ff0a6c8a8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMTableGenGlobalISel.a",
+      "sha256": "1cbe3d4508edc12dfb66171428796ef2db057b50b19af65056bc8dfb554318a6",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMTarget.a",
+      "sha256": "205bf92f83d741fd31077d339071d43ebb545d415883335acf4bc784a0f0af84",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMTextAPI.a",
+      "sha256": "8abbf978443d942c1dbd33cf2eddbff9c18d780d47b4db0b0ea2f5d70374485c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMTransformUtils.a",
+      "sha256": "b4a13c36b55655be8a656e523ec31cb745aa9bac88471cf1ce4f93946160f969",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMVectorize.a",
+      "sha256": "147dbda9f5746c2cafbc2914c4d92601746f6abc98922b0b170f37eb837b8762",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMWindowsManifest.a",
+      "sha256": "6157e31037b5268b00a79df03b39e6d12bc979bcca29a1695dc5e3cd6974b546",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86AsmParser.a",
+      "sha256": "70c29c710ab0968c0c7764fc02821f4f7a2379b0ef471ebdf4e73a5388132e6f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86CodeGen.a",
+      "sha256": "1ecfd185bbf9307b2c8117f44b44544cc79dd373fb4eb923bed24d9e0a0e68e7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86Desc.a",
+      "sha256": "9c26324598fb42d88fc82212173bc90aed099644a62888aeefa3272cd6ed8a65",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86Disassembler.a",
+      "sha256": "61832e2ead77d8d30826a7bef96f64fad5826fddc851fc13ba27b03ec0dcc972",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86Info.a",
+      "sha256": "782ea92275a1b32420cb8697941009738b331ce7596ea9d3ae9b952bf83a5f2f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMX86TargetMCA.a",
+      "sha256": "59a29adbca7906b9923866e33871ab7c971b50c1dd8f7e9e16ad428308e4a588",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMXRay.a",
+      "sha256": "85e84dd5dcf089e95ff55b0a709a2cb5bdb0e1337d5741b2a5ce29df031c5d69",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libLLVMipo.a",
+      "sha256": "81f7c3b8445bd7387d4f6ff80ce919c358ee57d7d32d67a0afa85b622655469e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2.a",
+      "sha256": "c9d6cf9c5888155511d7e0b143a23e678988c209ce3aa7223093bddba997c6fb",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_gfx.a",
+      "sha256": "cb4f95f09a2d310979868cc9924288efc55ba4e5dd05e9bbbf901177d637742e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_image.a",
+      "sha256": "652b7f67667b4660111cccb31b8b15699399acf1e5102963f2d7142a7e348eea",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_mixer.a",
+      "sha256": "4f3d526f53895d1f48269b852916b5fe0596b70245adb86b46e7a2967aa92b8a",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_net.a",
+      "sha256": "d9b4a503b511071acffff31dcaf24075d118778667bfd005ffa1e141213d4b59",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_test.a",
+      "sha256": "5b6aa28aac362d897bde8c2f57415e0a2f2048fb903315899de3f86cbd97056c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2_ttf.a",
+      "sha256": "66e7f71d075c46bbe441c9adad0672496b6978ef804194f69ef030af75c98d68",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL2main.a",
+      "sha256": "9f6968760691228e89b4ccd9b6aacb5dd144d81d69e4b49f1f2d5fccdc8234db",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libSDL_kitchensink_static.a",
+      "sha256": "c9bd865f66a0c6f83f85c44503891761139e36b30e6d13e4a0562a46b2738cc1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libarchive.a",
+      "sha256": "df7da55575456bd4a9fb3f960d7a524e69f0eec78a333dacc1248a54debf2741",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libass.a",
+      "sha256": "7b95b53d738ad0381ccf19ab3d5d4cdbd9307e92e5f75646be9d890b8b331437",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libavcodec.a",
+      "sha256": "04e6f5e4496c981bdd2aaee38980b4767cae35f6d6b008b9193d204218d9e88c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libavdevice.a",
+      "sha256": "13d55b417b0dee9be3c43452f707f3ab4c56355e51e07d595ca4f06503987510",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libavfilter.a",
+      "sha256": "854e1c0172ef45bdcc545d53c9b1ccee55bd3622c44ed9d715f3f2713c30be68",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libavformat.a",
+      "sha256": "f3cb50aedf912a5393329e30c38e4d2083a58ccd16e530388ae6e1af0a27e47e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libavutil.a",
+      "sha256": "b2261bc228a824ed6ed7d902d4bdc478c55955eaf7c753dc91bb307b9326b370",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libb64.a",
+      "sha256": "9452bb8ef183156f8b47a3ee1f3d86552150559edaca71f48e4dc0afe9d9f353",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libbz2.a",
+      "sha256": "f4565fea22b334b64332b5b506feb68e929d80d40e911fa0df2b8b30e3f89e04",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libcharset.a",
+      "sha256": "40d3f499c3c89e5c5e4e06f61cf1c39dd7c8e0a73b4fa8f34d2b0501f592c46c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libconfig++.a",
+      "sha256": "3694f770fd1b67abedfdab20bc039da8ec215f9b2c841ab6164eb535dbd53f71",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libconfig.a",
+      "sha256": "751c8c3d9d37b3b75debf71ce30dbf2dc5b4a80b17c2589bda8078ef6593d6f5",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libcrypto.a",
+      "sha256": "e8fe42a8159e30d4c8a2ab1be74ee10b119c3f547265e3cc872bdaecda620944",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libcurl.a",
+      "sha256": "c29815b2e111e12c68975626b7d53418533d0718b18ee229943081068c11527d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libdeflate.a",
+      "sha256": "15133b799eb34e858572b22d75cfef040eb93ce4fd4843547b18a9a1e7a93432",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libdht.a",
+      "sha256": "c1aeb29ed309f133414a143c188744f6dd59867e9d7bb5db93a9679748b9816f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libenet.a",
+      "sha256": "988408e5def0ab0affe857ce7d813dba0e4b543e089fc2c1a883d9ad4bacf6c0",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libevent.a",
+      "sha256": "746f4c686c9d64591b1aa8c467d94175b0e16ef2aa75bf07b7e26c5dc6b8ec99",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libevent_core.a",
+      "sha256": "9bc767c6d0a091a64488d7adae704afe44d9657862ff1a8547e6a9dbaa23c8f7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libevent_extra.a",
+      "sha256": "1a92baaf5fe23a160661867bf54cb8d9557749bcd9e80c0754ac645a84ac7dfa",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libevent_pthreads.a",
+      "sha256": "399eed61b2860b50f248fd21472231d8d52fe50cb0c984a6fbecff4f01dff074",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libexpat.a",
+      "sha256": "2b0a3b7058bd3b0f0807aa51d247a4b412853407c0a1dddb1ee91ecff7f90213",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfaad.a",
+      "sha256": "17e8b83baa1e8ec4070e0f08b131c2c6d0bae06efd6909a1e34c48334f4fb58e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfaad_drm.a",
+      "sha256": "b9690dff0756b99a0caa58b3d98f95434bb97e7f5bdf548401370c1dede2e94f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfmt.a",
+      "sha256": "da7eae8760e1f53a41c0e91f2631f7a099185e6d251492993368b255506b9e7e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfontconfig.a",
+      "sha256": "e4fbfd415687d24321907b8fa9b601f22f2c0691a3f539932b5daf1f3a0c6b8c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfreetype.a",
+      "sha256": "49ce46bbf653c1edab34d7a905ade453b1e7029eb7af01482bfd8a8fe0b03167",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libfribidi.a",
+      "sha256": "140204e608d317991c91a1c966d3d092147f323efc838d6e1b8b02a171349669",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libgif.a",
+      "sha256": "cef8b3a084f29ec172d76142bbb14bb167950d3d51324813dcd71439b6e186d5",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libglm.a",
+      "sha256": "8620358cb49389214221b4c843595c9d9cb1a09e66aac2e7fabb2d0a46f4772f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libharfbuzz-subset.a",
+      "sha256": "fabf255ae7bd4dbee1c04a2a259a6dc55cf5bde3e5409febde747bb8df84e36b",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libharfbuzz.a",
+      "sha256": "75cddfab6b0cd73418be512178435422d4d98f432fd60b8a21a7f5fad55858c1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libiconv.a",
+      "sha256": "4d32ede7bc29e5087b4bd22ee1728f040b5d14e45a220d77ddbdc6f04b8e0f14",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libimgui.a",
+      "sha256": "8aebd4d5436d9a1b32af33e451df39d50fd40f5e71a368d1ded577025122b5f7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libjansson.a",
+      "sha256": "16f6c84bd5e21b7ac6b88bc3d87e16a8d2ed5f70cdeeb62ccd1259d6e9d79a30",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libjpeg.a",
+      "sha256": "2545ca5b378d4b8a5a1c3196de6e995f1b08e15c18021fc8eb65c77ae9130d74",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libjson-c.a",
+      "sha256": "42461ffdf7a034e761cb063be759e68ee43387a036cfdc5e62ee476101886ca1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/liblove.a",
+      "sha256": "2cedde4f9ca6c66594e67d1e546cd39a7045547597ca45b9474231cd7230cb7f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/liblua.a",
+      "sha256": "d56c226386fe52708463a29fbe9204bee01dcdf97faef4ed2811d71084de7f57",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libluajit-5.1.a",
+      "sha256": "70c8d654224b9bda120f082d25c052a3e7d5cbc586fb73ec6f6e8101d193a9b7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/liblzma.a",
+      "sha256": "3e10d6a85032b5374c92211f7025aa1c64e86ab726775321795cb2ace69404a5",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmad.a",
+      "sha256": "9c08b1b7b7ee87ff24bbed10ac51751f9a2228d6923dffd38c26465bd36d08f1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmagic.a",
+      "sha256": "cb44c13efce4a8ab13d0f848717e93302ae39c70423dd08dc29bfab22877318d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmicrodns.a",
+      "sha256": "02dd55303e7bce4a5a20823a856a536d43e5ca4946d6d105bfe24075e1ec5d48",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmicrohttpd.a",
+      "sha256": "c54d4532ab81248379223be6e16785424c81f012454ba7fbc6aabdf8fefab45f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libminiupnpc.a",
+      "sha256": "9528a2b19a45293ab52ff6e008084d710b15f7dd81bd212508f6baa47ca804f7",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libminizip.a",
+      "sha256": "6abead8e69c091a348278f98cfa98eaef51052b53dd3c7a3046394b3c332c624",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmodplug.a",
+      "sha256": "2cb02780f5420c640d5794facf1bc488f05f56c5ef947e68c4b9cc49cf71aede",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmp3lame.a",
+      "sha256": "6f3b303d4ba594750317be41a5414e3f0093c31ba597ddc8de343a7fe2bf4c57",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmpeg2.a",
+      "sha256": "78eee84b661d47218738569e4958457b469270b70d191582b9b0717aad5cab6b",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmpeg2convert.a",
+      "sha256": "ee7c3255ccd81ae5064a2dc42638b73ad7193ba05b484b3248b37e115936b0dc",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libmpg123.a",
+      "sha256": "d9f59df7aeec2b2387e1246b5d4a29477c8ab6aa7f154727013eb590aa8b66c8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libnatpmp.a",
+      "sha256": "eaadae10639fb5d338ca281c7e097f103a29a4db3e110c44646671e3e47798a8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libnfs.a",
+      "sha256": "43b99a3ea5dcf55fea364b1593610a7617c65ab788477a141cfa111f9c10038c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libogg.a",
+      "sha256": "6559a98a37c17b90fafc34b995e1cdfeb894c65cd487a224eab0b20c13b7596d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libopenal.a",
+      "sha256": "4e2bea7f1d582a78b9be7f9b4208b3c905bea4ea34dce7ce8436224180803db1",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libopenlibm.a",
+      "sha256": "5b092d84d59f3fd78787c3eb8cd75411001ab2f93b5207e27741e36741f14457",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libopus.a",
+      "sha256": "4edc5b97a067aa6372dca5ba23bb7ceb5c1fe5315d53b4bc74d5f918b589aa8f",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libpng16.a",
+      "sha256": "394d54a83d5e8c0e0ddd8cf3cb19b3dfb1bd988c6d90fd587642946555f648a3",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libpostproc.a",
+      "sha256": "3888531f96c1023a09c5c72b2cb6bcf9b514dd46f68419621ebd5d075d44e9b9",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libpsl.a",
+      "sha256": "8ae4064de68c29f74095dec10c3db61ee85fd0b33c4d75be197c0adf59ea4220",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/librmlui.a",
+      "sha256": "3fd8e4118a6f2e9bd6518dc1249e6a239f537c2b7dc9d242c54e2076e806d7c8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/librmlui_debugger.a",
+      "sha256": "0d42e1c11ed5c9f9de322d081208501acc76afbe0cf8fb77f5ab8b1a59bff8c6",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/librmlui_lua.a",
+      "sha256": "b8d6d75c108e0680a8b60bee6b025cd475e23cc96787138f995a68af71efc93b",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsamplerate.a",
+      "sha256": "ed3f67db64c1f3fbb35c43b85055a754ad1d4a9b27833f4125afff0f74688e7d",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsharpyuv.a",
+      "sha256": "c6e737cb81eaad50e29e01c5650a9d2e4086e2fbb041afe0897cc3a4b4cfe15a",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsmb2.a",
+      "sha256": "db3ed254ae1c0711c59895d5a656c61128c7d53609edf6a3b98b0f7a0d8a9bd3",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsndfile.a",
+      "sha256": "6b43222bd3aa97e356b3a211146a767bf6d52eedbe6123aa00ebd853469ad5dc",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsodium.a",
+      "sha256": "e00bf11927179959d142507fa3dc738f620c61698c9fa5a0880097981f954380",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libsqlite3.a",
+      "sha256": "38662df0bc8403007bf08f89ef3e5394df3d8c7cdcdcf5d3f0325f25ebb40373",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libssh.a",
+      "sha256": "b08114dd4c74e8605ec9c11f5811422f847a7ffaa1c8d1c159095fc6c2bdfe72",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libssh2.a",
+      "sha256": "4774d5be7f65a7325b01ad1ce1553bc541803bf9007cf2c4b5826ffc89844c56",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libssl.a",
+      "sha256": "db58e5bb95ee7dba9e83d192dbd3258b976956c05bb1876e1f7a0763d512807e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libswresample.a",
+      "sha256": "f77dcceab376ef63160021549146651f4f33e8f0d28f49f3989f7c74e12e18f8",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libswscale.a",
+      "sha256": "5e7fe556445422250c1f287657204470398d5244e6140088480bdb766844e1bc",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libtheora.a",
+      "sha256": "86ef15a66998715d2805ef619c1d0d19cc1c9e0babf81a0e0f8e6c602e50f563",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libtheoradec.a",
+      "sha256": "f86d19cc804c78a7613e72e964e51211ceea4cb3c72da4ad83c5daec0b806086",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libtheoraenc.a",
+      "sha256": "0bcec39bc94690d94583e6d5a634b0411b9f5be5cab0b69c304ec3cbcbbbaee9",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libtinyxml2.a",
+      "sha256": "763a7d05b1d4df9d9a0105272d28f8987017bbdf61608b2ed2942026b6d89eaa",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libturbojpeg.a",
+      "sha256": "db03ecc224b47b432b63230eb0423679bc36af54748a2536275a651a3ccf1232",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libutp.a",
+      "sha256": "69a6eae9173c0e752faef4e0aa0152c3729c25729c1ea779eeb89e5991d98847",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libvorbis.a",
+      "sha256": "0bfab3ef518e2a2a2bbb73d876029a0a49b3490534eca646f2c88b87e311b152",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libvorbisenc.a",
+      "sha256": "29d56751808ca3b14c8c5617a247dfe4c7c32181c9590f2ba2f0f4782cf23b03",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libvorbisfile.a",
+      "sha256": "18a29a7a1bb274e73b480accdabdd4ba13ff0c416daa75a593c5c59f99d00077",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libvpx.a",
+      "sha256": "77f82a8bbf09af0e1bb833d03cda769cdf4c74a1a31f59c36aac5005be474434",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libwebp.a",
+      "sha256": "b964218c6fb86ea50ede5ab95ef46ab55ccba5ce52fada28cac63d21e771587c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libwebpdemux.a",
+      "sha256": "f0aa7b432781c7d6a6d7f5ebf729354fa3ced09ac5a4856de6eb1a6ce32fb6cd",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libwebpmux.a",
+      "sha256": "aa47cabf96efe63b4628afedcdebcc09573e520c9e8d11b84fb76993f3f7ed3a",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libx264.a",
+      "sha256": "00e2b45d8d144f6e98e724a0ed11fadc8201f9807ab81f81ebb867e029c08339",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libxml2.a",
+      "sha256": "26b79963cc80cdabfc48cee3cc5d43e6d9962e1bd45a381913cf2122c329180b",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libz.a",
+      "sha256": "6838f30dd02e47e3fb46ed64b83f38a6067378428616edef38dee76935868d69",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/libzstd.a",
+      "sha256": "d84ca33e966555f8c35940c097c491773b58a69af8438966e98ecff1cd11435c",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib/quickjs/libquickjs.a",
+      "sha256": "99772f9e9999479d36151b4df31868f25f8264960432fe8616850a4f0d0a7b6e",
+      "kind": "archive"
+    },
+    {
+      "link_input": "$TEST_BUILD/source/sahin/launcher/.deps/ps5-opengl/libps5opengl-group.a",
+      "sha256": "e8fff072578f95b34678ecff14cea798f12e5c1bd2b414d4e393488098f35f0d",
+      "kind": "linker script"
+    }
+  ],
+  "launcher_link_command_archives": [
+    {
+      "input": "$TEST_BUILD/source/sahin/launcher/.deps/ps5-opengl/libps5opengl-group.a",
+      "sha256": "e8fff072578f95b34678ecff14cea798f12e5c1bd2b414d4e393488098f35f0d"
+    }
+  ],
+  "launcher_link_command": "$TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/bin/prospero-lld -T $TEST_BUILD/source/sahin/launcher/tooling/native/ps5-pie.ld --eh-frame-hdr --wrap=malloc --wrap=calloc --wrap=realloc --wrap=free --wrap=posix_memalign --wrap=malloc_usable_size --wrap=sceSystemServiceHideSplashScreen --version-script $TEST_BUILD/source/sahin/launcher/tooling/native/app-symbols.map -e _start -o $TEST_BUILD/source/sahin/launcher/build/llvm-pie.elf $TEST_BUILD/source/sahin/launcher/build/obj/app_crt.o $TEST_BUILD/source/sahin/launcher/build/obj/app_cpp_runtime.o $TEST_BUILD/source/sahin/launcher/build/obj/src/app/early_exit.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/app/service.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/app/store.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/audio/cues.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/audio/mixer.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/audio/music.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/audio/wav.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/catalog/blackbox.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/catalog/catalog.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/catalog/icons.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/frame_stats.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/i18n.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/i18n_strings.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/image.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/input.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/qr.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/save_file.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/settings.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/core/version.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/demo_renderer.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/diag/crash_report.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/diag/diagnostics.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/diag/trace.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/backdrop.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/canvas.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/draw_list.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/font.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/gl_batch.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/gl_program.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/renderer.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/gfx/triangulate.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/install/archive.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/install/files.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/install/transaction.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/install/worker.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/adopt_gta.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/base_game.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/game_install.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/game_profile.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/game_sources.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/install_plan.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/prefix.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/rtpatch.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/tree.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/upgrade.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/library/wine_registry.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/main.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/net/curl_request.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/net/http.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/audio_out.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/curl_compat.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/curl_dns.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/display_egl.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/ime.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/keyboard.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/pad.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/self_update_kit.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/self_update_store.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/store_http.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/system.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/platform/ps5/title_registry.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/runtime/app_heap.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/runtime/runtime_shims.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/app_folder.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/elevation.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/inventory.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/locations.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/running.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/storage_probe.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/store_folder.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/update_check.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/system/worker_launch.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/miniz/miniz.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/miniz/miniz_tdef.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/miniz/miniz_tinfl.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/miniz/miniz_zip.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/monocypher/monocypher-ed25519.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/monocypher/monocypher.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/qrcodegen/qrcodegen.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/stb/vorbis.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/third_party/yyjson/yyjson.c.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/accordion.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/badge.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/banner.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/breadcrumb.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/button.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/button_group.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/calendar.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/card.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/carousel.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/chart.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/choice.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/choice_group.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/coach_mark.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/color_picker.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/component.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/counter.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/data_common.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/detail_list.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/dialog.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/focus_group.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/form.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/grid.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/hold_button.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/hud.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/image_viewer.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/input_prompt.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/inventory_grid.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/jump_bar.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/key_binder.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/keyboard.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/layout.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/list.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/loading_screen.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/media_controls.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/menu.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/node_map.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/notification.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/notification_bell.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/notification_center.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/overlay.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/page_dots.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/pause_menu.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/pin_entry.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/profile_picker.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/progress.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/quick_action.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/radial.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/range_slider.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/rating.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/scroll_area.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/search_field.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/select.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/sheet.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/sidenav.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/skeleton.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/split_view.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/stat.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/status.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/stepper.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/surface.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/table.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/tabs.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/tag_select.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/text_field.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/text_view.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/timeline.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/toast.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/tooltip.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/transition.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/tree.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/unlock_popup.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/wheel_picker.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/components/wizard.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/confetti.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/glyphs.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/pixel_font.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/theme.cpp.o $TEST_BUILD/source/sahin/launcher/build/obj/src/ui/widgets.cpp.o $TEST_BUILD/source/sahin/launcher/.deps/ps5-opengl/libps5opengl-group.a --start-group -L$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/user/homebrew/lib -lcurl -lpsl -lssl -lcrypto -lzstd -lz -L$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/opt/ps5-payload-sdk/target/user/homebrew/lib -L$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/opt/ps5-payload-sdk/target/user/homebrew/lib -L$TEST_BUILD/source/sahin/launcher/.deps/pacbrew/v0.40.2/sysroot/opt/ps5-payload-sdk/target/user/homebrew/lib -lssl -lcrypto -lcrypto -lzstd -lz -lzstd -lssl -lcrypto -lpsl --end-group --as-needed $TEST_BUILD/source/sahin/launcher/.deps/ps5-opengl/current/lib/libSceAgc.so $TEST_BUILD/source/sahin/launcher/.deps/ps5-opengl/current/lib/libSceAgcDriver.so $TEST_BUILD/source/sahin/launcher/build/system-keyboard/libSceCommonDialog.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceAppInstUtil.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceAudioOut.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceFsInternalForVsh.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceGLSlimVSH.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceGnmDriver.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceGnmDriverForNeoMode.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceHttp.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceHttp2.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceImeDialog.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceIpmi.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceKeyboard.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceLibcInternal.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceNet.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceNetCtl.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceNotification.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libScePad.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libScePosixForWebKit.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceRandom.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceRegMgr.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceRemoteplay.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceSsl.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceSysCore.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceSysmodule.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceSystemService.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceUserService.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libSceVideoOut.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libc_stub_weak.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libkernel.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libkernel_stub_weak.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libkernel_sys.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libkernel_web.so $TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libmonosgen-2.0.so",
+  "wine_source_deltas": [
+    {
+      "file": "wine-host-from-490f6d5d.patch",
+      "sha256": "596dd29c10303db7168941ab9ce26714020fc4b7b579e2d751e6da0da16bcced",
+      "base_commit": "490f6d5dcbb2a5047345b8af88d114bbcaad69a8",
+      "reverse_apply_check_against_actual_source": "PASS",
+      "instruction": "Apply exactly one matching complete delta to a fresh upstream tree; do not also apply the 88-patch series."
+    },
+    {
+      "file": "wine-ps5-from-490f6d5d.patch",
+      "sha256": "596dd29c10303db7168941ab9ce26714020fc4b7b579e2d751e6da0da16bcced",
+      "base_commit": "490f6d5dcbb2a5047345b8af88d114bbcaad69a8",
+      "reverse_apply_check_against_actual_source": "PASS",
+      "instruction": "Apply exactly one matching complete delta to a fresh upstream tree; do not also apply the 88-patch series."
+    },
+    {
+      "file": "wine-r4-controller-from-490f6d5d.patch",
+      "sha256": "634edb088c89553de760f4802c9a996cc203b4a302f0cdd76d69289424610d0a",
+      "base_commit": "490f6d5dcbb2a5047345b8af88d114bbcaad69a8",
+      "reverse_apply_check_against_actual_source": "PASS",
+      "instruction": "Apply exactly one matching complete delta to a fresh upstream tree; do not also apply the 88-patch series."
+    }
+  ],
+  "launcher_opengl_group_inputs": [
+    {
+      "input": "$TEST_BUILD/source/ps5-opengl/build/sdk/ps5-opengl-gl46/lib/libPS5OpenGL.a",
+      "sha256": "11ab03a347cf75e143c7aa896ff0fd94714ded471a92146aa0f2aba82722ae95"
+    },
+    {
+      "input": "$TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libunwind.a",
+      "sha256": "d5942a5ffb6585952855160d9230f6e597df1851e5f3dda1b338e08e24b2f2d0"
+    },
+    {
+      "input": "$TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libc++abi.a",
+      "sha256": "fe074aba4cfd2d81025d05c248d4468a954b5b8e2eaef82c8da99d36c4cbbcc5"
+    },
+    {
+      "input": "$TEST_BUILD/source/sahin/launcher/.deps/native/ps5-payload-sdk/target/lib/libc++.a",
+      "sha256": "b1480e6edcb7cffba5ea999cb13da0d40b0def4c215ead442649bba71d32414f"
+    },
+    {
+      "input": "$TEST_BUILD/source/sahin/launcher/.deps/native/compiler-rt/libclang_rt.builtins-x86_64.a",
+      "sha256": "101e233515a6152a68c6fb274f00f29a5c30f48897cd91fce47778a4b38096e6"
+    }
+  ],
+  "launcher_l_flags": [
+    "-lcurl",
+    "-lpsl",
+    "-lssl",
+    "-lcrypto",
+    "-lzstd",
+    "-lz",
+    "-lssl",
+    "-lcrypto",
+    "-lcrypto",
+    "-lzstd",
+    "-lz",
+    "-lzstd",
+    "-lssl",
+    "-lcrypto",
+    "-lpsl"
+  ],
+  "launcher_mesa": {
+    "archive": "mesa-26.2.0.tar.xz",
+    "sha256": "efd4bb08cdb7c365a812cd4e6c9202ab55b2f22cdcd13c7d6c4f9647b799a4ef",
+    "upstream_members_compared": 12803,
+    "changed_upstream_files": [
+      "src/compiler/glsl/gl_nir_lower_xfb_varying.c",
+      "src/compiler/nir/nir_intrinsics.py",
+      "src/compiler/nir/nir_opt_varyings.c",
+      "src/gallium/auxiliary/indices/u_primconvert.c",
+      "src/gallium/auxiliary/indices/u_primconvert.h",
+      "src/gallium/auxiliary/translate/translate.c",
+      "src/gallium/auxiliary/util/u_threaded_context.c",
+      "src/gallium/auxiliary/util/u_vbuf.c",
+      "src/gallium/include/pipe/p_state.h",
+      "src/glx/libgl-symbols.txt",
+      "src/mesa/main/draw.c",
+      "src/mesa/main/fbobject.c",
+      "src/mesa/main/glthread.h",
+      "src/mesa/main/renderbuffer.c",
+      "src/mesa/main/texparam.c",
+      "src/mesa/main/texstate.c",
+      "src/mesa/state_tracker/st_atom_storagebuf.c",
+      "src/mesa/state_tracker/st_cb_texture.c",
+      "src/mesa/state_tracker/st_draw.c",
+      "src/mesa/state_tracker/st_extensions.c",
+      "src/mesa/state_tracker/st_format.c",
+      "src/mesa/state_tracker/st_manager.c",
+      "src/util/os_file.c"
+    ],
+    "patch": "mesa-launcher-from-26.2.0.patch",
+    "reverse_apply_check": "PASS",
+    "limit": "Records changes to upstream members; additional generated/platform files are supplied by the pinned ps5-opengl recipes and still require full linked-input closure."
+  },
+  "psbc": {
+    "upstream_commit": "a92a1228ea3a64e4be9f0e61c2a65a5aa7ffed92",
+    "patch": "ps5-opengl/toolchain/opengnm-psbc-ps5.patch",
+    "patch_sha256": "ec8e008b57aef807093f6aa97ed089421fd55717525659574ccd8d344184f244",
+    "reverse_patch_against_actual_compile_source": "PASS"
+  },
+  "sdk": {
+    "tag": "v0.42",
+    "commit": "4eb701204fc3f8d31e84cf8ca272974e2be9c867",
+    "archive_sha256": "8cfbc7cd5811e719eb4f0c47eea668d3dc7b40bc8ab11c4a5031d40c23ec02da",
+    "source_url": "https://github.com/ps5-payload-dev/sdk/tree/4eb701204fc3f8d31e84cf8ca272974e2be9c867",
+    "libcxx_recipe": "SDK-libcxx.upstream.sh",
+    "llvm_version": "18.1.8",
+    "recipe_sha256": "a0f8f7354618f5596bd683bf1a2b196cec99f75bdcc2778ebdbb184ebfe2b635",
+    "remaining": "Complete runtime-link-input and applicable notice/source coverage not yet closed for the composed package."
+  }
+}
