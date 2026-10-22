@@ -4,6 +4,10 @@
 
 **Author: [CHI-GETSU](https://github.com/CHI-GETSU)**
 
+![GETSU-SAN promotional illustration showing an illustrated urban sunset scene.](docs/images/getsu-san-promotional-banner.png)
+
+*Promotional illustration for GETSU-SAN — not an in-game screenshot or gameplay captured on PS5.*
+
 Welcome to **GETSU-SAN**, my community PS5 homebrew integration and adaptation project. **GETSU** is my signature, taken from CHI-GETSU; **SAN** refers to San Andreas. I bring existing homebrew components together so you can run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS5 homebrew tile, using an adapted [Sahin](https://github.com/7tg/sahin) launcher and [Prospero Win](https://github.com/mpereiraesaa/prospero-win).
 
 **Beta: `v0.1.0-beta` · PS5 title ID: `PPSA99604`**
