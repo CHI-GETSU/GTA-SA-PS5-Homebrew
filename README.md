@@ -1,6 +1,10 @@
-# GTA San Andreas Homebrew PS5
+# GETSU-SAN
 
-Welcome to my GTA San Andreas PS5 homebrew project. I maintain this community adaptation so you can run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS5 homebrew tile, using an adapted [Sahin](https://github.com/7tg/sahin) launcher and [Prospero Win](https://github.com/mpereiraesaa/prospero-win).
+**GTA San Andreas for PS5**
+
+**Author: [CHI-GETSU](https://github.com/CHI-GETSU)**
+
+Welcome to **GETSU-SAN**, my community PS5 homebrew integration and adaptation project. **GETSU** is my signature, taken from CHI-GETSU; **SAN** refers to San Andreas. I bring existing homebrew components together so you can run **Grand Theft Auto: San Andreas — classic PC edition** from a dedicated PS5 homebrew tile, using an adapted [Sahin](https://github.com/7tg/sahin) launcher and [Prospero Win](https://github.com/mpereiraesaa/prospero-win).
 
 **Beta: `v0.1.0-beta` · PS5 title ID: `PPSA99604`**
 
@@ -24,6 +28,8 @@ Prospero Win provides the Windows compatibility runtime, including Wine, that le
 - Recognition of the existing R4 prefix, without replacing its saved games.
 
 ## Download the PS5 release
+
+The validated `v0.1.0-beta` downloads retain their original GTA-SA filenames. GETSU-SAN is the public project name; the repository URL, PS5 title ID, icon and existing on-console labels remain those of the tested release.
 
 Open [v0.1.0-beta](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases/tag/v0.1.0-beta) and expand **Assets**. For the PS5 application, choose **[GTA-SA-PS5-PPSA99604-TEST.zip](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases/download/v0.1.0-beta/GTA-SA-PS5-PPSA99604-TEST.zip)**.
 
@@ -56,7 +62,7 @@ I can't confirm compatibility with firmware/loader combinations beyond those tes
    /data/homebrew/PPSA99604/
    ```
 
-   Keep `eboot.bin`, `game.bin`, `win/`, `assets/`, `sce_module/`, helpers and their dependencies together. `game.bin` is the homebrew engine, not the PC game executable. Do not rename the title folder or change its title ID.
+   Keep `eboot.bin`, `game.bin`, `win/`, `assets/`, `sce_module/`, helpers and their dependencies together. `game.bin` is the adapted native homebrew runner; the PC game executable is supplied separately. Do not rename the title folder or change its title ID.
 3. Refresh/register the homebrew tile using your loader's procedure, for example ShadowMountPlus. Preserve executable permissions where required by the loader; an FTP transfer can change them.
 4. Place your classic PC game files in:
 
@@ -150,7 +156,7 @@ I'd like to thank the developers and contributors whose work makes my adaptation
 - The [Wine contributors](https://gitlab.winehq.org/wine/wine) ([GitHub mirror](https://github.com/wine-mirror/wine)), the [DXVK contributors](https://github.com/doitsujin/dxvk) and the [PS5 DXVK fork contributors](https://github.com/mpereiraesaa/dxvk).
 - The [Mesa contributors](https://gitlab.freedesktop.org/mesa/mesa), the [PS5 OpenGL port contributors](https://github.com/mpereiraesaa/ps5-opengl), the [public PS5 payload SDK contributors](https://github.com/ps5-payload-dev/sdk), and the wider PS5 homebrew tools community.
 
-GTA-SA-PS5-Homebrew is an **independent community adaptation**. It has no official affiliation with, endorsement by, or support agreement with the developers credited above, Rockstar Games, Take-Two Interactive or Sony Interactive Entertainment. Project and game names belong to their respective owners.
+GETSU-SAN is an **independent community integration and adaptation**. It has no official affiliation with, endorsement by, or support agreement with the developers credited above, Rockstar Games, Take-Two Interactive or Sony Interactive Entertainment. Project and game names belong to their respective owners.
 
 These thanks supplement the component copyright and license notices; they do not replace them. Verified upstream references are recorded in [docs/CREDITS_VERIFICATION.md](docs/CREDITS_VERIFICATION.md).
 
@@ -169,7 +175,7 @@ Some technical records describe earlier preparation or diagnostic stages. They a
 
 ## Source, builds and attribution
 
-The adapted launcher is in `sahin/launcher/`; GTA native engine changes are in `runner/native-source/`; the pinned Prospero Win base, Wine patches, R4 bridge and tests are included in their respective directories. See [BUILDING.md](BUILDING.md), [DEPENDENCIES.md](DEPENDENCIES.md) and [VALIDATION.md](VALIDATION.md).
+My adapted launcher is in `sahin/launcher/`; my GTA-specific native runner adaptations are in `runner/native-source/`. The pinned Prospero Win base, Wine patches, R4 bridge and tests are included in their respective directories. The underlying compatibility runtime, graphics components and launcher foundations retain their original authorship and licenses. See [BUILDING.md](BUILDING.md), [DEPENDENCIES.md](DEPENDENCIES.md) and [VALIDATION.md](VALIDATION.md).
 
 I've published [v0.1.0-beta](https://github.com/CHI-GETSU/GTA-SA-PS5-Homebrew/releases/tag/v0.1.0-beta) as the first public beta of my community adaptation. This release version does not change the internal PS5 application version or title ID.
 
